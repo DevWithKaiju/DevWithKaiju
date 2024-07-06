@@ -1,6 +1,4 @@
-<h2 align="center>
-  Hi there 😀
-</h2>
+# Hi there 🦖
 
 <p align="left"> 
   <img alt="Top Langs" height="140px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YoshikawaMei&layout=compact&show_icons=true&theme=dracula" />
