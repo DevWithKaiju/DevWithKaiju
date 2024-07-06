@@ -3,5 +3,5 @@
   <img alt="github stats" height="130px" src="https://github-readme-stats.vercel.app/api?username=YoshikawaMei&theme=dracula&show_icons=ture" />
 </p>
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=YoshikawaMei&theme=nord&column=8
+[![trophy](https://github-profile-trophy.vercel.app/?username=YoshikawaMei&theme=onedark&column=8
 )](https://github.com/ryo-ma/github-profile-trophy)
