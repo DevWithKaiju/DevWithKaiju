@@ -1,2 +1,2 @@
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=YoshikawaMei&layout=compact&theme=radical
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=YoshikawaMei&layout=compact&theme=cabalt
 )](https://github.com/anuraghazra/github-readme-stats)
