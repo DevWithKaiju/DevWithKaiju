@@ -9,8 +9,8 @@
 
 ## Links
 
-* Personal HP: https://devwithkaiju.github.io/
-* Mizuno Group HP: https://www.mizuno-group.com/
+* Personal HP: https://devwithkaiju.github.io
+* Mizuno Group HP: https://www.mizuno-group.com
 * Mizuno Group GitHub: https://github.com/mizuno-group
 
 <p align="left"> 
