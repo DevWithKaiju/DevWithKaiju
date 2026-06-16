@@ -24,7 +24,7 @@ FONT_FAMILY = "'Segoe UI', 'Helvetica Neue', Ubuntu, sans-serif"
 
 
 def svg_header(width: int, height: int, extra_defs: str = "", extra_style: str = "") -> str:
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 {width} {height}">
   <defs>
     <linearGradient id="purpleMintGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="{COLORS['dusty_purple']}" />

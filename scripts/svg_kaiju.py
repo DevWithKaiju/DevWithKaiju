@@ -50,13 +50,7 @@ def generate_kaiju_svg(data: dict) -> str:
     </linearGradient>
     """
 
-    extra_style = f"""
-    @keyframes float {{
-      0%, 100% {{ transform: translateY(0); }}
-      50% {{ transform: translateY(-4px); }}
-    }}
-    .kaiju-art {{ animation: float 3s ease-in-out infinite; }}
-    """
+    extra_style = ""
 
     lines = [svg_header(CARD_W, CARD_H, extra_defs=extra_defs, extra_style=extra_style)]
 
@@ -78,7 +72,7 @@ def generate_kaiju_svg(data: dict) -> str:
     lines.append(f'  <g class="kaiju-art" transform="translate({art_cx},{art_cy})">')
     # The generated images are embedded as base64
     img_size = 140
-    lines.append(f'    <image x="{-img_size/2}" y="{-img_size/2}" width="{img_size}" height="{img_size}" href="{ASSETS[stage[1]]}" />')
+    lines.append(f'    <image x="{-img_size/2}" y="{-img_size/2}" width="{img_size}" height="{img_size}" xlink:href="{ASSETS[stage[1]]}" />')
     lines.append("  </g>")
 
     # Decorative elements

@@ -15,10 +15,9 @@
 
 ## 🦖 My Kaiju & 📊 Stats
 
-<p align="left">
-  <img src="./images/kaiju.svg" alt="kaiju" width="48%">
-  <img src="./images/stats.svg" alt="stats" width="48%">
-</p>
+| 🦖 My Kaiju | 📊 Stats |
+| :---: | :---: |
+| <img src="./images/kaiju.svg" width="400"> | <img src="./images/stats.svg" width="400"> |
 
 ## 🏆 Achievements
 
