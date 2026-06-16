@@ -28,8 +28,11 @@ jobs:
 
       - name: Generate SVGs
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/generate_profile.py
+          # Privateリポジトリの活動も含めたい場合は、GitHubのSettingsでPATを発行し、
+          # リポジトリのSecretsに 'GH_PAT' という名前で保存してください。
+          GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+        run: |
+          uv run --with requests scripts/generate_profile.py
 
       - name: Commit & Push
         run: |
