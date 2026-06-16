@@ -5,7 +5,6 @@ A unique card where a cute dinosaur evolves based on total commits.
 
 import os
 from theme import COLORS, FONT_FAMILY, svg_header, svg_footer, rounded_rect, text_element
-from kaiju_assets import ASSETS
 
 # ─── Growth Stages ──────────────────────────────────────────
 
