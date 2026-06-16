@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="118" viewBox="0 0 800 118">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="194" viewBox="0 0 800 194">
   <defs>
     <linearGradient id="purpleMintGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#9B8EC4" />
@@ -33,42 +33,77 @@
     }
     
   </style>
-  <rect x="0" y="0" width="800" height="118" rx="16" fill="#1E1833" />
-  <rect x="0" y="0" width="800" height="118" rx="16" fill="none" stroke="url(#cardBorderGrad)" stroke-width="1.5" />
+  <rect x="0" y="0" width="800" height="194" rx="16" fill="#1E1833" />
+  <rect x="0" y="0" width="800" height="194" rx="16" fill="none" stroke="url(#cardBorderGrad)" stroke-width="1.5" />
   <text x="400.0" y="32" font-size="16" fill="#D4CCE6" text-anchor="middle" font-weight="600" >🛠  Skills & Languages</text>
   <g>
-    <rect x="50.0" y="50" width="133.5" height="28" rx="14" fill="#2D2640" stroke="#3A3350" stroke-width="1" />
-    <circle cx="64.0" cy="64.0" r="5" fill="#3572A5" />
-    <circle cx="64.0" cy="64.0" r="5" fill="none" stroke="#1E1833" stroke-width="1" />
-    <text x="76.0" y="68.5" font-size="11.5" fill="#E8E0F0" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">Python</text>
-    <text x="173.5" y="68.5" font-size="10" fill="#A89EC0" text-anchor="end" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">60.0%</text>
+    <rect x="80.5" y="50" width="208.5" height="28" rx="14" fill="#2D2640" stroke="#3A3350" stroke-width="1" />
+    <circle cx="94.5" cy="64.0" r="5" fill="#DA5B0B" />
+    <circle cx="94.5" cy="64.0" r="5" fill="none" stroke="#1E1833" stroke-width="1" />
+    <text x="106.5" y="68.5" font-size="11.5" fill="#E8E0F0" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">Jupyter Notebook</text>
+    <text x="279.0" y="68.5" font-size="10" fill="#A89EC0" text-anchor="end" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">39.7%</text>
   </g>
   <g>
-    <rect x="193.5" y="50" width="208.5" height="28" rx="14" fill="#2D2640" stroke="#3A3350" stroke-width="1" />
-    <circle cx="207.5" cy="64.0" r="5" fill="#DA5B0B" />
-    <circle cx="207.5" cy="64.0" r="5" fill="none" stroke="#1E1833" stroke-width="1" />
-    <text x="219.5" y="68.5" font-size="11.5" fill="#E8E0F0" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">Jupyter Notebook</text>
-    <text x="392.0" y="68.5" font-size="10" fill="#A89EC0" text-anchor="end" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">24.0%</text>
+    <rect x="299.0" y="50" width="133.5" height="28" rx="14" fill="#2D2640" stroke="#3A3350" stroke-width="1" />
+    <circle cx="313.0" cy="64.0" r="5" fill="#3572A5" />
+    <circle cx="313.0" cy="64.0" r="5" fill="none" stroke="#1E1833" stroke-width="1" />
+    <text x="325.0" y="68.5" font-size="11.5" fill="#E8E0F0" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">Python</text>
+    <text x="422.5" y="68.5" font-size="10" fill="#A89EC0" text-anchor="end" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">21.9%</text>
   </g>
   <g>
-    <rect x="412.0" y="50" width="88.5" height="28" rx="14" fill="#2D2640" stroke="#3A3350" stroke-width="1" />
-    <circle cx="426.0" cy="64.0" r="5" fill="#198CE7" />
-    <circle cx="426.0" cy="64.0" r="5" fill="none" stroke="#1E1833" stroke-width="1" />
-    <text x="438.0" y="68.5" font-size="11.5" fill="#E8E0F0" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">R</text>
-    <text x="490.5" y="68.5" font-size="10" fill="#A89EC0" text-anchor="end" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">9.6%</text>
+    <rect x="442.5" y="50" width="163.5" height="28" rx="14" fill="#2D2640" stroke="#3A3350" stroke-width="1" />
+    <circle cx="456.5" cy="64.0" r="5" fill="#f1e05a" />
+    <circle cx="456.5" cy="64.0" r="5" fill="none" stroke="#1E1833" stroke-width="1" />
+    <text x="468.5" y="68.5" font-size="11.5" fill="#E8E0F0" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">JavaScript</text>
+    <text x="596.0" y="68.5" font-size="10" fill="#A89EC0" text-anchor="end" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">21.5%</text>
   </g>
   <g>
-    <rect x="510.5" y="50" width="118.5" height="28" rx="14" fill="#2D2640" stroke="#3A3350" stroke-width="1" />
-    <circle cx="524.5" cy="64.0" r="5" fill="#89e051" />
-    <circle cx="524.5" cy="64.0" r="5" fill="none" stroke="#1E1833" stroke-width="1" />
-    <text x="536.5" y="68.5" font-size="11.5" fill="#E8E0F0" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">Shell</text>
-    <text x="619.0" y="68.5" font-size="10" fill="#A89EC0" text-anchor="end" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">3.6%</text>
+    <rect x="616.0" y="50" width="103.5" height="28" rx="14" fill="#2D2640" stroke="#3A3350" stroke-width="1" />
+    <circle cx="630.0" cy="64.0" r="5" fill="#663399" />
+    <circle cx="630.0" cy="64.0" r="5" fill="none" stroke="#1E1833" stroke-width="1" />
+    <text x="642.0" y="68.5" font-size="11.5" fill="#E8E0F0" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">CSS</text>
+    <text x="709.5" y="68.5" font-size="10" fill="#A89EC0" text-anchor="end" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">9.0%</text>
   </g>
   <g>
-    <rect x="639.0" y="50" width="111.0" height="28" rx="14" fill="#2D2640" stroke="#3A3350" stroke-width="1" />
-    <circle cx="653.0" cy="64.0" r="5" fill="#e34c26" />
-    <circle cx="653.0" cy="64.0" r="5" fill="none" stroke="#1E1833" stroke-width="1" />
-    <text x="665.0" y="68.5" font-size="11.5" fill="#E8E0F0" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">HTML</text>
-    <text x="740.0" y="68.5" font-size="10" fill="#A89EC0" text-anchor="end" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">2.4%</text>
+    <rect x="72.5" y="88" width="118.5" height="28" rx="14" fill="#2D2640" stroke="#3A3350" stroke-width="1" />
+    <circle cx="86.5" cy="102.0" r="5" fill="#ff5a03" />
+    <circle cx="86.5" cy="102.0" r="5" fill="none" stroke="#1E1833" stroke-width="1" />
+    <text x="98.5" y="106.5" font-size="11.5" fill="#E8E0F0" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">Astro</text>
+    <text x="181.0" y="106.5" font-size="10" fill="#A89EC0" text-anchor="end" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">5.7%</text>
+  </g>
+  <g>
+    <rect x="201.0" y="88" width="118.5" height="28" rx="14" fill="#2D2640" stroke="#3A3350" stroke-width="1" />
+    <circle cx="215.0" cy="102.0" r="5" fill="#89e051" />
+    <circle cx="215.0" cy="102.0" r="5" fill="none" stroke="#1E1833" stroke-width="1" />
+    <text x="227.0" y="106.5" font-size="11.5" fill="#E8E0F0" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">Shell</text>
+    <text x="309.5" y="106.5" font-size="10" fill="#A89EC0" text-anchor="end" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">1.1%</text>
+  </g>
+  <g>
+    <rect x="329.5" y="88" width="111.0" height="28" rx="14" fill="#2D2640" stroke="#3A3350" stroke-width="1" />
+    <circle cx="343.5" cy="102.0" r="5" fill="#e34c26" />
+    <circle cx="343.5" cy="102.0" r="5" fill="none" stroke="#1E1833" stroke-width="1" />
+    <text x="355.5" y="106.5" font-size="11.5" fill="#E8E0F0" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">HTML</text>
+    <text x="430.5" y="106.5" font-size="10" fill="#A89EC0" text-anchor="end" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">0.5%</text>
+  </g>
+  <g>
+    <rect x="450.5" y="88" width="156.0" height="28" rx="14" fill="#2D2640" stroke="#3A3350" stroke-width="1" />
+    <circle cx="464.5" cy="102.0" r="5" fill="#3178c6" />
+    <circle cx="464.5" cy="102.0" r="5" fill="none" stroke="#1E1833" stroke-width="1" />
+    <text x="476.5" y="106.5" font-size="11.5" fill="#E8E0F0" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">TypeScript</text>
+    <text x="596.5" y="106.5" font-size="10" fill="#A89EC0" text-anchor="end" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">0.4%</text>
+  </g>
+  <g>
+    <rect x="616.5" y="88" width="111.0" height="28" rx="14" fill="#2D2640" stroke="#3A3350" stroke-width="1" />
+    <circle cx="630.5" cy="102.0" r="5" fill="#c6538c" />
+    <circle cx="630.5" cy="102.0" r="5" fill="none" stroke="#1E1833" stroke-width="1" />
+    <text x="642.5" y="106.5" font-size="11.5" fill="#E8E0F0" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">SCSS</text>
+    <text x="717.5" y="106.5" font-size="10" fill="#A89EC0" text-anchor="end" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">0.2%</text>
+  </g>
+  <g>
+    <rect x="348.25" y="126" width="103.5" height="28" rx="14" fill="#2D2640" stroke="#3A3350" stroke-width="1" />
+    <circle cx="362.25" cy="140.0" r="5" fill="#3D6117" />
+    <circle cx="362.25" cy="140.0" r="5" fill="none" stroke="#1E1833" stroke-width="1" />
+    <text x="374.25" y="144.5" font-size="11.5" fill="#E8E0F0" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">TeX</text>
+    <text x="441.75" y="144.5" font-size="10" fill="#A89EC0" text-anchor="end" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif">0.0%</text>
   </g>
 </svg>
