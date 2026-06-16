@@ -17,31 +17,25 @@
 * Mizuno Group GitHub: https://github.com/mizuno-group
 
 <!-- ========================================== -->
-<!-- 🦖 Stats & Kaiju Section (Side-by-side)    -->
+<!-- 🦖 Stats & Kaiju Section                   -->
 <!-- ========================================== -->
-<p align="center">
-  <a href="https://github.com/DevWithKaiju">
-    <img src="./images/kaiju.svg" width="400" alt="My Kaiju">
-  </a>
-  <a href="https://github.com/DevWithKaiju">
-    <img src="./images/stats.svg" width="400" alt="GitHub Stats">
-  </a>
-</p>
+| 🦖 My Kaiju | 📊 GitHub Stats |
+|:---:|:---:|
+| <a href="https://github.com/DevWithKaiju"><img src="./images/kaiju.svg" width="400" alt="My Kaiju"></a> | <a href="https://github.com/DevWithKaiju"><img src="./images/stats.svg" width="400" alt="GitHub Stats"></a> |
+
+<br />
 
 <!-- ========================================== -->
-<!-- 🏆 Achievements Section                    -->
+<!-- 🏆 Achievements & Skills Section           -->
 <!-- ========================================== -->
-<p align="center">
-  <a href="https://github.com/DevWithKaiju">
-    <img src="./images/achievements.svg" width="800" alt="Achievements">
-  </a>
-</p>
+## 🏆 Achievements
 
-<!-- ========================================== -->
-<!-- 🛠 Skills Section                          -->
-<!-- ========================================== -->
-<p align="center">
-  <a href="https://github.com/DevWithKaiju">
-    <img src="./images/skills.svg" width="800" alt="Skills">
-  </a>
-</p>
+<a href="https://github.com/DevWithKaiju">
+  <img src="./images/achievements.svg" width="800" alt="Achievements">
+</a>
+
+## 🛠 Skills
+
+<a href="https://github.com/DevWithKaiju">
+  <img src="./images/skills.svg" width="800" alt="Skills">
+</a>
