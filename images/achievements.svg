@@ -123,37 +123,31 @@
   <text x="82" y="334" font-size="9" fill="#A8D8C8" text-anchor="start" font-weight="normal" >✅ Unlocked</text>
   </g>
   <g>
-  <rect x="215" y="258" width="185" height="95" rx="10" fill="#FFFFFF" />
-  <rect x="215" y="258" width="185" height="95" rx="10" fill="none" stroke="url(#cardBorderGrad)" stroke-width="1.2" />
-  <circle cx="247" cy="305.5" r="22" fill="#FAFAFC" stroke="url(#purpleMintGrad)" stroke-width="1.5" />
-  <text x="247" y="311.5" font-size="20" fill="#4A4359" text-anchor="middle" font-weight="normal" >🎭</text>
-  <circle cx="385" cy="270" r="2" fill="#A8D8C8" class="sparkle" style="animation-delay: 0.72s" />
-  <circle cx="392" cy="276" r="1.5" fill="#9B8EC4" class="sparkle" style="animation-delay: 1.12s" />
-  <text x="277" y="296" font-size="12" fill="#4A4359" text-anchor="start" font-weight="600" >Collaborator</text>
-  <text x="277" y="314" font-size="10" fill="#8A80A0" text-anchor="start" font-weight="normal" >10+ PRs</text>
-  <text x="277" y="334" font-size="9" fill="#A8D8C8" text-anchor="start" font-weight="normal" >✅ Unlocked</text>
+  <rect x="215" y="258" width="185" height="95" rx="10" fill="#F5F5F5" />
+  <rect x="215" y="258" width="185" height="95" rx="10" fill="none" stroke="#E0E0E0" stroke-width="1" />
+  <circle cx="247" cy="305.5" r="22" fill="#FAFAFC" stroke="#E0E0E0" stroke-width="1.5" />
+  <text x="247" y="311.5" font-size="18" fill="#B0B0B0" text-anchor="middle" font-weight="normal" >🔒</text>
+  <text x="277" y="296" font-size="12" fill="#B0B0B0" text-anchor="start" font-weight="600" >Collaborator</text>
+  <text x="277" y="314" font-size="10" fill="#B0B0B0" text-anchor="start" font-weight="normal" >10+ PRs</text>
+  <text x="277" y="334" font-size="9" fill="#B0B0B0" text-anchor="start" font-weight="normal" >🔒 Locked</text>
   </g>
   <g>
-  <rect x="410" y="258" width="185" height="95" rx="10" fill="#FFFFFF" />
-  <rect x="410" y="258" width="185" height="95" rx="10" fill="none" stroke="url(#cardBorderGrad)" stroke-width="1.2" />
-  <circle cx="442" cy="305.5" r="22" fill="#FAFAFC" stroke="url(#purpleMintGrad)" stroke-width="1.5" />
-  <text x="442" y="311.5" font-size="20" fill="#4A4359" text-anchor="middle" font-weight="normal" >🐛</text>
-  <circle cx="580" cy="270" r="2" fill="#A8D8C8" class="sparkle" style="animation-delay: 0.8s" />
-  <circle cx="587" cy="276" r="1.5" fill="#9B8EC4" class="sparkle" style="animation-delay: 1.2000000000000002s" />
-  <text x="472" y="296" font-size="12" fill="#4A4359" text-anchor="start" font-weight="600" >Bug Hunter</text>
-  <text x="472" y="314" font-size="10" fill="#8A80A0" text-anchor="start" font-weight="normal" >5+ issues</text>
-  <text x="472" y="334" font-size="9" fill="#A8D8C8" text-anchor="start" font-weight="normal" >✅ Unlocked</text>
+  <rect x="410" y="258" width="185" height="95" rx="10" fill="#F5F5F5" />
+  <rect x="410" y="258" width="185" height="95" rx="10" fill="none" stroke="#E0E0E0" stroke-width="1" />
+  <circle cx="442" cy="305.5" r="22" fill="#FAFAFC" stroke="#E0E0E0" stroke-width="1.5" />
+  <text x="442" y="311.5" font-size="18" fill="#B0B0B0" text-anchor="middle" font-weight="normal" >🔒</text>
+  <text x="472" y="296" font-size="12" fill="#B0B0B0" text-anchor="start" font-weight="600" >Bug Hunter</text>
+  <text x="472" y="314" font-size="10" fill="#B0B0B0" text-anchor="start" font-weight="normal" >5+ issues</text>
+  <text x="472" y="334" font-size="9" fill="#B0B0B0" text-anchor="start" font-weight="normal" >🔒 Locked</text>
   </g>
   <g>
-  <rect x="605" y="258" width="185" height="95" rx="10" fill="#FFFFFF" />
-  <rect x="605" y="258" width="185" height="95" rx="10" fill="none" stroke="url(#cardBorderGrad)" stroke-width="1.2" />
-  <circle cx="637" cy="305.5" r="22" fill="#FAFAFC" stroke="url(#purpleMintGrad)" stroke-width="1.5" />
-  <text x="637" y="311.5" font-size="20" fill="#4A4359" text-anchor="middle" font-weight="normal" >💜</text>
-  <circle cx="775" cy="270" r="2" fill="#A8D8C8" class="sparkle" style="animation-delay: 0.88s" />
-  <circle cx="782" cy="276" r="1.5" fill="#9B8EC4" class="sparkle" style="animation-delay: 1.28s" />
-  <text x="667" y="296" font-size="12" fill="#4A4359" text-anchor="start" font-weight="600" >Popular</text>
-  <text x="667" y="314" font-size="10" fill="#8A80A0" text-anchor="start" font-weight="normal" >10+ followers</text>
-  <text x="667" y="334" font-size="9" fill="#A8D8C8" text-anchor="start" font-weight="normal" >✅ Unlocked</text>
+  <rect x="605" y="258" width="185" height="95" rx="10" fill="#F5F5F5" />
+  <rect x="605" y="258" width="185" height="95" rx="10" fill="none" stroke="#E0E0E0" stroke-width="1" />
+  <circle cx="637" cy="305.5" r="22" fill="#FAFAFC" stroke="#E0E0E0" stroke-width="1.5" />
+  <text x="637" y="311.5" font-size="18" fill="#B0B0B0" text-anchor="middle" font-weight="normal" >🔒</text>
+  <text x="667" y="296" font-size="12" fill="#B0B0B0" text-anchor="start" font-weight="600" >Popular</text>
+  <text x="667" y="314" font-size="10" fill="#B0B0B0" text-anchor="start" font-weight="normal" >10+ followers</text>
+  <text x="667" y="334" font-size="9" fill="#B0B0B0" text-anchor="start" font-weight="normal" >🔒 Locked</text>
   </g>
   <g>
   <rect x="20" y="363" width="185" height="95" rx="10" fill="#F5F5F5" />
