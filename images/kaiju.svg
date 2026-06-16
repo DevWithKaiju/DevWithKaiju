@@ -28,7 +28,7 @@
     }
     @keyframes xpGrow {
       from { width: 0; }
-      to { width: 200.0px; }
+      to { width: 214.0px; }
     }
     @keyframes float {
       0%, 100% { transform: translateY(0); }
@@ -39,33 +39,45 @@
   </style>
   <rect x="0" y="0" width="420" height="320" rx="16" fill="#FAFAFC" />
   <rect x="0" y="0" width="420" height="320" rx="16" fill="none" stroke="url(#cardBorderGrad)" stroke-width="1.5" />
-  <text x="210.0" y="30" font-size="17" fill="#F4F1FA" text-anchor="middle" font-weight="700" >🦖  Baby Kaiju</text>
+  <text x="210.0" y="30" font-size="17" fill="#F4F1FA" text-anchor="middle" font-weight="700" >🦖  Junior Kaiju</text>
   <rect x="180.0" y="38" width="60" height="22" rx="11" fill="#FFFFFF" stroke="url(#purpleMintGrad)" stroke-width="1.2" />
-  <text x="210.0" y="54" font-size="11" fill="#A8D8C8" text-anchor="middle" font-weight="700" >Lv. 8</text>
+  <text x="210.0" y="54" font-size="11" fill="#A8D8C8" text-anchor="middle" font-weight="700" >Lv. 21</text>
   <g class="kaiju-art">
 
   <g transform="translate(210.0,150)">
-    <!-- egg shell bottom -->
-    <path d="M-22,10 Q-25,-5 -15,-10 L15,-10 Q25,-5 22,10 Z" fill="#F4F1FA" stroke="#9B8EC4" stroke-width="1.5" />
-    <path d="M-22,10 Q-20,25 0,28 Q20,25 22,10 Z" fill="#F4F1FA" stroke="#9B8EC4" stroke-width="1.5" />
-    <!-- zigzag crack line on shell -->
-    <polyline points="-22,10 -14,5 -6,12 2,4 10,11 18,6 22,10" fill="none" stroke="#5A5070" stroke-width="1.2" />
-    <!-- baby dino head poking out -->
-    <ellipse cx="0" cy="-22" rx="18" ry="16" fill="#A8D8C8" />
-    <ellipse cx="0" cy="-22" rx="18" ry="16" fill="none" stroke="#5A5070" stroke-width="1.5" />
-    <!-- eyes -->
-    <circle cx="-6" cy="-24" r="4" fill="#FAFAFC" />
-    <circle cx="6" cy="-24" r="4" fill="#FAFAFC" />
-    <circle cx="-5" cy="-25" r="1.5" fill="#FFFFFF" />
-    <circle cx="7" cy="-25" r="1.5" fill="#FFFFFF" />
-    <!-- blush -->
-    <ellipse cx="-12" cy="-18" rx="4" ry="2.5" fill="#FFD6E5" opacity="0.5" />
-    <ellipse cx="12" cy="-18" rx="4" ry="2.5" fill="#FFD6E5" opacity="0.5" />
-    <!-- tiny horns -->
-    <circle cx="-8" cy="-37" r="3" fill="#E2F4EE" />
-    <circle cx="8" cy="-37" r="3" fill="#E2F4EE" />
+    <!-- cute round body -->
+    <ellipse cx="0" cy="5" rx="32" ry="28" fill="#A8D8C8" />
+    <ellipse cx="0" cy="5" rx="32" ry="28" fill="none" stroke="#5A5070" stroke-width="1.8" />
+    <!-- big cute head -->
+    <circle cx="0" cy="-18" r="24" fill="#A8D8C8" />
+    <circle cx="0" cy="-18" r="24" fill="none" stroke="#5A5070" stroke-width="1.8" />
+    <!-- tummy -->
+    <ellipse cx="0" cy="8" rx="20" ry="16" fill="#E2F4EE" />
+    <!-- big kawaii eyes -->
+    <circle cx="-10" cy="-20" r="5" fill="#FAFAFC" />
+    <circle cx="10" cy="-20" r="5" fill="#FAFAFC" />
+    <circle cx="-11" cy="-21" r="2.5" fill="#FFFFFF" />
+    <circle cx="9" cy="-21" r="2.5" fill="#FFFFFF" />
+    <!-- tiny cute smile -->
+    <path d="M-4,-12 Q0,-8 4,-12" fill="none" stroke="#5A5070" stroke-width="1.5" stroke-linecap="round" />
+    <!-- big blush -->
+    <ellipse cx="-16" cy="-14" rx="6" ry="4" fill="#FFD6E5" opacity="0.8" />
+    <ellipse cx="16" cy="-14" rx="6" ry="4" fill="#FFD6E5" opacity="0.8" />
+    <!-- back spikes -->
+    <circle cx="-8" cy="-38" r="5" fill="#9B8EC4" />
+    <circle cx="8" cy="-38" r="5" fill="#9B8EC4" />
+    <circle cx="0" cy="-42" r="5" fill="#F4F1FA" />
+    <!-- stubby cute arms -->
+    <ellipse cx="-22" cy="-2" rx="8" ry="6" fill="#A8D8C8" stroke="#5A5070" stroke-width="1.5" transform="rotate(-30 -22 -2)" />
+    <ellipse cx="22" cy="-2" rx="8" ry="6" fill="#A8D8C8" stroke="#5A5070" stroke-width="1.5" transform="rotate(30 22 -2)" />
+    <!-- stubby cute legs -->
+    <ellipse cx="-14" cy="30" rx="9" ry="7" fill="#A8D8C8" stroke="#5A5070" stroke-width="1.5" />
+    <ellipse cx="14" cy="30" rx="9" ry="7" fill="#A8D8C8" stroke="#5A5070" stroke-width="1.5" />
+    <!-- chubby tail -->
+    <path d="M30,12 Q45,5 38,-4" fill="none" stroke="#A8D8C8" stroke-width="14" stroke-linecap="round" />
+    <path d="M30,12 Q45,5 38,-4" fill="none" stroke="#5A5070" stroke-width="2" stroke-linecap="round" />
     <!-- sparkle -->
-    <text x="26" y="-36" font-size="12" text-anchor="middle">💖</text>
+    <text x="35" y="-25" font-size="16" text-anchor="middle">🌟</text>
   </g>
   </g>
   <circle cx="40" cy="90" r="3" fill="#9B8EC4" opacity="0.3" />
@@ -73,11 +85,11 @@
   <circle cx="60" cy="250" r="2" fill="#FFD6E5" opacity="0.3" />
   <circle cx="360" cy="240" r="3.5" fill="#F4F1FA" opacity="0.2" />
   <text x="60" y="244" font-size="10" fill="#8A80A0" text-anchor="start" font-weight="600" >EXP</text>
-  <text x="360" y="244" font-size="9" fill="#8A80A0" text-anchor="end" font-weight="normal" >50 commits to next stage</text>
+  <text x="360" y="244" font-size="9" fill="#8A80A0" text-anchor="end" font-weight="normal" >86 commits to next stage</text>
   <rect x="60" y="250" width="300" height="14" rx="7" fill="#F5F5F5" />
   <clipPath id="xpClip"><rect x="60" y="250" width="300" height="14" rx="7" /></clipPath>
-  <rect x="60" y="250" width="200.0" height="14" rx="7" fill="url(#xpBarGrad)" clip-path="url(#xpClip)" />
-  <rect x="60" y="250" width="200.0" height="7.0" rx="7" fill="#FFFFFF" opacity="0.1" clip-path="url(#xpClip)" />
-  <text x="210.0" y="286" font-size="12" fill="#4A4359" text-anchor="middle" font-weight="600" >🔥 150 total commits</text>
+  <rect x="60" y="250" width="214.0" height="14" rx="7" fill="url(#xpBarGrad)" clip-path="url(#xpClip)" />
+  <rect x="60" y="250" width="214.0" height="7.0" rx="7" fill="#FFFFFF" opacity="0.1" clip-path="url(#xpClip)" />
+  <text x="210.0" y="286" font-size="12" fill="#4A4359" text-anchor="middle" font-weight="600" >🔥 414 total commits</text>
   <line x1="60" y1="305" x2="360" y2="305" stroke="url(#purpleMintGradH)" stroke-width="1" stroke-opacity="0.2" />
 </svg>
