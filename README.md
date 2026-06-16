@@ -1,4 +1,4 @@
-# 🦖 Hi there 🦖
+# 🦁 Hi there 🦁
 
 ## About me
 
@@ -13,7 +13,18 @@
 * Mizuno Group HP: https://www.mizuno-group.com
 * Mizuno Group GitHub: https://github.com/mizuno-group
 
-## 📊 GitHub Stats
+## 🦖 My Kaiju
 
-![Mei's GitHub stats](https://github-readme-stats.vercel.app/api?username=DevWithKaiju&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DevWithKaiju&layout=compact&theme=radical)
+<a href="https://github.com/DevWithKaiju"><img src="./images/kaiju.svg" width="400"></a>
+
+## 📊 Stats
+
+<a href="https://github.com/DevWithKaiju"><img src="./images/stats.svg" width="400"></a>
+
+## 🏆 Achievements
+
+<a href="https://github.com/DevWithKaiju"><img src="./images/achievements.svg" width="800"></a>
+
+## 🛠 Skills
+
+<a href="https://github.com/DevWithKaiju"><img src="./images/skills.svg" width="800"></a>
