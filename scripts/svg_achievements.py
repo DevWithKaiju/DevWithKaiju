@@ -61,7 +61,7 @@ def generate_achievements_svg(data: dict) -> str:
     lines.append(rounded_rect(0, 0, total_w, total_h, rx=16, fill="none", stroke="url(#cardBorderGrad)", stroke_width=1.5))
 
     # Title
-    lines.append(text_element(total_w / 2, 32, "✨ Achievements ✨", size=16, fill=COLORS["lavender"], anchor="middle", weight="600"))
+    lines.append(text_element(total_w / 2, 32, "✨ Achievements ✨", size=16, fill=COLORS["deep_purple"], anchor="middle", weight="700"))
 
     # Render each badge
     for idx, ach in enumerate(ACHIEVEMENTS):

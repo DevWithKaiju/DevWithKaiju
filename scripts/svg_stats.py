@@ -40,7 +40,7 @@ def generate_stats_svg(data: dict) -> str:
     lines.append(rounded_rect(0, 0, CARD_W, CARD_H, rx=16, fill="none", stroke="url(#cardBorderGrad)", stroke_width=1.5))
 
     # Title bar
-    lines.append(text_element(CARD_W / 2, 45, f"📊  {data['username']}'s GitHub Stats", size=16, anchor="middle", fill=COLORS["dusty_purple"], weight="700"))
+    lines.append(text_element(CARD_W / 2, 45, f"📊  {data['username']}'s GitHub Stats", size=16, anchor="middle", fill=COLORS["deep_purple"], weight="700"))
 
     # Divider line
     lines.append(f'  <line x1="{PADDING}" y1="65" x2="{CARD_W - PADDING}" y2="65" stroke="url(#purpleMintGradH)" stroke-width="1.5" stroke-opacity="0.5" />')
@@ -58,7 +58,7 @@ def generate_stats_svg(data: dict) -> str:
         lines.append(text_element(PADDING + 34, y + 3, label, size=13, fill=COLORS["text_muted"]))
 
         # Value
-        lines.append(text_element(CARD_W - PADDING - 10, y + 3, str(value), size=14, fill=COLORS["mint_green"], anchor="end", weight="700"))
+        lines.append(text_element(CARD_W - PADDING - 10, y + 3, str(value), size=14, fill=COLORS["deep_purple"], anchor="end", weight="700"))
 
         # Subtle row separator (except last)
         if i < len(STAT_ROWS) - 1:
