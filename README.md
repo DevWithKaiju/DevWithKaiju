@@ -1,5 +1,8 @@
 # 🦁 Hi there 🦁
 
+<!-- ========================================== -->
+<!-- 🦁 About Me & Links Section                -->
+<!-- ========================================== -->
 ## About me
 
 * Mei Yoshikawa
@@ -13,18 +16,32 @@
 * Mizuno Group HP: https://www.mizuno-group.com
 * Mizuno Group GitHub: https://github.com/mizuno-group
 
-## 🦖 My Kaiju
+<!-- ========================================== -->
+<!-- 🦖 Stats & Kaiju Section (Side-by-side)    -->
+<!-- ========================================== -->
+<p align="center">
+  <a href="https://github.com/DevWithKaiju">
+    <img src="./images/kaiju.svg" width="400" alt="My Kaiju">
+  </a>
+  <a href="https://github.com/DevWithKaiju">
+    <img src="./images/stats.svg" width="400" alt="GitHub Stats">
+  </a>
+</p>
 
-<a href="https://github.com/DevWithKaiju"><img src="./images/kaiju.svg" width="400"></a>
+<!-- ========================================== -->
+<!-- 🏆 Achievements Section                    -->
+<!-- ========================================== -->
+<p align="center">
+  <a href="https://github.com/DevWithKaiju">
+    <img src="./images/achievements.svg" width="800" alt="Achievements">
+  </a>
+</p>
 
-## 📊 Stats
-
-<a href="https://github.com/DevWithKaiju"><img src="./images/stats.svg" width="400"></a>
-
-## 🏆 Achievements
-
-<a href="https://github.com/DevWithKaiju"><img src="./images/achievements.svg" width="800"></a>
-
-## 🛠 Skills
-
-<a href="https://github.com/DevWithKaiju"><img src="./images/skills.svg" width="800"></a>
+<!-- ========================================== -->
+<!-- 🛠 Skills Section                          -->
+<!-- ========================================== -->
+<p align="center">
+  <a href="https://github.com/DevWithKaiju">
+    <img src="./images/skills.svg" width="800" alt="Skills">
+  </a>
+</p>
