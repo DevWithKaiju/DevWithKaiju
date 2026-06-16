@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="810" height="490" viewBox="0 0 810 490">
+  <defs>
+    <linearGradient id="purpleMintGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9B8EC4" />
+      <stop offset="100%" stop-color="#A8D8C8" />
+    </linearGradient>
+    <linearGradient id="purpleMintGradH" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9B8EC4" />
+      <stop offset="100%" stop-color="#A8D8C8" />
+    </linearGradient>
+    <linearGradient id="cardBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9B8EC4" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#A8D8C8" stop-opacity="0.5" />
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="subtleShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#1E1833" flood-opacity="0.5" />
+    </filter>
+    
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', 'Helvetica Neue', Ubuntu, Arial, sans-serif; }
+    
+    @keyframes sparkle {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
+    .sparkle { animation: sparkle 2s ease-in-out infinite; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+  </style>
+  <rect x="0" y="0" width="810" height="490" rx="16" fill="#1E1833" />
+  <rect x="0" y="0" width="810" height="490" rx="16" fill="none" stroke="url(#cardBorderGrad)" stroke-width="1.5" />
+  <text x="405.0" y="32" font-size="16" fill="#D4CCE6" text-anchor="middle" font-weight="600" >✨ Achievements ✨</text>
+  <g>
+  <rect x="20" y="48" width="185" height="95" rx="10" fill="#2D2640" />
+  <rect x="20" y="48" width="185" height="95" rx="10" fill="none" stroke="url(#cardBorderGrad)" stroke-width="1.2" />
+  <circle cx="52" cy="95.5" r="22" fill="#1E1833" stroke="url(#purpleMintGrad)" stroke-width="1.5" />
+  <text x="52" y="101.5" font-size="20" fill="#E8E0F0" text-anchor="middle" font-weight="normal" >🌱</text>
+  <circle cx="190" cy="60" r="2" fill="#A8D8C8" class="sparkle" style="animation-delay: 0.0s" />
+  <circle cx="197" cy="66" r="1.5" fill="#9B8EC4" class="sparkle" style="animation-delay: 0.4s" />
+  <text x="82" y="86" font-size="12" fill="#E8E0F0" text-anchor="start" font-weight="600" >First Sprout</text>
+  <text x="82" y="104" font-size="10" fill="#A89EC0" text-anchor="start" font-weight="normal" >First commit!</text>
+  <text x="82" y="124" font-size="9" fill="#A8D8C8" text-anchor="start" font-weight="normal" >✅ Unlocked</text>
+  </g>
+  <g>
+  <rect x="215" y="48" width="185" height="95" rx="10" fill="#2D2640" />
+  <rect x="215" y="48" width="185" height="95" rx="10" fill="none" stroke="url(#cardBorderGrad)" stroke-width="1.2" />
+  <circle cx="247" cy="95.5" r="22" fill="#1E1833" stroke="url(#purpleMintGrad)" stroke-width="1.5" />
+  <text x="247" y="101.5" font-size="20" fill="#E8E0F0" text-anchor="middle" font-weight="normal" >🌸</text>
+  <circle cx="385" cy="60" r="2" fill="#A8D8C8" class="sparkle" style="animation-delay: 0.08s" />
+  <circle cx="392" cy="66" r="1.5" fill="#9B8EC4" class="sparkle" style="animation-delay: 0.48000000000000004s" />
+  <text x="277" y="86" font-size="12" fill="#E8E0F0" text-anchor="start" font-weight="600" >Blooming</text>
+  <text x="277" y="104" font-size="10" fill="#A89EC0" text-anchor="start" font-weight="normal" >100+ commits</text>
+  <text x="277" y="124" font-size="9" fill="#A8D8C8" text-anchor="start" font-weight="normal" >✅ Unlocked</text>
+  </g>
+  <g>
+  <rect x="410" y="48" width="185" height="95" rx="10" fill="#252038" />
+  <rect x="410" y="48" width="185" height="95" rx="10" fill="none" stroke="#3A3350" stroke-width="1" />
+  <circle cx="442" cy="95.5" r="22" fill="#1E1833" stroke="#3A3350" stroke-width="1.5" />
+  <text x="442" y="101.5" font-size="18" fill="#5A5070" text-anchor="middle" font-weight="normal" >🔒</text>
+  <text x="472" y="86" font-size="12" fill="#5A5070" text-anchor="start" font-weight="600" >Deep Roots</text>
+  <text x="472" y="104" font-size="10" fill="#5A5070" text-anchor="start" font-weight="normal" >500+ commits</text>
+  <text x="472" y="124" font-size="9" fill="#5A5070" text-anchor="start" font-weight="normal" >🔒 Locked</text>
+  </g>
+  <g>
+  <rect x="605" y="48" width="185" height="95" rx="10" fill="#2D2640" />
+  <rect x="605" y="48" width="185" height="95" rx="10" fill="none" stroke="url(#cardBorderGrad)" stroke-width="1.2" />
+  <circle cx="637" cy="95.5" r="22" fill="#1E1833" stroke="url(#purpleMintGrad)" stroke-width="1.5" />
+  <text x="637" y="101.5" font-size="20" fill="#E8E0F0" text-anchor="middle" font-weight="normal" >⭐</text>
+  <circle cx="775" cy="60" r="2" fill="#A8D8C8" class="sparkle" style="animation-delay: 0.24s" />
+  <circle cx="782" cy="66" r="1.5" fill="#9B8EC4" class="sparkle" style="animation-delay: 0.64s" />
+  <text x="667" y="86" font-size="12" fill="#E8E0F0" text-anchor="start" font-weight="600" >Starlight</text>
+  <text x="667" y="104" font-size="10" fill="#A89EC0" text-anchor="start" font-weight="normal" >Earned a star</text>
+  <text x="667" y="124" font-size="9" fill="#A8D8C8" text-anchor="start" font-weight="normal" >✅ Unlocked</text>
+  </g>
+  <g>
+  <rect x="20" y="153" width="185" height="95" rx="10" fill="#252038" />
+  <rect x="20" y="153" width="185" height="95" rx="10" fill="none" stroke="#3A3350" stroke-width="1" />
+  <circle cx="52" cy="200.5" r="22" fill="#1E1833" stroke="#3A3350" stroke-width="1.5" />
+  <text x="52" y="206.5" font-size="18" fill="#5A5070" text-anchor="middle" font-weight="normal" >🔒</text>
+  <text x="82" y="191" font-size="12" fill="#5A5070" text-anchor="start" font-weight="600" >Constellation</text>
+  <text x="82" y="209" font-size="10" fill="#5A5070" text-anchor="start" font-weight="normal" >10+ stars</text>
+  <text x="82" y="229" font-size="9" fill="#5A5070" text-anchor="start" font-weight="normal" >🔒 Locked</text>
+  </g>
+  <g>
+  <rect x="215" y="153" width="185" height="95" rx="10" fill="#252038" />
+  <rect x="215" y="153" width="185" height="95" rx="10" fill="none" stroke="#3A3350" stroke-width="1" />
+  <circle cx="247" cy="200.5" r="22" fill="#1E1833" stroke="#3A3350" stroke-width="1.5" />
+  <text x="247" y="206.5" font-size="18" fill="#5A5070" text-anchor="middle" font-weight="normal" >🔒</text>
+  <text x="277" y="191" font-size="12" fill="#5A5070" text-anchor="start" font-weight="600" >Supernova</text>
+  <text x="277" y="209" font-size="10" fill="#5A5070" text-anchor="start" font-weight="normal" >50+ stars</text>
+  <text x="277" y="229" font-size="9" fill="#5A5070" text-anchor="start" font-weight="normal" >🔒 Locked</text>
+  </g>
+  <g>
+  <rect x="410" y="153" width="185" height="95" rx="10" fill="#2D2640" />
+  <rect x="410" y="153" width="185" height="95" rx="10" fill="none" stroke="url(#cardBorderGrad)" stroke-width="1.2" />
+  <circle cx="442" cy="200.5" r="22" fill="#1E1833" stroke="url(#purpleMintGrad)" stroke-width="1.5" />
+  <text x="442" y="206.5" font-size="20" fill="#E8E0F0" text-anchor="middle" font-weight="normal" >📦</text>
+  <circle cx="580" cy="165" r="2" fill="#A8D8C8" class="sparkle" style="animation-delay: 0.48s" />
+  <circle cx="587" cy="171" r="1.5" fill="#9B8EC4" class="sparkle" style="animation-delay: 0.88s" />
+  <text x="472" y="191" font-size="12" fill="#E8E0F0" text-anchor="start" font-weight="600" >Collector</text>
+  <text x="472" y="209" font-size="10" fill="#A89EC0" text-anchor="start" font-weight="normal" >5+ repos</text>
+  <text x="472" y="229" font-size="9" fill="#A8D8C8" text-anchor="start" font-weight="normal" >✅ Unlocked</text>
+  </g>
+  <g>
+  <rect x="605" y="153" width="185" height="95" rx="10" fill="#252038" />
+  <rect x="605" y="153" width="185" height="95" rx="10" fill="none" stroke="#3A3350" stroke-width="1" />
+  <circle cx="637" cy="200.5" r="22" fill="#1E1833" stroke="#3A3350" stroke-width="1.5" />
+  <text x="637" y="206.5" font-size="18" fill="#5A5070" text-anchor="middle" font-weight="normal" >🔒</text>
+  <text x="667" y="191" font-size="12" fill="#5A5070" text-anchor="start" font-weight="600" >Architect</text>
+  <text x="667" y="209" font-size="10" fill="#5A5070" text-anchor="start" font-weight="normal" >15+ repos</text>
+  <text x="667" y="229" font-size="9" fill="#5A5070" text-anchor="start" font-weight="normal" >🔒 Locked</text>
+  </g>
+  <g>
+  <rect x="20" y="258" width="185" height="95" rx="10" fill="#2D2640" />
+  <rect x="20" y="258" width="185" height="95" rx="10" fill="none" stroke="url(#cardBorderGrad)" stroke-width="1.2" />
+  <circle cx="52" cy="305.5" r="22" fill="#1E1833" stroke="url(#purpleMintGrad)" stroke-width="1.5" />
+  <text x="52" y="311.5" font-size="20" fill="#E8E0F0" text-anchor="middle" font-weight="normal" >🤝</text>
+  <circle cx="190" cy="270" r="2" fill="#A8D8C8" class="sparkle" style="animation-delay: 0.64s" />
+  <circle cx="197" cy="276" r="1.5" fill="#9B8EC4" class="sparkle" style="animation-delay: 1.04s" />
+  <text x="82" y="296" font-size="12" fill="#E8E0F0" text-anchor="start" font-weight="600" >Handshake</text>
+  <text x="82" y="314" font-size="10" fill="#A89EC0" text-anchor="start" font-weight="normal" >First PR</text>
+  <text x="82" y="334" font-size="9" fill="#A8D8C8" text-anchor="start" font-weight="normal" >✅ Unlocked</text>
+  </g>
+  <g>
+  <rect x="215" y="258" width="185" height="95" rx="10" fill="#252038" />
+  <rect x="215" y="258" width="185" height="95" rx="10" fill="none" stroke="#3A3350" stroke-width="1" />
+  <circle cx="247" cy="305.5" r="22" fill="#1E1833" stroke="#3A3350" stroke-width="1.5" />
+  <text x="247" y="311.5" font-size="18" fill="#5A5070" text-anchor="middle" font-weight="normal" >🔒</text>
+  <text x="277" y="296" font-size="12" fill="#5A5070" text-anchor="start" font-weight="600" >Collaborator</text>
+  <text x="277" y="314" font-size="10" fill="#5A5070" text-anchor="start" font-weight="normal" >10+ PRs</text>
+  <text x="277" y="334" font-size="9" fill="#5A5070" text-anchor="start" font-weight="normal" >🔒 Locked</text>
+  </g>
+  <g>
+  <rect x="410" y="258" width="185" height="95" rx="10" fill="#252038" />
+  <rect x="410" y="258" width="185" height="95" rx="10" fill="none" stroke="#3A3350" stroke-width="1" />
+  <circle cx="442" cy="305.5" r="22" fill="#1E1833" stroke="#3A3350" stroke-width="1.5" />
+  <text x="442" y="311.5" font-size="18" fill="#5A5070" text-anchor="middle" font-weight="normal" >🔒</text>
+  <text x="472" y="296" font-size="12" fill="#5A5070" text-anchor="start" font-weight="600" >Bug Hunter</text>
+  <text x="472" y="314" font-size="10" fill="#5A5070" text-anchor="start" font-weight="normal" >5+ issues</text>
+  <text x="472" y="334" font-size="9" fill="#5A5070" text-anchor="start" font-weight="normal" >🔒 Locked</text>
+  </g>
+  <g>
+  <rect x="605" y="258" width="185" height="95" rx="10" fill="#252038" />
+  <rect x="605" y="258" width="185" height="95" rx="10" fill="none" stroke="#3A3350" stroke-width="1" />
+  <circle cx="637" cy="305.5" r="22" fill="#1E1833" stroke="#3A3350" stroke-width="1.5" />
+  <text x="637" y="311.5" font-size="18" fill="#5A5070" text-anchor="middle" font-weight="normal" >🔒</text>
+  <text x="667" y="296" font-size="12" fill="#5A5070" text-anchor="start" font-weight="600" >Popular</text>
+  <text x="667" y="314" font-size="10" fill="#5A5070" text-anchor="start" font-weight="normal" >10+ followers</text>
+  <text x="667" y="334" font-size="9" fill="#5A5070" text-anchor="start" font-weight="normal" >🔒 Locked</text>
+  </g>
+  <g>
+  <rect x="20" y="363" width="185" height="95" rx="10" fill="#252038" />
+  <rect x="20" y="363" width="185" height="95" rx="10" fill="none" stroke="#3A3350" stroke-width="1" />
+  <circle cx="52" cy="410.5" r="22" fill="#1E1833" stroke="#3A3350" stroke-width="1.5" />
+  <text x="52" y="416.5" font-size="18" fill="#5A5070" text-anchor="middle" font-weight="normal" >🔒</text>
+  <text x="82" y="401" font-size="12" fill="#5A5070" text-anchor="start" font-weight="600" >Kaiju</text>
+  <text x="82" y="419" font-size="10" fill="#5A5070" text-anchor="start" font-weight="normal" >3+ years on GitHub</text>
+  <text x="82" y="439" font-size="9" fill="#5A5070" text-anchor="start" font-weight="normal" >🔒 Locked</text>
+  </g>
+</svg>
