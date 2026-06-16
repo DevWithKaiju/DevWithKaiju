@@ -3,6 +3,7 @@ Kaiju Growth Card SVG generator.
 A unique card where a cute dinosaur evolves based on total commits.
 """
 
+import os
 from theme import COLORS, FONT_FAMILY, svg_header, svg_footer, rounded_rect, text_element
 from kaiju_assets import ASSETS
 
@@ -70,9 +71,12 @@ def generate_kaiju_svg(data: dict) -> str:
     art_cx = CARD_W / 2
     art_cy = 150
     lines.append(f'  <g class="kaiju-art" transform="translate({art_cx},{art_cy})">')
-    # The generated images are embedded as base64
+    # Use raw github URL to bypass GitHub SVG raster stripping
     img_size = 140
-    lines.append(f'    <image x="{-img_size/2}" y="{-img_size/2}" width="{img_size}" height="{img_size}" xlink:href="{ASSETS[stage[1]]}" />')
+    stage_name = stage[1].lower()
+    repo_env = os.environ.get('GITHUB_REPOSITORY', 'DevWithKaiju/DevWithKaiju')
+    img_url = f"https://raw.githubusercontent.com/{repo_env}/main/images/stage_{stage_name}.png"
+    lines.append(f'    <image x="{-img_size/2}" y="{-img_size/2}" width="{img_size}" height="{img_size}" href="{img_url}" xlink:href="{img_url}" />')
     lines.append("  </g>")
 
     # Decorative elements
