@@ -93,102 +93,103 @@ def _draw_baby(cx: float, cy: float) -> str:
 
 
 def _draw_junior(cx: float, cy: float) -> str:
-    """Draw a medium-sized cute dinosaur."""
+    """Draw a medium-sized cute chibi dinosaur."""
     return f"""
   <g transform="translate({cx},{cy})">
-    <!-- body -->
-    <ellipse cx="0" cy="10" rx="28" ry="22" fill="{COLORS['mint_green']}" />
-    <ellipse cx="0" cy="10" rx="28" ry="22" fill="none" stroke="{COLORS['deep_purple']}" stroke-width="1.5" />
-    <!-- head -->
-    <ellipse cx="0" cy="-20" rx="22" ry="18" fill="{COLORS['mint_green']}" />
-    <ellipse cx="0" cy="-20" rx="22" ry="18" fill="none" stroke="{COLORS['deep_purple']}" stroke-width="1.5" />
+    <!-- cute round body -->
+    <ellipse cx="0" cy="5" rx="32" ry="28" fill="{COLORS['mint_green']}" />
+    <ellipse cx="0" cy="5" rx="32" ry="28" fill="none" stroke="{COLORS['deep_purple']}" stroke-width="1.8" />
+    <!-- big cute head -->
+    <circle cx="0" cy="-18" r="24" fill="{COLORS['mint_green']}" />
+    <circle cx="0" cy="-18" r="24" fill="none" stroke="{COLORS['deep_purple']}" stroke-width="1.8" />
     <!-- tummy -->
-    <ellipse cx="0" cy="12" rx="18" ry="14" fill="{COLORS['soft_mint']}" opacity="0.6" />
-    <!-- eyes -->
-    <circle cx="-7" cy="-22" r="5" fill="{COLORS['dark_bg']}" />
-    <circle cx="7" cy="-22" r="5" fill="{COLORS['dark_bg']}" />
-    <circle cx="-5.5" cy="-23.5" r="2" fill="{COLORS['white']}" />
-    <circle cx="8.5" cy="-23.5" r="2" fill="{COLORS['white']}" />
-    <!-- mouth smile -->
-    <path d="M-5,-12 Q0,-8 5,-12" fill="none" stroke="{COLORS['deep_purple']}" stroke-width="1.2" stroke-linecap="round" />
-    <!-- blush -->
-    <ellipse cx="-15" cy="-16" rx="5" ry="3" fill="{COLORS['soft_pink']}" opacity="0.5" />
-    <ellipse cx="15" cy="-16" rx="5" ry="3" fill="{COLORS['soft_pink']}" opacity="0.5" />
-    <!-- spikes -->
-    <circle cx="-6" cy="-38" r="4" fill="{COLORS['dusty_purple']}" />
-    <circle cx="6" cy="-38" r="4" fill="{COLORS['dusty_purple']}" />
-    <circle cx="0" cy="-40" r="3.5" fill="{COLORS['lavender']}" />
-    <!-- tiny arms -->
-    <ellipse cx="-25" cy="5" rx="8" ry="5" fill="{COLORS['mint_green']}" stroke="{COLORS['deep_purple']}" stroke-width="1" transform="rotate(-20 -25 5)" />
-    <ellipse cx="25" cy="5" rx="8" ry="5" fill="{COLORS['mint_green']}" stroke="{COLORS['deep_purple']}" stroke-width="1" transform="rotate(20 25 5)" />
-    <!-- legs -->
-    <ellipse cx="-12" cy="32" rx="8" ry="5" fill="{COLORS['mint_green']}" stroke="{COLORS['deep_purple']}" stroke-width="1" />
-    <ellipse cx="12" cy="32" rx="8" ry="5" fill="{COLORS['mint_green']}" stroke="{COLORS['deep_purple']}" stroke-width="1" />
-    <!-- tail -->
-    <path d="M28,15 Q42,10 38,0" fill="none" stroke="{COLORS['mint_green']}" stroke-width="8" stroke-linecap="round" />
-    <path d="M28,15 Q42,10 38,0" fill="none" stroke="{COLORS['deep_purple']}" stroke-width="1.5" stroke-linecap="round" />
+    <ellipse cx="0" cy="8" rx="20" ry="16" fill="{COLORS['soft_mint']}" />
+    <!-- big kawaii eyes -->
+    <circle cx="-10" cy="-20" r="5" fill="{COLORS['dark_bg']}" />
+    <circle cx="10" cy="-20" r="5" fill="{COLORS['dark_bg']}" />
+    <circle cx="-11" cy="-21" r="2.5" fill="{COLORS['white']}" />
+    <circle cx="9" cy="-21" r="2.5" fill="{COLORS['white']}" />
+    <!-- tiny cute smile -->
+    <path d="M-4,-12 Q0,-8 4,-12" fill="none" stroke="{COLORS['deep_purple']}" stroke-width="1.5" stroke-linecap="round" />
+    <!-- big blush -->
+    <ellipse cx="-16" cy="-14" rx="6" ry="4" fill="{COLORS['soft_pink']}" opacity="0.8" />
+    <ellipse cx="16" cy="-14" rx="6" ry="4" fill="{COLORS['soft_pink']}" opacity="0.8" />
+    <!-- back spikes -->
+    <circle cx="-8" cy="-38" r="5" fill="{COLORS['dusty_purple']}" />
+    <circle cx="8" cy="-38" r="5" fill="{COLORS['dusty_purple']}" />
+    <circle cx="0" cy="-42" r="5" fill="{COLORS['lavender']}" />
+    <!-- stubby cute arms -->
+    <ellipse cx="-22" cy="-2" rx="8" ry="6" fill="{COLORS['mint_green']}" stroke="{COLORS['deep_purple']}" stroke-width="1.5" transform="rotate(-30 -22 -2)" />
+    <ellipse cx="22" cy="-2" rx="8" ry="6" fill="{COLORS['mint_green']}" stroke="{COLORS['deep_purple']}" stroke-width="1.5" transform="rotate(30 22 -2)" />
+    <!-- stubby cute legs -->
+    <ellipse cx="-14" cy="30" rx="9" ry="7" fill="{COLORS['mint_green']}" stroke="{COLORS['deep_purple']}" stroke-width="1.5" />
+    <ellipse cx="14" cy="30" rx="9" ry="7" fill="{COLORS['mint_green']}" stroke="{COLORS['deep_purple']}" stroke-width="1.5" />
+    <!-- chubby tail -->
+    <path d="M30,12 Q45,5 38,-4" fill="none" stroke="{COLORS['mint_green']}" stroke-width="14" stroke-linecap="round" />
+    <path d="M30,12 Q45,5 38,-4" fill="none" stroke="{COLORS['deep_purple']}" stroke-width="2" stroke-linecap="round" />
     <!-- sparkle -->
-    <text x="38" y="-30" font-size="14" text-anchor="middle">🌟</text>
+    <text x="35" y="-25" font-size="16" text-anchor="middle">🌟</text>
   </g>"""
 
 
 def _draw_kaiju(cx: float, cy: float) -> str:
-    """Draw a full-size cute kaiju dinosaur."""
+    """Draw a full-size extremely round & cute chibi kaiju."""
     return f"""
   <g transform="translate({cx},{cy})">
-    <!-- body -->
-    <ellipse cx="0" cy="8" rx="35" ry="28" fill="{COLORS['mint_green']}" />
-    <ellipse cx="0" cy="8" rx="35" ry="28" fill="none" stroke="{COLORS['deep_purple']}" stroke-width="1.8" />
-    <!-- tummy -->
-    <ellipse cx="0" cy="12" rx="22" ry="18" fill="{COLORS['soft_mint']}" opacity="0.5" />
-    <!-- head -->
-    <ellipse cx="0" cy="-26" rx="26" ry="22" fill="{COLORS['mint_green']}" />
-    <ellipse cx="0" cy="-26" rx="26" ry="22" fill="none" stroke="{COLORS['deep_purple']}" stroke-width="1.8" />
-    <!-- eyes -->
-    <circle cx="-8" cy="-28" r="6" fill="{COLORS['dark_bg']}" />
-    <circle cx="8" cy="-28" r="6" fill="{COLORS['dark_bg']}" />
-    <circle cx="-6" cy="-30" r="2.5" fill="{COLORS['white']}" />
-    <circle cx="10" cy="-30" r="2.5" fill="{COLORS['white']}" />
-    <!-- nostrils -->
-    <circle cx="-4" cy="-16" r="1.5" fill="{COLORS['deep_purple']}" />
-    <circle cx="4" cy="-16" r="1.5" fill="{COLORS['deep_purple']}" />
-    <!-- mouth smile -->
-    <path d="M-8,-11 Q0,-5 8,-11" fill="none" stroke="{COLORS['deep_purple']}" stroke-width="1.5" stroke-linecap="round" />
-    <!-- blush -->
-    <ellipse cx="-18" cy="-20" rx="6" ry="3.5" fill="{COLORS['soft_pink']}" opacity="0.5" />
-    <ellipse cx="18" cy="-20" rx="6" ry="3.5" fill="{COLORS['soft_pink']}" opacity="0.5" />
-    <!-- back spikes -->
-    <path d="M-10,-48 L-6,-42 L-2,-50 L2,-42 L6,-48 L10,-42" fill="{COLORS['dusty_purple']}" stroke="{COLORS['deep_purple']}" stroke-width="1" />
-    <!-- arms -->
-    <path d="M-32,0 Q-42,-5 -40,-12" fill="none" stroke="{COLORS['mint_green']}" stroke-width="10" stroke-linecap="round" />
-    <path d="M-32,0 Q-42,-5 -40,-12" fill="none" stroke="{COLORS['deep_purple']}" stroke-width="1.5" stroke-linecap="round" />
-    <path d="M32,0 Q42,-5 40,-12" fill="none" stroke="{COLORS['mint_green']}" stroke-width="10" stroke-linecap="round" />
-    <path d="M32,0 Q42,-5 40,-12" fill="none" stroke="{COLORS['deep_purple']}" stroke-width="1.5" stroke-linecap="round" />
-    <!-- legs -->
-    <ellipse cx="-14" cy="38" rx="10" ry="6" fill="{COLORS['mint_green']}" stroke="{COLORS['deep_purple']}" stroke-width="1.5" />
-    <ellipse cx="14" cy="38" rx="10" ry="6" fill="{COLORS['mint_green']}" stroke="{COLORS['deep_purple']}" stroke-width="1.5" />
-    <!-- tail -->
-    <path d="M35,12 Q52,5 55,-8 Q58,-18 50,-22" fill="none" stroke="{COLORS['mint_green']}" stroke-width="12" stroke-linecap="round" />
-    <path d="M35,12 Q52,5 55,-8 Q58,-18 50,-22" fill="none" stroke="{COLORS['deep_purple']}" stroke-width="1.8" stroke-linecap="round" />
+    <!-- very round chubby body -->
+    <circle cx="0" cy="5" r="38" fill="{COLORS['mint_green']}" />
+    <circle cx="0" cy="5" r="38" fill="none" stroke="{COLORS['deep_purple']}" stroke-width="2" />
+    <!-- big soft tummy -->
+    <circle cx="0" cy="12" r="26" fill="{COLORS['soft_mint']}" />
+    <!-- huge cute head -->
+    <ellipse cx="0" cy="-28" rx="34" ry="28" fill="{COLORS['mint_green']}" />
+    <ellipse cx="0" cy="-28" rx="34" ry="28" fill="none" stroke="{COLORS['deep_purple']}" stroke-width="2" />
+    <!-- giant kawaii eyes -->
+    <circle cx="-14" cy="-30" r="7.5" fill="{COLORS['dark_bg']}" />
+    <circle cx="14" cy="-30" r="7.5" fill="{COLORS['dark_bg']}" />
+    <circle cx="-15" cy="-32" r="3" fill="{COLORS['white']}" />
+    <circle cx="13" cy="-32" r="3" fill="{COLORS['white']}" />
+    <!-- little cute nostrils -->
+    <circle cx="-5" cy="-16" r="1.5" fill="{COLORS['deep_purple']}" />
+    <circle cx="5" cy="-16" r="1.5" fill="{COLORS['deep_purple']}" />
+    <!-- happy wide smile -->
+    <path d="M-10,-10 Q0,-2 10,-10" fill="none" stroke="{COLORS['deep_purple']}" stroke-width="2" stroke-linecap="round" />
+    <!-- big blush -->
+    <ellipse cx="-22" cy="-20" rx="8" ry="5" fill="{COLORS['soft_pink']}" opacity="0.9" />
+    <ellipse cx="22" cy="-20" rx="8" ry="5" fill="{COLORS['soft_pink']}" opacity="0.9" />
+    <!-- cute soft spikes -->
+    <path d="M-16,-52 L-10,-46 L-4,-55 L2,-46 L8,-52 L14,-46 L20,-55" fill="{COLORS['dusty_purple']}" stroke="{COLORS['deep_purple']}" stroke-width="1.5" stroke-linejoin="round" />
+    <!-- pudgy short arms -->
+    <path d="M-36,-5 Q-48,-10 -42,-18" fill="none" stroke="{COLORS['mint_green']}" stroke-width="14" stroke-linecap="round" />
+    <path d="M-36,-5 Q-48,-10 -42,-18" fill="none" stroke="{COLORS['deep_purple']}" stroke-width="2" stroke-linecap="round" />
+    <path d="M36,-5 Q48,-10 42,-18" fill="none" stroke="{COLORS['mint_green']}" stroke-width="14" stroke-linecap="round" />
+    <path d="M36,-5 Q48,-10 42,-18" fill="none" stroke="{COLORS['deep_purple']}" stroke-width="2" stroke-linecap="round" />
+    <!-- pudgy legs -->
+    <ellipse cx="-18" cy="40" rx="12" ry="8" fill="{COLORS['mint_green']}" stroke="{COLORS['deep_purple']}" stroke-width="2" />
+    <ellipse cx="18" cy="40" rx="12" ry="8" fill="{COLORS['mint_green']}" stroke="{COLORS['deep_purple']}" stroke-width="2" />
+    <!-- thick chubby tail -->
+    <path d="M38,15 Q55,5 50,-12" fill="none" stroke="{COLORS['mint_green']}" stroke-width="18" stroke-linecap="round" />
+    <path d="M38,15 Q55,5 50,-12" fill="none" stroke="{COLORS['deep_purple']}" stroke-width="2" stroke-linecap="round" />
     <!-- sparkle -->
-    <text x="-42" y="-40" font-size="14" text-anchor="middle">💫</text>
-    <text x="50" y="-35" font-size="12" text-anchor="middle">✨</text>
+    <text x="-46" y="-36" font-size="18" text-anchor="middle">✨</text>
+    <text x="50" y="-30" font-size="14" text-anchor="middle">🌸</text>
   </g>"""
 
 
 def _draw_king(cx: float, cy: float) -> str:
-    """Draw the king kaiju with a crown."""
+    """Draw the chibi king kaiju with a big crown."""
     base = _draw_kaiju(cx, cy)
     crown = f"""
   <g transform="translate({cx},{cy})">
-    <!-- crown -->
-    <path d="M-18,-56 L-14,-46 L-6,-52 L0,-44 L6,-52 L14,-46 L18,-56 Z" fill="{COLORS['gold']}" stroke="{COLORS['deep_purple']}" stroke-width="1.2" />
-    <circle cx="-10" cy="-52" r="2" fill="{COLORS['soft_pink']}" />
-    <circle cx="0" cy="-49" r="2" fill="{COLORS['mint_green']}" />
-    <circle cx="10" cy="-52" r="2" fill="{COLORS['dusty_purple']}" />
+    <!-- chunky cute crown -->
+    <path d="M-20,-60 L-14,-46 L-4,-56 L4,-46 L14,-60 L20,-48 L-20,-48 Z" fill="{COLORS['gold']}" stroke="{COLORS['deep_purple']}" stroke-width="1.8" stroke-linejoin="round" />
+    <circle cx="-14" cy="-56" r="3" fill="{COLORS['soft_pink']}" />
+    <circle cx="-4" cy="-52" r="3.5" fill="{COLORS['mint_green']}" />
+    <circle cx="4" cy="-52" r="3.5" fill="{COLORS['dusty_purple']}" />
+    <circle cx="14" cy="-56" r="3" fill="{COLORS['white']}" />
     <!-- royal sparkles -->
-    <text x="-50" y="-50" font-size="10" text-anchor="middle">👑</text>
-    <text x="55" y="-45" font-size="16" text-anchor="middle">🌈</text>
+    <text x="-52" y="-55" font-size="18" text-anchor="middle">👑</text>
+    <text x="60" y="-45" font-size="20" text-anchor="middle">🌈</text>
   </g>"""
     return base + crown
 

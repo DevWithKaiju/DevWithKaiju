@@ -13,13 +13,12 @@
 * Mizuno Group HP: https://www.mizuno-group.com
 * Mizuno Group GitHub: https://github.com/mizuno-group
 
-## 🦖 My Kaiju
+## 🦖 My Kaiju & 📊 Stats
 
-![kaiju](./images/kaiju.svg)
-
-## 📊 Stats
-
-![stats](./images/stats.svg)
+<p align="left">
+  <img src="./images/kaiju.svg" alt="kaiju" width="48%">
+  <img src="./images/stats.svg" alt="stats" width="48%">
+</p>
 
 ## 🏆 Achievements
 

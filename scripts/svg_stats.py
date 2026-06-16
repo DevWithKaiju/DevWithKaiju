@@ -18,9 +18,9 @@ STAT_ROWS = [
 ]
 
 CARD_W = 420
-CARD_H = 260
-ROW_H = 30
-PADDING = 24
+CARD_H = 320
+ROW_H = 32
+PADDING = 30
 
 
 def generate_stats_svg(data: dict) -> str:
@@ -40,13 +40,13 @@ def generate_stats_svg(data: dict) -> str:
     lines.append(rounded_rect(0, 0, CARD_W, CARD_H, rx=16, fill="none", stroke="url(#cardBorderGrad)", stroke_width=1.5))
 
     # Title bar
-    lines.append(text_element(CARD_W / 2, 36, f"📊  {data['username']}'s GitHub Stats", size=15, anchor="middle", fill=COLORS["lavender"], weight="600"))
+    lines.append(text_element(CARD_W / 2, 45, f"📊  {data['username']}'s GitHub Stats", size=16, anchor="middle", fill=COLORS["dusty_purple"], weight="700"))
 
     # Divider line
-    lines.append(f'  <line x1="{PADDING}" y1="50" x2="{CARD_W - PADDING}" y2="50" stroke="url(#purpleMintGradH)" stroke-width="1" stroke-opacity="0.3" />')
+    lines.append(f'  <line x1="{PADDING}" y1="65" x2="{CARD_W - PADDING}" y2="65" stroke="url(#purpleMintGradH)" stroke-width="1.5" stroke-opacity="0.5" />')
 
     # Stats rows
-    start_y = 72
+    start_y = 95
     for i, (icon, label, key) in enumerate(STAT_ROWS):
         y = start_y + i * ROW_H
         value = data.get(key, 0)
@@ -62,15 +62,15 @@ def generate_stats_svg(data: dict) -> str:
 
         # Subtle row separator (except last)
         if i < len(STAT_ROWS) - 1:
-            sep_y = y + 16
-            lines.append(f'  <line x1="{PADDING + 30}" y1="{sep_y}" x2="{CARD_W - PADDING}" y2="{sep_y}" stroke="{COLORS["locked_border"]}" stroke-width="0.5" />')
+            sep_y = y + 18
+            lines.append(f'  <line x1="{PADDING + 30}" y1="{sep_y}" x2="{CARD_W - PADDING}" y2="{sep_y}" stroke="{COLORS["locked_border"]}" stroke-width="1" stroke-dasharray="2,4" />')
 
     # Bottom accent bar
-    bar_y = CARD_H - 28
-    lines.append(f'  <line x1="{PADDING}" y1="{bar_y}" x2="{CARD_W - PADDING}" y2="{bar_y}" stroke="url(#purpleMintGradH)" stroke-width="1" stroke-opacity="0.3" />')
+    bar_y = CARD_H - 35
+    lines.append(f'  <line x1="{PADDING}" y1="{bar_y}" x2="{CARD_W - PADDING}" y2="{bar_y}" stroke="url(#purpleMintGradH)" stroke-width="1.5" stroke-opacity="0.5" />')
 
     # Year contributions
-    lines.append(text_element(CARD_W / 2, CARD_H - 10, f"🌸 {data.get('contributions_this_year', 0)} contributions this year", size=11, anchor="middle", fill=COLORS["text_muted"]))
+    lines.append(text_element(CARD_W / 2, CARD_H - 15, f"🌸 {data.get('contributions_this_year', 0)} contributions this year", size=12, anchor="middle", fill=COLORS["text_muted"], weight="600"))
 
     lines.append(svg_footer())
     return "\n".join(lines)
