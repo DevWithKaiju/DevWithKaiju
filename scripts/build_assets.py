@@ -2,11 +2,11 @@ import base64
 import json
 
 files = {
-    'Egg': r'C:\Users\liong\.gemini\antigravity-ide\brain\bd9c0859-b0b0-4574-a135-69020797d543\kaiju_egg_1781601645385.png',
-    'Baby': r'C:\Users\liong\.gemini\antigravity-ide\brain\bd9c0859-b0b0-4574-a135-69020797d543\kaiju_baby_1781601655443.png',
-    'Junior': r'C:\Users\liong\.gemini\antigravity-ide\brain\bd9c0859-b0b0-4574-a135-69020797d543\kaiju_junior_1781601665560.png',
-    'Kaiju': r'C:\Users\liong\.gemini\antigravity-ide\brain\bd9c0859-b0b0-4574-a135-69020797d543\kaiju_adult_1781601676347.png',
-    'King': r'C:\Users\liong\.gemini\antigravity-ide\brain\bd9c0859-b0b0-4574-a135-69020797d543\kaiju_king_1781601687044.png'
+    'Egg': r'C:\Users\liong\.gemini\antigravity-ide\brain\bd9c0859-b0b0-4574-a135-69020797d543\kaiju_egg_v2_1781606467928.png',
+    'Baby': r'C:\Users\liong\.gemini\antigravity-ide\brain\bd9c0859-b0b0-4574-a135-69020797d543\kaiju_baby_v2_1781606478959.png',
+    'Junior': r'C:\Users\liong\.gemini\antigravity-ide\brain\bd9c0859-b0b0-4574-a135-69020797d543\kaiju_junior_v2_1781606489879.png',
+    'Kaiju': r'C:\Users\liong\.gemini\antigravity-ide\brain\bd9c0859-b0b0-4574-a135-69020797d543\kaiju_adult_v2_1781606499980.png',
+    'King': r'C:\Users\liong\.gemini\antigravity-ide\brain\bd9c0859-b0b0-4574-a135-69020797d543\kaiju_king_v2_1781606509690.png'
 }
 
 out = 'ASSETS = {\n'
