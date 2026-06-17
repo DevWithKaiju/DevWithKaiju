@@ -25,21 +25,21 @@
   </style>
   <rect x="0" y="0" width="420" height="320" rx="16" fill="#FFFFFF" />
   <rect x="0" y="0" width="420" height="320" rx="16" fill="none" stroke="url(#cardBorderGrad)" stroke-width="1.5" />
-  <text x="210.0" y="30" font-size="17" fill="#5A5070" text-anchor="middle" font-weight="700" >🦖  Baby Kaiju</text>
+  <text x="210.0" y="30" font-size="17" fill="#5A5070" text-anchor="middle" font-weight="700" >🦖  Junior Kaiju</text>
   <rect x="180.0" y="38" width="60" height="22" rx="11" fill="#FFFFFF" stroke="url(#purpleMintGrad)" stroke-width="1.2" />
-  <text x="210.0" y="54" font-size="11" fill="#5A5070" text-anchor="middle" font-weight="700" >Lv. 8</text>
+  <text x="210.0" y="54" font-size="11" fill="#5A5070" text-anchor="middle" font-weight="700" >Lv. 17</text>
   <g class="kaiju-art" transform="translate(210.0,150)">
-    <image x="-70.0" y="-70.0" width="140" height="140" href="https://raw.githubusercontent.com/DevWithKaiju/DevWithKaiju/main/images/stage_baby.png" xlink:href="https://raw.githubusercontent.com/DevWithKaiju/DevWithKaiju/main/images/stage_baby.png" />
+    <image x="-70.0" y="-70.0" width="140" height="140" href="https://raw.githubusercontent.com/DevWithKaiju/DevWithKaiju/main/images/stage_junior.png" xlink:href="https://raw.githubusercontent.com/DevWithKaiju/DevWithKaiju/main/images/stage_junior.png" />
   </g>
   <circle cx="40" cy="90" r="3" fill="#9B8EC4" opacity="0.4" />
   <circle cx="380" cy="100" r="2.5" fill="#A8D8C8" opacity="0.5" />
   <circle cx="60" cy="250" r="2" fill="#FFD6E5" opacity="0.6" />
   <circle cx="360" cy="240" r="3.5" fill="#9B8EC4" opacity="0.3" />
   <text x="60" y="244" font-size="10" fill="#8A80A0" text-anchor="start" font-weight="600" >EXP</text>
-  <text x="360" y="244" font-size="9" fill="#8A80A0" text-anchor="end" font-weight="normal" >50 commits to next stage</text>
+  <text x="360" y="244" font-size="9" fill="#8A80A0" text-anchor="end" font-weight="normal" >179 commits to next stage</text>
   <rect x="60" y="250" width="300" height="14" rx="7" fill="#F5F5F5" />
   <clipPath id="xpClip"><rect x="60" y="250" width="300" height="14" rx="7" /></clipPath>
-  <rect x="60" y="250" width="200.0" height="14" rx="7" fill="url(#xpBarGrad)" clip-path="url(#xpClip)" />
-  <text x="210.0" y="286" font-size="12" fill="#5A5070" text-anchor="middle" font-weight="700" >🔥 150 total commits</text>
+  <rect x="60" y="250" width="121.0" height="14" rx="7" fill="url(#xpBarGrad)" clip-path="url(#xpClip)" />
+  <text x="210.0" y="286" font-size="12" fill="#5A5070" text-anchor="middle" font-weight="700" >🔥 321 total commits</text>
   <line x1="60" y1="305" x2="360" y2="305" stroke="url(#purpleMintGradH)" stroke-width="1.5" stroke-opacity="0.3" />
 </svg>
