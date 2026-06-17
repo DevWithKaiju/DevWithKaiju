@@ -19,9 +19,15 @@
 <!-- ========================================== -->
 <!-- 🦖 Stats & Kaiju Section                   -->
 <!-- ========================================== -->
-| 🦖 My Kaiju | 📊 GitHub Stats |
-|:---:|:---:|
-| <a href="https://github.com/DevWithKaiju"><img src="./images/kaiju.svg?v=1" width="400" alt="My Kaiju"></a> | <a href="https://github.com/DevWithKaiju"><img src="./images/stats.svg" width="400" alt="GitHub Stats"></a> |
+<div align="center">
+  <a href="https://github.com/DevWithKaiju">
+    <img src="./images/kaiju.svg?v=1" width="400" alt="My Kaiju">
+  </a>
+  &nbsp; &nbsp;
+  <a href="https://github.com/DevWithKaiju">
+    <img src="./images/stats.svg" width="400" alt="GitHub Stats">
+  </a>
+</div>
 
 <br />
 
