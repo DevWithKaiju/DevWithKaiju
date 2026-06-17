@@ -32,12 +32,12 @@
 <br />
 
 <!-- ========================================== -->
-<!-- 🏆 Achievements & Skills Section           -->
+<!-- 🎯 GitHub Milestones Section               -->
 <!-- ========================================== -->
-## 🏆 Achievements
+## 🎯 GitHub Milestones
 
 <a href="https://github.com/DevWithKaiju">
-  <img src="./images/achievements.svg" width="800" alt="Achievements">
+  <img src="./images/achievements.svg?v=1" width="800" alt="Milestones">
 </a>
 
 ## 🛠 Skills

@@ -10,19 +10,14 @@ from theme import COLORS, FONT_FAMILY, svg_header, svg_footer, rounded_rect, tex
 
 ACHIEVEMENTS = [
     # (id, icon, title, description, stat_key, thresholds)
-    ("first_sprout", "🌱", "First Sprout", "First commit!", "total_commits", 1),
-    ("blooming", "🌸", "Blooming", "100+ commits", "total_commits", 100),
-    ("deep_roots", "🌳", "Deep Roots", "500+ commits", "total_commits", 500),
-    ("starlight", "⭐", "Starlight", "Earned a star", "total_stars", 1),
-    ("constellation", "🌟", "Constellation", "10+ stars", "total_stars", 10),
-    ("supernova", "💫", "Supernova", "50+ stars", "total_stars", 50),
-    ("collector", "📦", "Collector", "5+ repos", "total_repos", 5),
-    ("architect", "🏛️", "Architect", "15+ repos", "total_repos", 15),
-    ("handshake", "🤝", "Handshake", "First PR", "total_prs", 1),
-    ("collaborator", "🎭", "Collaborator", "10+ PRs", "total_prs", 10),
-    ("bug_hunter", "🐛", "Bug Hunter", "5+ issues", "total_issues", 5),
-    ("popular", "💜", "Popular", "10+ followers", "followers", 10),
-    ("kaiju", "🦖", "Kaiju", "3+ years on GitHub", "account_age_years", 3),
+    ("commits_100", "💻", "100+ Commits", "Contributed 100+ times", "total_commits", 100),
+    ("commits_500", "🔥", "500+ Commits", "Contributed 500+ times", "total_commits", 500),
+    ("stars_10", "⭐", "10+ Stars", "Earned 10+ stars", "total_stars", 10),
+    ("stars_50", "🌟", "50+ Stars", "Earned 50+ stars", "total_stars", 50),
+    ("repos_10", "📦", "10+ Repos", "Created 10+ repositories", "total_repos", 10),
+    ("prs_10", "🔀", "10+ PRs", "Opened 10+ Pull Requests", "total_prs", 10),
+    ("issues_10", "📝", "10+ Issues", "Opened 10+ Issues", "total_issues", 10),
+    ("years_3", "🗓️", "3+ Years", "GitHub member for 3+ years", "account_age_years", 3),
 ]
 
 # ─── Card dimensions ────────────────────────────────────────
@@ -61,7 +56,7 @@ def generate_achievements_svg(data: dict) -> str:
     lines.append(rounded_rect(0, 0, total_w, total_h, rx=16, fill="none", stroke="url(#cardBorderGrad)", stroke_width=1.5))
 
     # Title
-    lines.append(text_element(total_w / 2, 32, "✨ Achievements ✨", size=16, fill=COLORS["deep_purple"], anchor="middle", weight="700"))
+    lines.append(text_element(total_w / 2, 32, "🎯 GitHub Milestones", size=16, fill=COLORS["deep_purple"], anchor="middle", weight="700"))
 
     # Render each badge
     for idx, ach in enumerate(ACHIEVEMENTS):
