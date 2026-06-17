@@ -4,6 +4,7 @@ A unique card where a cute dinosaur evolves based on total commits.
 """
 
 import os
+import base64
 from theme import COLORS, FONT_FAMILY, svg_header, svg_footer, rounded_rect, text_element
 
 # ─── Growth Stages ──────────────────────────────────────────
@@ -70,11 +71,22 @@ def generate_kaiju_svg(data: dict) -> str:
     art_cx = CARD_W / 2
     art_cy = 150
     lines.append(f'  <g class="kaiju-art" transform="translate({art_cx},{art_cy})">')
-    # Use raw github URL to bypass GitHub SVG raster stripping
+    # Embed image as base64 to bypass browser security restrictions on external images in SVGs
     img_size = 140
     stage_name = stage[1].lower()
-    repo_env = os.environ.get('GITHUB_REPOSITORY', 'DevWithKaiju/DevWithKaiju')
-    img_url = f"https://raw.githubusercontent.com/{repo_env}/main/images/stage_{stage_name}.png"
+    
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(script_dir)
+    img_path = os.path.join(project_root, "images", f"stage_{stage_name}.png")
+    
+    try:
+        with open(img_path, "rb") as f:
+            encoded_img = base64.b64encode(f.read()).decode('utf-8')
+        img_url = f"data:image/png;base64,{encoded_img}"
+    except Exception as e:
+        repo_env = os.environ.get('GITHUB_REPOSITORY', 'DevWithKaiju/DevWithKaiju')
+        img_url = f"https://raw.githubusercontent.com/{repo_env}/main/images/stage_{stage_name}.png"
+
     lines.append(f'    <image x="{-img_size/2}" y="{-img_size/2}" width="{img_size}" height="{img_size}" href="{img_url}" xlink:href="{img_url}" />')
     lines.append("  </g>")
 
