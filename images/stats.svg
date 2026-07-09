@@ -45,7 +45,7 @@
   <line x1="60" y1="209" x2="390" y2="209" stroke="#E0E0E0" stroke-width="1" stroke-dasharray="2,4" />
   <text x="36" y="227" font-size="15" fill="#4A4359" text-anchor="start" font-weight="normal" >📦</text>
   <text x="64" y="226" font-size="13" fill="#8A80A0" text-anchor="start" font-weight="normal" >Total Repos</text>
-  <text x="380" y="226" font-size="14" fill="#5A5070" text-anchor="end" font-weight="700" >31</text>
+  <text x="380" y="226" font-size="14" fill="#5A5070" text-anchor="end" font-weight="700" >32</text>
   <line x1="60" y1="241" x2="390" y2="241" stroke="#E0E0E0" stroke-width="1" stroke-dasharray="2,4" />
   <text x="36" y="259" font-size="15" fill="#4A4359" text-anchor="start" font-weight="normal" >👥</text>
   <text x="64" y="258" font-size="13" fill="#8A80A0" text-anchor="start" font-weight="normal" >Followers</text>
