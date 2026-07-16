@@ -51,7 +51,7 @@
     <circle cx="113.25" cy="64.0" r="6" fill="#DA5B0B" opacity="0.3" />
     <circle cx="113.25" cy="64.0" r="4" fill="#DA5B0B" />
     <text x="125.25" y="68.0" font-size="11.5" fill="#4A4359" font-weight="600" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, sans-serif">Jupyter Notebook</text>
-    <text x="297.75" y="67.5" font-size="10" fill="#8A80A0" text-anchor="end" font-weight="500" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, sans-serif">77.8%</text>
+    <text x="297.75" y="67.5" font-size="10" fill="#8A80A0" text-anchor="end" font-weight="500" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, sans-serif">77.2%</text>
   </g>
   <g class="badge" style="animation-delay: 0.15000000000000002s" transform-origin="380.75 64.0">
     <rect x="317.75" y="50" width="126.0" height="28" rx="14" fill="url(#badgeGrad)" stroke="#E0E0E0" stroke-width="1" filter="url(#badgeShadow)" />
@@ -65,7 +65,7 @@
     <circle cx="467.75" cy="64.0" r="6" fill="#89e051" opacity="0.3" />
     <circle cx="467.75" cy="64.0" r="4" fill="#89e051" />
     <text x="479.75" y="68.0" font-size="11.5" fill="#4A4359" font-weight="600" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, sans-serif">Shell</text>
-    <text x="562.25" y="67.5" font-size="10" fill="#8A80A0" text-anchor="end" font-weight="500" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, sans-serif">6.7%</text>
+    <text x="562.25" y="67.5" font-size="10" fill="#8A80A0" text-anchor="end" font-weight="500" font-family="'Segoe UI', 'Helvetica Neue', Ubuntu, sans-serif">7.5%</text>
   </g>
   <g class="badge" style="animation-delay: 0.25s" transform-origin="641.5 64.0">
     <rect x="582.25" y="50" width="118.5" height="28" rx="14" fill="url(#badgeGrad)" stroke="#E0E0E0" stroke-width="1" filter="url(#badgeShadow)" />
