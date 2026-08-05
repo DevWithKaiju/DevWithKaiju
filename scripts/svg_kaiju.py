@@ -10,12 +10,12 @@ from theme import COLORS, FONT_FAMILY, svg_header, svg_footer, rounded_rect, tex
 # ─── Growth Stages ──────────────────────────────────────────
 
 STAGES = [
-    # (min_commits, label, emoji, title, next_threshold)
-    (0, "Egg", "🥚", "Kaiju Egg", 50),
-    (50, "Baby", "🐣", "Baby Kaiju", 200),
-    (200, "Junior", "🦎", "Junior Kaiju", 500),
-    (500, "Kaiju", "🦖", "Kaiju", 1000),
-    (1000, "King", "👑", "King Kaiju", None),
+    # (min_commits, label, icon, title, next_threshold)
+    (0, "Egg", "", "Kaiju Egg", 50),
+    (50, "Baby", "", "Baby Kaiju", 200),
+    (200, "Junior", "", "Junior Kaiju", 500),
+    (500, "Kaiju", "", "Kaiju", 1000),
+    (1000, "King", "", "King Kaiju", None),
 ]
 
 CARD_W = 420
@@ -69,7 +69,7 @@ def generate_kaiju_svg(data: dict) -> str:
     lines.append(rounded_rect(0, 0, CARD_W, CARD_H, rx=16, fill="none", stroke="url(#cardBorderGrad)", stroke_width=1.5))
 
     # Title
-    lines.append(text_element(CARD_W / 2, 30, f"🦖  {stage[3]}", size=17, fill=COLORS["deep_purple"], anchor="middle", weight="700"))
+    lines.append(text_element(CARD_W / 2, 30, f"{stage[3]}", size=17, fill=COLORS["deep_purple"], anchor="middle", weight="700"))
 
     # Level badge
     lv_x = CARD_W / 2
@@ -80,21 +80,10 @@ def generate_kaiju_svg(data: dict) -> str:
     art_cx = CARD_W / 2
     art_cy = 150
     lines.append(f'  <g class="kaiju-art" style="--cx: {art_cx}px; --cy: {art_cy}px;" transform="translate({art_cx},{art_cy})">')
-    # Embed image as base64 to bypass browser security restrictions on external images in SVGs
     img_size = 140
     stage_name = stage[1].lower()
-    
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.dirname(script_dir)
-    img_path = os.path.join(project_root, "images", f"stage_{stage_name}.png")
-    
-    try:
-        with open(img_path, "rb") as f:
-            encoded_img = base64.b64encode(f.read()).decode('utf-8')
-        img_url = f"data:image/png;base64,{encoded_img}"
-    except Exception as e:
-        repo_env = os.environ.get('GITHUB_REPOSITORY', 'DevWithKaiju/DevWithKaiju')
-        img_url = f"https://raw.githubusercontent.com/{repo_env}/main/images/stage_{stage_name}.png"
+    repo_env = os.environ.get('GITHUB_REPOSITORY', 'DevWithKaiju/DevWithKaiju')
+    img_url = f"https://raw.githubusercontent.com/{repo_env}/main/images/stage_{stage_name}.png"
 
     lines.append(f'    <image x="{-img_size/2}" y="{-img_size/2}" width="{img_size}" height="{img_size}" href="{img_url}" xlink:href="{img_url}" />')
     lines.append("  </g>")
@@ -117,7 +106,7 @@ def generate_kaiju_svg(data: dict) -> str:
         remaining = stage[4] - commits
         lines.append(text_element(bar_x + bar_w, bar_y - 6, f"{remaining} commits to next stage", size=9, fill=COLORS["text_muted"], anchor="end"))
     else:
-        lines.append(text_element(bar_x + bar_w, bar_y - 6, "MAX STAGE ✨", size=9, fill=COLORS["gold"], anchor="end"))
+        lines.append(text_element(bar_x + bar_w, bar_y - 6, "MAX STAGE", size=9, fill=COLORS["gold"], anchor="end"))
 
     # Bar background
     lines.append(rounded_rect(bar_x, bar_y, bar_w, bar_h, rx=7, fill=COLORS["locked_bg"]))
@@ -128,7 +117,7 @@ def generate_kaiju_svg(data: dict) -> str:
     lines.append(f'  <rect x="{bar_x}" y="{bar_y}" width="{fill_w}" height="{bar_h}" rx="7" fill="url(#xpBarGrad)" clip-path="url(#xpClip)" />')
 
     # Commit counter
-    lines.append(text_element(CARD_W / 2, bar_y + bar_h + 22, f"🔥 {commits} total commits", size=12, fill=COLORS["deep_purple"], anchor="middle", weight="700"))
+    lines.append(text_element(CARD_W / 2, bar_y + bar_h + 22, f"{commits} total commits", size=12, fill=COLORS["deep_purple"], anchor="middle", weight="700"))
 
     # Bottom decorative line
     lines.append(f'  <line x1="60" y1="{CARD_H - 15}" x2="{CARD_W - 60}" y2="{CARD_H - 15}" stroke="url(#purpleMintGradH)" stroke-width="1.5" stroke-opacity="0.3" />')

@@ -14,6 +14,8 @@ from github_api import fetch_github_data
 from svg_stats import generate_stats_svg
 from svg_skills import generate_skills_svg
 from svg_kaiju import generate_kaiju_svg
+from svg_header import generate_header_svg
+from svg_certs import generate_certs_svg
 
 
 USERNAME = "DevWithKaiju"
@@ -41,6 +43,8 @@ def main():
         "stats.svg": generate_stats_svg,
         "skills.svg": generate_skills_svg,
         "kaiju.svg": generate_kaiju_svg,
+        "header.svg": generate_header_svg,
+        "certifications.svg": generate_certs_svg,
     }
 
     for filename, gen_fn in generators.items():
