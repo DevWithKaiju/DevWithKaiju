@@ -5,6 +5,7 @@ A unique card where a cute dinosaur evolves based on total commits.
 
 import os
 import base64
+import io
 from theme import COLORS, FONT_FAMILY, svg_header, svg_footer, rounded_rect, text_element
 
 # ─── Growth Stages ──────────────────────────────────────────
@@ -82,8 +83,22 @@ def generate_kaiju_svg(data: dict) -> str:
     lines.append(f'  <g class="kaiju-art" style="--cx: {art_cx}px; --cy: {art_cy}px;" transform="translate({art_cx},{art_cy})">')
     img_size = 140
     stage_name = stage[1].lower()
-    repo_env = os.environ.get('GITHUB_REPOSITORY', 'DevWithKaiju/DevWithKaiju')
-    img_url = f"https://raw.githubusercontent.com/{repo_env}/main/images/stage_{stage_name}.png"
+    
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(script_dir)
+    img_path = os.path.join(project_root, "images", f"stage_{stage_name}.png")
+    
+    try:
+        from PIL import Image
+        with Image.open(img_path) as img:
+            img = img.resize((img_size, img_size), Image.Resampling.LANCZOS)
+            buffered = io.BytesIO()
+            img.save(buffered, format="PNG")
+            encoded_img = base64.b64encode(buffered.getvalue()).decode('utf-8')
+        img_url = f"data:image/png;base64,{encoded_img}"
+    except Exception as e:
+        repo_env = os.environ.get('GITHUB_REPOSITORY', 'DevWithKaiju/DevWithKaiju')
+        img_url = f"https://raw.githubusercontent.com/{repo_env}/main/images/stage_{stage_name}.png"
 
     lines.append(f'    <image x="{-img_size/2}" y="{-img_size/2}" width="{img_size}" height="{img_size}" href="{img_url}" xlink:href="{img_url}" />')
     lines.append("  </g>")

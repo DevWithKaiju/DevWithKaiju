@@ -50,7 +50,7 @@ def generate_header_svg(data: dict = None) -> str:
     lines.append(f'<g class="star2" transform="translate({CARD_W - 100}, 30) scale(0.7)"><path d="{star_path}" fill="{COLORS["soft_pink"]}" opacity="0.7"/></g>')
 
     # Main text
-    lines.append(text_element(CARD_W / 2, CARD_H / 2 + 8, "Bridging Pharmaceutical Sciences & NLP", size=24, fill=COLORS["deep_purple"], anchor="middle", weight="800"))
+    lines.append(text_element(CARD_W / 2, CARD_H / 2 + 8, "Bridging Pharmaceutical Sciences &amp; NLP", size=24, fill=COLORS["deep_purple"], anchor="middle", weight="800"))
 
     # Sub text / decorative line
     lines.append(f'<line x1="{CARD_W/2 - 100}" y1="{CARD_H - 30}" x2="{CARD_W/2 + 100}" y2="{CARD_H - 30}" stroke="{COLORS["dusty_purple"]}" stroke-width="2" stroke-opacity="0.4" stroke-linecap="round" />')
