@@ -44,7 +44,7 @@
 <g class="star2" transform="translate(740, 50)"><path d="M0,-10 L2,-3 L10,0 L2,3 L0,10 L-2,3 L-10,0 L-2,-3 Z" fill="#b39cd0" opacity="0.5"/></g>
 <g class="star1" transform="translate(760, 90)"><circle cx="0" cy="0" r="3" fill="#2dd4bf" opacity="0.5"/></g>
 <g class="star2" transform="translate(700, 30) scale(0.7)"><path d="M0,-10 L2,-3 L10,0 L2,3 L0,10 L-2,3 L-10,0 L-2,-3 Z" fill="#FFD6E5" opacity="0.7"/></g>
-  <text x="400.0" y="68.0" font-size="24" fill="#8870a4" text-anchor="middle" font-weight="800" >Bridging Pharmaceutical Sciences & NLP</text>
+  <text x="400.0" y="68.0" font-size="24" fill="#8870a4" text-anchor="middle" font-weight="800" >Bridging Pharmaceutical Sciences &amp; NLP</text>
 <line x1="300.0" y1="90" x2="500.0" y2="90" stroke="#b39cd0" stroke-width="2" stroke-opacity="0.4" stroke-linecap="round" />
   <text x="400.0" y="108" font-size="12" fill="#94a3b8" text-anchor="middle" font-weight="600" >Graduate School of Pharmaceutical Sciences</text>
 </svg>
