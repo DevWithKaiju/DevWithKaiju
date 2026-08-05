@@ -3,18 +3,18 @@ Theme: Dusty Purple × Mint Green (Light / Cute Theme)
 """
 
 COLORS = {
-    "dusty_purple": "#9B8EC4",     # Main accent
-    "deep_purple": "#5A5070",      # Dark text / strokes
-    "mint_green": "#A8D8C8",       # Secondary accent
-    "soft_mint": "#E2F4EE",        # Very light mint for highlights
-    "lavender": "#F4F1FA",         # Very light purple for inner backgrounds
+    "dusty_purple": "#b39cd0",     # Main accent (Primary)
+    "deep_purple": "#8870a4",      # Dark text / strokes (Primary Dark)
+    "mint_green": "#2dd4bf",       # Secondary accent (Accent)
+    "soft_mint": "#e6f8f5",        # Very light mint for highlights
+    "lavender": "#f5f0f9",         # Very light purple for inner backgrounds (Primary Light)
     "card_bg": "#FFFFFF",          # Card background (White)
     "dark_bg": "#FAFAFC",          # Base background (Off-white)
-    "text_light": "#4A4359",       # Main text (Dark purple-gray)
-    "text_muted": "#8A80A0",       # Muted text
-    "locked_bg": "#F5F5F5",        # Locked badge background
-    "locked_border": "#E0E0E0",    # Locked badge border
-    "locked_text": "#B0B0B0",      # Locked text
+    "text_light": "#475569",       # Main text (Dark purple-gray)
+    "text_muted": "#94a3b8",       # Muted text
+    "locked_bg": "#f1f5f9",        # Locked badge background
+    "locked_border": "#e2e8f0",    # Locked badge border
+    "locked_text": "#94a3b8",      # Locked text
     "gold": "#F2C94C",
     "soft_pink": "#FFD6E5",
     "white": "#FFFFFF",
