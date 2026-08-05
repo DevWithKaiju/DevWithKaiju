@@ -44,98 +44,66 @@ def generate_kaiju_svg(data: dict) -> str:
     stage = _get_stage(commits)
     progress = _xp_progress(commits, stage)
     level = _level(commits)
+    stage_name = stage[1].lower()
+    
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(script_dir)
+    img_path = os.path.join(project_root, "images", f"stage_{stage_name}.png")
+    out_path = os.path.join(project_root, "images", "current_kaiju.png")
+    
+    # 1. Copy the current stage image to current_kaiju.png for direct HTML rendering
+    import shutil
+    try:
+        shutil.copyfile(img_path, out_path)
+    except Exception as e:
+        pass
 
+    # 2. Generate minimalist SVG for status (NO CARD BACKGROUND, NO RASTER IMAGE)
+    # Dimension is compact to sit nicely next to the PNG
+    svg_w = 260
+    svg_h = 120
+    
     extra_defs = f"""
     <linearGradient id="xpBarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="{COLORS['mint_green']}" />
       <stop offset="100%" stop-color="#0d9488" />
     </linearGradient>
     """
-
-    extra_style = """
-    @keyframes float {
-      0% { transform: translate(var(--cx), calc(var(--cy) - 3px)); }
-      50% { transform: translate(var(--cx), calc(var(--cy) + 3px)); }
-      100% { transform: translate(var(--cx), calc(var(--cy) - 3px)); }
-    }
-    .kaiju-art {
-      animation: float 3s ease-in-out infinite;
-    }
-    """
-
-    lines = [svg_header(CARD_W, CARD_H, extra_defs=extra_defs, extra_style=extra_style)]
-
-    # Use pure white background to blend perfectly with the generated image background
-    lines.append(rounded_rect(0, 0, CARD_W, CARD_H, rx=16, fill=COLORS["white"]))
-    lines.append(rounded_rect(0, 0, CARD_W, CARD_H, rx=16, fill="none", stroke="url(#cardBorderGrad)", stroke_width=1.5))
-
-    # Title
-    lines.append(text_element(CARD_W / 2, 30, f"{stage[3]}", size=17, fill=COLORS["deep_purple"], anchor="middle", weight="700"))
-
-    # Level badge
-    lv_x = CARD_W / 2
-    lines.append(rounded_rect(lv_x - 30, 38, 60, 22, rx=11, fill=COLORS["white"], stroke="url(#purpleMintGrad)", stroke_width=1.2))
-    lines.append(text_element(lv_x, 54, f"Lv. {level}", size=11, fill=COLORS["deep_purple"], anchor="middle", weight="700"))
-
-    # Kaiju art (centered)
-    art_cx = CARD_W / 2
-    art_cy = 150
-    lines.append(f'  <g class="kaiju-art" style="--cx: {art_cx}px; --cy: {art_cy}px;" transform="translate({art_cx},{art_cy})">')
-    img_size = 140
-    stage_name = stage[1].lower()
     
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.dirname(script_dir)
-    img_path = os.path.join(project_root, "images", f"stage_{stage_name}.png")
+    lines = [svg_header(svg_w, svg_h, extra_defs=extra_defs)]
     
-    try:
-        from PIL import Image
-        with Image.open(img_path) as img:
-            img = img.resize((img_size, img_size), Image.Resampling.LANCZOS)
-            buffered = io.BytesIO()
-            img.save(buffered, format="PNG")
-            encoded_img = base64.b64encode(buffered.getvalue()).decode('utf-8')
-        img_url = f"data:image/png;base64,{encoded_img}"
-    except Exception as e:
-        repo_env = os.environ.get('GITHUB_REPOSITORY', 'DevWithKaiju/DevWithKaiju')
-        img_url = f"https://raw.githubusercontent.com/{repo_env}/main/images/stage_{stage_name}.png"
-
-    lines.append(f'    <image x="{-img_size/2}" y="{-img_size/2}" width="{img_size}" height="{img_size}" href="{img_url}" xlink:href="{img_url}" />')
-    lines.append("  </g>")
-
-    # Decorative elements
-    lines.append(f'  <circle cx="40" cy="90" r="3" fill="{COLORS["dusty_purple"]}" opacity="0.4" />')
-    lines.append(f'  <circle cx="380" cy="100" r="2.5" fill="{COLORS["mint_green"]}" opacity="0.5" />')
-    lines.append(f'  <circle cx="60" cy="250" r="2" fill="{COLORS["soft_pink"]}" opacity="0.6" />')
-    lines.append(f'  <circle cx="360" cy="240" r="3.5" fill="{COLORS["dusty_purple"]}" opacity="0.3" />')
+    # We DO NOT add a white background rect or a border rect. It's completely transparent!
+    
+    # Title & Level Badge
+    lines.append(text_element(0, 30, f"{stage[3]}", size=18, fill=COLORS["deep_purple"], anchor="start", weight="800"))
+    
+    lines.append(rounded_rect(0, 42, 54, 20, rx=10, fill=COLORS["lavender"]))
+    lines.append(text_element(27, 56, f"Lv. {level}", size=11, fill=COLORS["deep_purple"], anchor="middle", weight="800"))
+    
+    # Total Commits
+    lines.append(text_element(64, 56, f"{commits} total commits", size=11, fill=COLORS["text_muted"], anchor="start", weight="600"))
 
     # XP Bar section
-    bar_y = 250
-    bar_x = 60
-    bar_w = 300
-    bar_h = 14
+    bar_y = 80
+    bar_x = 0
+    bar_w = 260
+    bar_h = 12
 
-    lines.append(text_element(bar_x, bar_y - 6, "EXP", size=10, fill=COLORS["text_muted"], weight="600"))
+    lines.append(text_element(bar_x, bar_y - 6, "EXP", size=10, fill=COLORS["text_muted"], weight="700"))
 
     if stage[4] is not None:
         remaining = stage[4] - commits
-        lines.append(text_element(bar_x + bar_w, bar_y - 6, f"{remaining} commits to next stage", size=9, fill=COLORS["text_muted"], anchor="end"))
+        lines.append(text_element(bar_x + bar_w, bar_y - 6, f"{remaining} commits to next stage", size=9, fill=COLORS["text_light"], anchor="end"))
     else:
         lines.append(text_element(bar_x + bar_w, bar_y - 6, "MAX STAGE", size=9, fill=COLORS["gold"], anchor="end"))
 
     # Bar background
-    lines.append(rounded_rect(bar_x, bar_y, bar_w, bar_h, rx=7, fill=COLORS["locked_bg"]))
+    lines.append(rounded_rect(bar_x, bar_y, bar_w, bar_h, rx=6, fill=COLORS["locked_bg"]))
 
     # Bar fill
     fill_w = max(bar_w * progress, 8)
-    lines.append(f'  <clipPath id="xpClip"><rect x="{bar_x}" y="{bar_y}" width="{bar_w}" height="{bar_h}" rx="7" /></clipPath>')
-    lines.append(f'  <rect x="{bar_x}" y="{bar_y}" width="{fill_w}" height="{bar_h}" rx="7" fill="url(#xpBarGrad)" clip-path="url(#xpClip)" />')
-
-    # Commit counter
-    lines.append(text_element(CARD_W / 2, bar_y + bar_h + 22, f"{commits} total commits", size=12, fill=COLORS["deep_purple"], anchor="middle", weight="700"))
-
-    # Bottom decorative line
-    lines.append(f'  <line x1="60" y1="{CARD_H - 15}" x2="{CARD_W - 60}" y2="{CARD_H - 15}" stroke="url(#purpleMintGradH)" stroke-width="1.5" stroke-opacity="0.3" />')
+    lines.append(f'  <clipPath id="xpClip"><rect x="{bar_x}" y="{bar_y}" width="{bar_w}" height="{bar_h}" rx="6" /></clipPath>')
+    lines.append(f'  <rect x="{bar_x}" y="{bar_y}" width="{fill_w}" height="{bar_h}" rx="6" fill="url(#xpBarGrad)" clip-path="url(#xpClip)" />')
 
     lines.append(svg_footer())
     return "\n".join(lines)

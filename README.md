@@ -44,10 +44,16 @@
 ## 📊 GitHub Stats & Activity
 <div align="center">
   <a href="https://github.com/DevWithKaiju">
-    <img src="./images/kaiju.svg?v=2" width="400" alt="My Kaiju">
+    <img src="./images/current_kaiju.png?v=3" height="130" alt="My Kaiju">
   </a>
   &nbsp; &nbsp;
   <a href="https://github.com/DevWithKaiju">
-    <img src="./images/stats.svg?v=2" width="400" alt="GitHub Stats">
+    <img src="./images/kaiju.svg?v=3" height="120" alt="Kaiju Status">
+  </a>
+</div>
+<br />
+<div align="center">
+  <a href="https://github.com/DevWithKaiju">
+    <img src="./images/stats.svg?v=3" width="600" alt="GitHub Stats">
   </a>
 </div>
