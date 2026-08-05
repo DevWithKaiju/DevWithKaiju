@@ -1,47 +1,55 @@
-# 🦁 Hi there 🦁
+<div align="center">
+  <!-- TODO: Replace with custom generated SVG header in the future -->
+  <img src="https://via.placeholder.com/800x120/f4f1fa/4a4359?text=Bridging+Pharmaceutical+Sciences+%26+NLP" alt="Header Banner" />
+</div>
+
+<br />
 
 <!-- ========================================== -->
-<!-- 🦁 About Me & Links Section                -->
+<!-- 🧬 About Me Section                        -->
 <!-- ========================================== -->
-## About me
+## 🧬 About Me
 
-* Mei Yoshikawa
-* Master's student at the Graduate School of Pharmaceutical Sciences, University of Tokyo
-* Member of Mizuno Group
-* Research interests: Biomedical NLP, Literature Mining, and Knowledge Discovery from Scientific Literature
+* 🎓 **Master's student** at the Graduate School of Pharmaceutical Sciences, The University of Tokyo.
+* 🔬 **Member** of the Mizuno Group.
+* 📚 **Research Interests:** Biomedical NLP, Literature Mining, and Knowledge Discovery from Scientific Literature.
 
-## Links
+[Personal HP](https://devwithkaiju.github.io) | [Mizuno Group HP](https://www.mizuno-group.com)
 
-* Personal HP: https://devwithkaiju.github.io
-* Mizuno Group HP: https://www.mizuno-group.com
-* Mizuno Group GitHub: https://github.com/mizuno-group
+<br />
 
 <!-- ========================================== -->
-<!-- 🦖 Stats & Kaiju Section                   -->
+<!-- 🛠️ Languages & Tools                       -->
 <!-- ========================================== -->
+<!-- 言語とツールはGitHubの履歴から自動生成されます -->
 <div align="center">
   <a href="https://github.com/DevWithKaiju">
-    <img src="./images/kaiju.svg?v=1" width="400" alt="My Kaiju">
-  </a>
-  &nbsp; &nbsp;
-  <a href="https://github.com/DevWithKaiju">
-    <img src="./images/stats.svg" width="400" alt="GitHub Stats">
+    <img src="./images/skills.svg?v=1" width="800" alt="Skills">
   </a>
 </div>
 
 <br />
 
 <!-- ========================================== -->
-<!-- 🎯 GitHub Milestones Section               -->
+<!-- 📜 Certifications                          -->
 <!-- ========================================== -->
-## 🎯 GitHub Milestones
+## 📜 Certifications
+![Applied Information Technology Engineer](https://img.shields.io/badge/応用情報技術者-Success?style=flat-square)
+![Database Specialist](https://img.shields.io/badge/データベーススペシャリスト-Success?style=flat-square)
+![Statistics Test Grade 2](https://img.shields.io/badge/統計検定2級-Success?style=flat-square)
 
-<a href="https://github.com/DevWithKaiju">
-  <img src="./images/achievements.svg?v=1" width="800" alt="Milestones">
-</a>
+<br />
 
-## 🛠 Skills
-
-<a href="https://github.com/DevWithKaiju">
-  <img src="./images/skills.svg" width="800" alt="Skills">
-</a>
+<!-- ========================================== -->
+<!-- 📊 Stats & Kaiju Section                   -->
+<!-- ========================================== -->
+## 📊 GitHub Stats & Activity
+<div align="center">
+  <a href="https://github.com/DevWithKaiju">
+    <img src="./images/kaiju.svg?v=1" width="400" alt="My Kaiju">
+  </a>
+  &nbsp; &nbsp;
+  <a href="https://github.com/DevWithKaiju">
+    <img src="./images/stats.svg?v=1" width="400" alt="GitHub Stats">
+  </a>
+</div>

@@ -51,7 +51,16 @@ def generate_kaiju_svg(data: dict) -> str:
     </linearGradient>
     """
 
-    extra_style = ""
+    extra_style = """
+    @keyframes float {
+      0% { transform: translate(var(--cx), calc(var(--cy) - 3px)); }
+      50% { transform: translate(var(--cx), calc(var(--cy) + 3px)); }
+      100% { transform: translate(var(--cx), calc(var(--cy) - 3px)); }
+    }
+    .kaiju-art {
+      animation: float 3s ease-in-out infinite;
+    }
+    """
 
     lines = [svg_header(CARD_W, CARD_H, extra_defs=extra_defs, extra_style=extra_style)]
 
@@ -70,7 +79,7 @@ def generate_kaiju_svg(data: dict) -> str:
     # Kaiju art (centered)
     art_cx = CARD_W / 2
     art_cy = 150
-    lines.append(f'  <g class="kaiju-art" transform="translate({art_cx},{art_cy})">')
+    lines.append(f'  <g class="kaiju-art" style="--cx: {art_cx}px; --cy: {art_cy}px;" transform="translate({art_cx},{art_cy})">')
     # Embed image as base64 to bypass browser security restrictions on external images in SVGs
     img_size = 140
     stage_name = stage[1].lower()

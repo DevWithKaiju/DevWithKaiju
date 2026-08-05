@@ -11,7 +11,6 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from github_api import fetch_github_data
-from svg_achievements import generate_achievements_svg
 from svg_stats import generate_stats_svg
 from svg_skills import generate_skills_svg
 from svg_kaiju import generate_kaiju_svg
@@ -39,7 +38,6 @@ def main():
 
     # ── Generate SVGs ──
     generators = {
-        "achievements.svg": generate_achievements_svg,
         "stats.svg": generate_stats_svg,
         "skills.svg": generate_skills_svg,
         "kaiju.svg": generate_kaiju_svg,
