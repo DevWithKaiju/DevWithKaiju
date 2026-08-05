@@ -47,8 +47,8 @@ def generate_kaiju_svg(data: dict) -> str:
 
     extra_defs = f"""
     <linearGradient id="xpBarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="{COLORS['dusty_purple']}" />
-      <stop offset="100%" stop-color="{COLORS['mint_green']}" />
+      <stop offset="0%" stop-color="{COLORS['mint_green']}" />
+      <stop offset="100%" stop-color="#0d9488" />
     </linearGradient>
     """
 

@@ -28,15 +28,15 @@ def svg_header(width: int, height: int, extra_defs: str = "", extra_style: str =
   <defs>
     <linearGradient id="purpleMintGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="{COLORS['dusty_purple']}" />
-      <stop offset="100%" stop-color="{COLORS['mint_green']}" />
+      <stop offset="100%" stop-color="{COLORS['deep_purple']}" />
     </linearGradient>
     <linearGradient id="purpleMintGradH" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="{COLORS['dusty_purple']}" />
-      <stop offset="100%" stop-color="{COLORS['mint_green']}" />
+      <stop offset="0%" stop-color="{COLORS['dusty_purple']}" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="{COLORS['deep_purple']}" stop-opacity="0.5" />
     </linearGradient>
     <linearGradient id="cardBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="{COLORS['dusty_purple']}" stop-opacity="0.6" />
-      <stop offset="100%" stop-color="{COLORS['mint_green']}" stop-opacity="0.6" />
+      <stop offset="0%" stop-color="{COLORS['dusty_purple']}" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="{COLORS['deep_purple']}" stop-opacity="0.2" />
     </linearGradient>
     {extra_defs}
   </defs>

@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./images/header.svg?v=1" width="800" alt="Header Banner" />
+  <img src="./images/header.svg?v=2" width="800" alt="Header Banner" />
 </div>
 
 <br />
@@ -23,7 +23,7 @@
 <!-- 言語とツールはGitHubの履歴から自動生成されます -->
 <div align="center">
   <a href="https://github.com/DevWithKaiju">
-    <img src="./images/skills.svg?v=1" width="800" alt="Skills">
+    <img src="./images/skills.svg?v=2" width="800" alt="Skills">
   </a>
 </div>
 
@@ -33,7 +33,7 @@
 <!-- 📜 Certifications                          -->
 <!-- ========================================== -->
 <div align="center">
-  <img src="./images/certifications.svg?v=1" width="800" alt="Certifications" />
+  <img src="./images/certifications.svg?v=2" width="800" alt="Certifications" />
 </div>
 
 <br />
@@ -44,10 +44,10 @@
 ## 📊 GitHub Stats & Activity
 <div align="center">
   <a href="https://github.com/DevWithKaiju">
-    <img src="./images/kaiju.svg?v=1" width="400" alt="My Kaiju">
+    <img src="./images/kaiju.svg?v=2" width="400" alt="My Kaiju">
   </a>
   &nbsp; &nbsp;
   <a href="https://github.com/DevWithKaiju">
-    <img src="./images/stats.svg?v=1" width="400" alt="GitHub Stats">
+    <img src="./images/stats.svg?v=2" width="400" alt="GitHub Stats">
   </a>
 </div>
