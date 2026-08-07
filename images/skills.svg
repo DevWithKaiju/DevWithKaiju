@@ -43,8 +43,6 @@
     }
     
   </style>
-  <rect x="0" y="0" width="800" height="194" rx="16" fill="#FAFAFC" />
-  <rect x="0" y="0" width="800" height="194" rx="16" fill="none" stroke="url(#cardBorderGrad)" stroke-width="1.5" />
   <text x="400.0" y="32" font-size="16" fill="#8870a4" text-anchor="middle" font-weight="700" >🛠  Skills &amp; Languages</text>
   <g class="badge" style="animation-delay: 0.1s" transform-origin="199.75 64.0">
     <rect x="95.5" y="50" width="208.5" height="28" rx="14" fill="url(#badgeGrad)" stroke="#e2e8f0" stroke-width="1" filter="url(#badgeShadow)" />
