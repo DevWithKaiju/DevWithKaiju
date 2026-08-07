@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="260" viewBox="0 0 390 260">
+  <defs>
+    <linearGradient id="purpleMintGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b39cd0" />
+      <stop offset="100%" stop-color="#8870a4" />
+    </linearGradient>
+    <linearGradient id="purpleMintGradH" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b39cd0" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#8870a4" stop-opacity="0.5" />
+    </linearGradient>
+    <linearGradient id="cardBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b39cd0" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#8870a4" stop-opacity="0.2" />
+    </linearGradient>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#5A5070" flood-opacity="0.08"/>
+    </filter>
+    
+  </defs>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; }
+    
+  </style>
+  <rect x="0" y="0" width="390" height="260" rx="16" fill="#FAFAFC" filter="url(#cardShadow)"/>
+  <rect x="0" y="0" width="390" height="260" rx="16" fill="none" stroke="url(#cardBorderGrad)" stroke-width="1.5" />
+  <text x="195.0" y="36" font-size="16" fill="#8870a4" text-anchor="middle" font-weight="700" >🧬  About Me</text>
+  <line x1="30" y1="52" x2="360" y2="52" stroke="url(#purpleMintGradH)" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4,4" />
+  <text x="30" y="86" font-size="14" fill="#475569" text-anchor="start" font-weight="normal" >🎓</text>
+  <text x="55" y="85" font-size="13" fill="#475569" text-anchor="start" font-weight="700" >Master's student</text>
+  <text x="55" y="102" font-size="13" fill="#94a3b8" text-anchor="start" font-weight="normal" >at the Graduate School of Pharmaceutical</text>
+  <text x="55" y="118" font-size="13" fill="#94a3b8" text-anchor="start" font-weight="normal" >Sciences, The University of Tokyo.</text>
+  <text x="30" y="146" font-size="14" fill="#475569" text-anchor="start" font-weight="normal" >🔬</text>
+  <text x="55" y="145" font-size="13" fill="#475569" text-anchor="start" font-weight="700" >Member</text>
+  <text x="115" y="145" font-size="13" fill="#94a3b8" text-anchor="start" font-weight="normal" >of the Mizuno Group.</text>
+  <text x="30" y="182" font-size="14" fill="#475569" text-anchor="start" font-weight="normal" >📚</text>
+  <text x="55" y="181" font-size="13" fill="#475569" text-anchor="start" font-weight="700" >Research Interests:</text>
+  <text x="55" y="198" font-size="13" fill="#94a3b8" text-anchor="start" font-weight="normal" >Biomedical NLP, Literature Mining,</text>
+  <text x="55" y="214" font-size="13" fill="#94a3b8" text-anchor="start" font-weight="normal" >and Knowledge Discovery from</text>
+  <text x="55" y="230" font-size="13" fill="#94a3b8" text-anchor="start" font-weight="normal" >Scientific Literature.</text>
+  <a href="https://devwithkaiju.github.io" target="_blank">
+  <text x="185.0" y="238" font-size="12" fill="#2dd4bf" text-anchor="end" font-weight="600" >🌐 Personal HP</text>
+  </a>
+  <text x="195.0" y="238" font-size="12" fill="#94a3b8" text-anchor="middle" font-weight="normal" >|</text>
+  <a href="https://www.mizuno-group.com" target="_blank">
+  <text x="205.0" y="238" font-size="12" fill="#2dd4bf" text-anchor="start" font-weight="600" >🏢 Mizuno Group HP</text>
+  </a>
+</svg>
