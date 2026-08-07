@@ -20,11 +20,16 @@ COLORS = {
     "white": "#FFFFFF",
 }
 
-FONT_FAMILY = "'Segoe UI', 'Helvetica Neue', Ubuntu, sans-serif"
+FONT_FAMILY = '-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"'
 
+# Typographic scales
+TEXT_H1 = 20
+TEXT_H2 = 16
+TEXT_BODY = 13
+TEXT_SMALL = 11
 
 def svg_header(width: int, height: int, extra_defs: str = "", extra_style: str = "") -> str:
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 {width} {height}">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">
   <defs>
     <linearGradient id="purpleMintGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="{COLORS['dusty_purple']}" />
@@ -38,6 +43,9 @@ def svg_header(width: int, height: int, extra_defs: str = "", extra_style: str =
       <stop offset="0%" stop-color="{COLORS['dusty_purple']}" stop-opacity="0.4" />
       <stop offset="100%" stop-color="{COLORS['deep_purple']}" stop-opacity="0.2" />
     </linearGradient>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#5A5070" flood-opacity="0.08"/>
+    </filter>
     {extra_defs}
   </defs>
   <style>
@@ -54,6 +62,23 @@ def rounded_rect(x: float, y: float, w: float, h: float, rx: float = 16, fill: s
     opacity_attr = f' opacity="{opacity}"' if opacity != 1 else ""
     return f'  <rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="{fill}"{stroke_attr}{opacity_attr} {extra}/>'
 
-def text_element(x: float, y: float, content: str, size: float = 14, fill: str | None = None, anchor: str = "start", weight: str = "normal", extra: str = "") -> str:
+def text_element(x: float, y: float, content: str, size: float = TEXT_BODY, fill: str | None = None, anchor: str = "start", weight: str = "normal", extra: str = "") -> str:
     fill = fill or COLORS["text_light"]
     return f'  <text x="{x}" y="{y}" font-size="{size}" fill="{fill}" text-anchor="{anchor}" font-weight="{weight}" {extra}>{content}</text>'
+
+def draw_card(width: float, height: float, title: str, icon: str = "") -> list[str]:
+    """Draws a standard beautifully styled card background with a title and divider line."""
+    lines = []
+    # Base Card
+    lines.append(rounded_rect(0, 0, width, height, rx=16, fill=COLORS["dark_bg"], extra='filter="url(#cardShadow)"'))
+    lines.append(rounded_rect(0, 0, width, height, rx=16, fill="none", stroke="url(#cardBorderGrad)", stroke_width=1.5))
+    
+    # Title Section
+    title_y = 36
+    title_text = f"{icon}  {title}" if icon else title
+    lines.append(text_element(width / 2, title_y, title_text, size=TEXT_H2, fill=COLORS["deep_purple"], anchor="middle", weight="700"))
+    
+    # Divider
+    lines.append(f'  <line x1="30" y1="52" x2="{width - 30}" y2="52" stroke="url(#purpleMintGradH)" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4,4" />')
+    
+    return lines

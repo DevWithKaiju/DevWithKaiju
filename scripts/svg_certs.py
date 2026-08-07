@@ -2,10 +2,10 @@
 Custom SVG Certifications for GitHub Profile.
 """
 
-from theme import COLORS, FONT_FAMILY, svg_header, svg_footer, rounded_rect, text_element
+from theme import COLORS, FONT_FAMILY, svg_header, svg_footer, draw_card, rounded_rect, text_element
 
-CARD_W = 800
-CARD_H = 160
+CARD_W = 390
+CARD_H = 240
 
 def generate_certs_svg(data: dict = None) -> str:
     extra_defs = f"""
@@ -13,31 +13,24 @@ def generate_certs_svg(data: dict = None) -> str:
       <stop offset="0%" stop-color="{COLORS['white']}" />
       <stop offset="100%" stop-color="{COLORS['lavender']}" />
     </linearGradient>
-    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.04" />
-    </filter>
     """
     
     extra_style = """
     .cert-card { transition: transform 0.3s ease; }
-    .cert-card:hover { transform: translateY(-3px); }
+    .cert-card:hover { transform: translateX(3px); }
     """
 
     lines = [svg_header(CARD_W, CARD_H, extra_defs=extra_defs, extra_style=extra_style)]
 
-    # Background (transparent)
-    lines.append(rounded_rect(0, 0, CARD_W, CARD_H, rx=16, fill="none"))
+    # Draw standard card background & title
+    lines.extend(draw_card(CARD_W, CARD_H, "Certifications", "📜"))
 
-    # Title
-    lines.append(text_element(30, 30, "Certifications", size=18, fill=COLORS["deep_purple"], weight="800"))
-    lines.append(f'<line x1="30" y1="42" x2="{CARD_W - 30}" y2="42" stroke="url(#purpleMintGradH)" stroke-width="1.5" stroke-opacity="0.4" stroke-linecap="round" />')
-
-    # Draw 3 cards
-    cert_w = 240
-    cert_h = 80
-    gap = 10
+    # Vertical list of cards
+    cert_w = CARD_W - 60
+    cert_h = 44
+    gap = 12
     start_x = 30
-    start_y = 60
+    start_y = 66
 
     certs = [
         {"title": "応用情報技術者", "sub": "Applied IT Engineer", "icon": "shield"},
@@ -46,39 +39,36 @@ def generate_certs_svg(data: dict = None) -> str:
     ]
 
     for i, cert in enumerate(certs):
-        x = start_x + (cert_w + gap) * i
-        y = start_y
+        y = start_y + (cert_h + gap) * i
         
-        lines.append(f'<g class="cert-card" transform="translate({x}, {y})">')
-        # Card Background
-        lines.append(rounded_rect(0, 0, cert_w, cert_h, rx=12, fill="url(#certGrad)", stroke="url(#cardBorderGrad)", stroke_width=1.5, extra='filter="url(#shadow)"'))
+        lines.append(f'<g class="cert-card" transform="translate({start_x}, {y})">')
         
         # Icon Background
-        lines.append(rounded_rect(10, 20, 40, 40, rx=10, fill=COLORS["soft_mint"], opacity=0.7))
+        lines.append(rounded_rect(0, 0, 44, 44, rx=10, fill=COLORS["soft_mint"], opacity=0.7))
         
         # Draw elegant SVG icons
         icon_color = COLORS["deep_purple"]
         if cert["icon"] == "shield":
-            path = f'<path d="M 30 28 L 40 28 L 40 42 Q 30 50 20 42 L 20 28 Z" fill="none" stroke="{icon_color}" stroke-width="2" stroke-linejoin="round" />'
+            path = f'<path d="M 12 10 L 32 10 L 32 24 Q 22 36 12 24 Z" fill="none" stroke="{icon_color}" stroke-width="2" stroke-linejoin="round" />'
             lines.append(path)
         elif cert["icon"] == "db":
-            path1 = f'<ellipse cx="30" cy="30" rx="10" ry="4" fill="none" stroke="{icon_color}" stroke-width="2" />'
-            path2 = f'<path d="M 20 30 L 20 46 A 10 4 0 0 0 40 46 L 40 30" fill="none" stroke="{icon_color}" stroke-width="2" />'
-            path3 = f'<path d="M 20 38 A 10 4 0 0 0 40 38" fill="none" stroke="{icon_color}" stroke-width="2" />'
+            path1 = f'<ellipse cx="22" cy="14" rx="10" ry="4" fill="none" stroke="{icon_color}" stroke-width="2" />'
+            path2 = f'<path d="M 12 14 L 12 30 A 10 4 0 0 0 32 30 L 32 14" fill="none" stroke="{icon_color}" stroke-width="2" />'
+            path3 = f'<path d="M 12 22 A 10 4 0 0 0 32 22" fill="none" stroke="{icon_color}" stroke-width="2" />'
             lines.append(path1)
             lines.append(path2)
             lines.append(path3)
         elif cert["icon"] == "chart":
-            path1 = f'<rect x="20" y="40" width="6" height="10" rx="1" fill="{COLORS["dusty_purple"]}" />'
-            path2 = f'<rect x="28" y="32" width="6" height="18" rx="1" fill="{COLORS["mint_green"]}" />'
-            path3 = f'<rect x="36" y="24" width="6" height="26" rx="1" fill="{icon_color}" />'
+            path1 = f'<rect x="12" y="24" width="6" height="10" rx="1" fill="{COLORS["dusty_purple"]}" />'
+            path2 = f'<rect x="20" y="16" width="6" height="18" rx="1" fill="{COLORS["mint_green"]}" />'
+            path3 = f'<rect x="28" y="8" width="6" height="26" rx="1" fill="{icon_color}" />'
             lines.append(path1)
             lines.append(path2)
             lines.append(path3)
             
         # Text
-        lines.append(text_element(60, 36, cert["title"], size=12, fill=COLORS["deep_purple"], weight="700"))
-        lines.append(text_element(60, 54, cert["sub"], size=10, fill=COLORS["text_muted"], weight="500"))
+        lines.append(text_element(56, 18, cert["title"], size=13, fill=COLORS["deep_purple"], weight="700"))
+        lines.append(text_element(56, 34, cert["sub"], size=11, fill=COLORS["text_muted"], weight="500"))
         
         lines.append('</g>')
 

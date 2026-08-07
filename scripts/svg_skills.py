@@ -3,16 +3,14 @@ Skills / language badge SVG generator.
 Creates pill-shaped badges showing top languages from GitHub repos.
 """
 
-from theme import COLORS, FONT_FAMILY, svg_header, svg_footer, rounded_rect, text_element
-
+from theme import COLORS, FONT_FAMILY, svg_header, svg_footer, draw_card, text_element
 
 BADGE_H = 28
 BADGE_RX = 14
 BADGE_GAP_X = 10
 BADGE_GAP_Y = 10
-PADDING = 20
+PADDING = 30
 MAX_WIDTH = 800
-
 
 def generate_skills_svg(data: dict) -> str:
     """Generate skills/language badges SVG."""
@@ -39,7 +37,8 @@ def generate_skills_svg(data: dict) -> str:
         rows[-1].append(badge)
         row_w += badge["w"] + BADGE_GAP_X
 
-    total_h = PADDING * 2 + 40 + len(rows) * (BADGE_H + BADGE_GAP_Y)
+    # 70 is space for title and divider, 30 for bottom padding
+    total_h = 70 + 30 + len(rows) * (BADGE_H + BADGE_GAP_Y)
     total_w = MAX_WIDTH
 
     extra_defs = """
@@ -73,13 +72,11 @@ def generate_skills_svg(data: dict) -> str:
 
     lines = [svg_header(total_w, total_h, extra_defs=extra_defs, extra_style=extra_style)]
 
-    # Background removed for a seamless unified look
-    
-    # Title
-    lines.append(text_element(total_w / 2, 32, "🛠  Skills &amp; Languages", size=16, fill=COLORS["deep_purple"], anchor="middle", weight="700"))
+    # Draw standard card background & title
+    lines.extend(draw_card(total_w, total_h, "Skills & Languages", "🛠"))
 
     # Render badges
-    base_y = 50
+    base_y = 75
     badge_idx = 0
     for row_idx, row in enumerate(rows):
         # Center the row

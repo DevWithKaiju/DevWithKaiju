@@ -3,8 +3,7 @@ Stats card SVG generator.
 Replaces github-readme-stats with a custom card in the cute theme.
 """
 
-from theme import COLORS, FONT_FAMILY, svg_header, svg_footer, rounded_rect, text_element
-
+from theme import COLORS, FONT_FAMILY, svg_header, svg_footer, draw_card, text_element
 
 # ─── Stat row definitions ───────────────────────────────────
 
@@ -17,11 +16,10 @@ STAT_ROWS = [
     ("👥", "Followers", "followers"),
 ]
 
-CARD_W = 420
-CARD_H = 320
-ROW_H = 32
+CARD_W = 390
+CARD_H = 240
+ROW_H = 24
 PADDING = 30
-
 
 def generate_stats_svg(data: dict) -> str:
     """Generate the GitHub stats card SVG."""
@@ -35,33 +33,29 @@ def generate_stats_svg(data: dict) -> str:
 
     lines = [svg_header(CARD_W, CARD_H, extra_style=extra_style)]
 
-    # Background removed for a seamless unified look
-    
-    # Title bar
-    lines.append(text_element(CARD_W / 2, 45, f"📊  {data['username']}'s GitHub Stats", size=16, anchor="middle", fill=COLORS["deep_purple"], weight="700"))
-
-    # Divider line
-    lines.append(f'  <line x1="{PADDING}" y1="65" x2="{CARD_W - PADDING}" y2="65" stroke="url(#purpleMintGradH)" stroke-width="1.5" stroke-opacity="0.5" />')
+    # Draw standard card background & title
+    title = f"{data['username']}'s GitHub Stats"
+    lines.extend(draw_card(CARD_W, CARD_H, title, "📊"))
 
     # Stats rows
-    start_y = 95
+    start_y = 75
     for i, (icon, label, key) in enumerate(STAT_ROWS):
         y = start_y + i * ROW_H
         value = data.get(key, 0)
 
         # Icon
-        lines.append(text_element(PADDING + 6, y + 4, icon, size=15, anchor="start"))
+        lines.append(text_element(PADDING, y + 4, icon, size=14, anchor="start"))
 
         # Label
-        lines.append(text_element(PADDING + 34, y + 3, label, size=13, fill=COLORS["text_muted"]))
+        lines.append(text_element(PADDING + 28, y + 3, label, size=13, fill=COLORS["text_light"]))
 
         # Value
-        lines.append(text_element(CARD_W - PADDING - 10, y + 3, str(value), size=14, fill=COLORS["deep_purple"], anchor="end", weight="700"))
+        lines.append(text_element(CARD_W - PADDING, y + 3, str(value), size=13, fill=COLORS["deep_purple"], anchor="end", weight="700"))
 
         # Subtle row separator (except last)
         if i < len(STAT_ROWS) - 1:
-            sep_y = y + 18
-            lines.append(f'  <line x1="{PADDING + 30}" y1="{sep_y}" x2="{CARD_W - PADDING}" y2="{sep_y}" stroke="{COLORS["locked_border"]}" stroke-width="1" stroke-dasharray="2,4" />')
+            sep_y = y + 14
+            lines.append(f'  <line x1="{PADDING + 28}" y1="{sep_y}" x2="{CARD_W - PADDING}" y2="{sep_y}" stroke="{COLORS["locked_border"]}" stroke-width="1" stroke-dasharray="2,4" />')
 
     # Bottom accent bar
     bar_y = CARD_H - 35
