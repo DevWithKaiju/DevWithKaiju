@@ -35,10 +35,8 @@ def generate_stats_svg(data: dict) -> str:
 
     lines = [svg_header(CARD_W, CARD_H, extra_style=extra_style)]
 
-    # Card background
-    lines.append(rounded_rect(0, 0, CARD_W, CARD_H, rx=16, fill=COLORS["dark_bg"]))
-    lines.append(rounded_rect(0, 0, CARD_W, CARD_H, rx=16, fill="none", stroke="url(#cardBorderGrad)", stroke_width=1.5))
-
+    # Background removed for a seamless unified look
+    
     # Title bar
     lines.append(text_element(CARD_W / 2, 45, f"📊  {data['username']}'s GitHub Stats", size=16, anchor="middle", fill=COLORS["deep_purple"], weight="700"))
 

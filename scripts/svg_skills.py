@@ -73,10 +73,8 @@ def generate_skills_svg(data: dict) -> str:
 
     lines = [svg_header(total_w, total_h, extra_defs=extra_defs, extra_style=extra_style)]
 
-    # Background
-    lines.append(rounded_rect(0, 0, total_w, total_h, rx=16, fill=COLORS["dark_bg"]))
-    lines.append(rounded_rect(0, 0, total_w, total_h, rx=16, fill="none", stroke="url(#cardBorderGrad)", stroke_width=1.5))
-
+    # Background removed for a seamless unified look
+    
     # Title
     lines.append(text_element(total_w / 2, 32, "🛠  Skills &amp; Languages", size=16, fill=COLORS["deep_purple"], anchor="middle", weight="700"))
 
