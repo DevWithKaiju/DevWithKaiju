@@ -39,16 +39,13 @@
   <rect x="0" y="0" width="390" height="260" rx="16" fill="none" stroke="url(#cardBorderGrad)" stroke-width="1.5" />
   <text x="195.0" y="36" font-size="16" fill="#8870a4" text-anchor="middle" font-weight="700" >🦖  My Kaiju</text>
   <line x1="30" y1="52" x2="360" y2="52" stroke="url(#purpleMintGradH)" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4,4" />
-  <g class="kaiju-art" transform="translate(45, 80)">
-    <image x="0" y="0" width="120" height="120" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAIAAAC2BqGFAAAEbUlEQVR42u3cz08cZRgH8Pd535nZnf3BsouwhYWWAq0giOlFaWwv1ZBwMTF69Obdm/+B16Z3TyYe1Et7IDFZk6qJRNrYags1ERZQKIWFXZbdZX/MzszO4wGb1Jto3MzA93visAfy2e+87/O+u0DMLJD/PxIEgAY0AmhAAxoBNKARQAMa0AigAY0AGtCARnwIjU8J0OjTBI0+dwiaANbBRqPWnVij0enOTR2wxtQBaARrNE6GWDoQQAMa0CAANKARQOPAAmgcWLB0ABoBNKABjQAa0AigAQ1oBNCARs4UNDN77AXiV9WCSiyYmSVJEhSIr6kFtdEkSJIs1ao/rDwmIfzf6+A1uu21lVTr+Wdf/XQ3lUzs24dXMmOxWJSZifzbbDrRP69iweSDx/ST+c8Kbi2ajDl2K6zrIVd/d/zNyaERP1sHrNFO280u3y971nvXbmw2io2mZTuOGTNvbyx2R2IDPb2+tQ7YGk0s7iwvTL58qdg6slzXMIyoGSFHhKLGg+0VEsR+/bAtMNDMzEJslfaT8S5pqD2rspD9djv3ux429vK7D79Z+O1g03YcIgnokw5w4sV6Hv98UCtX7UbLa3cbsYmBizZ5Tss245HZudnxzMVfnq76dgLxLzQJQX/fq0mI0d6MKXW33TaFNvf27MjlsfX1jWKxlOjvW6vsRXXz+QuxGf7j1KymrlRIN9qeRyQkSaftZpfu1diJGuG9ZmVzqxDVwqNjo3W7+evG2rBKvTIwzMzSl5uhH8c7jz1J8se15a+XFj966/2+REoI0bRbtx98P796b+7qdVsKXalq42grnw+xmu65cCHe98boJEn/ztH+XTqSkVhB1m5mv7ife5Lb2bqV/fLn/dzH73wgDaXrKn9QiFP4w9fnerTIWPzczKUpn+/rflw6jh+adCw1NTBSodbnj+7arp1Mdd94dSZXzbc9b7dYUKZeKZUnJjMb6fO3Ht652Zvu6+7BgeWE0ETMnOpKXA6dy4cagzP9VtMy9VCxWau7tqkZesiwSvXecLdgUa1Urw9OxcIREoJxBP8Xs51gthw7+3iREiHHlOVW3fEcQ+p2281EkrP9r4U1Y23naaF6eHV82v/nAJ8ubCQEEZlGaHZ6pscJJytqQvZZxRpJcVSrnfcSiuXSVu7TxfnMS2mPvdN3e9fRZ5OFiITC1yavHBxVCoclspmlsFv2H7s7360+2uSiMDxdKUkSjf6vvWYh6i1LKW24f3AomX6ytPIst53pTU8NjRgNihypnfJBuVGvtyzf39L4/prUabu263oee+wVqodSyi4zauqG5diapulSCSJdKV1pgEYCdR99PIr8NQA+v2YKyhsfJGgSQrwwKQfr2cL3OgANaATQgAa0n4/gZxkafzmLRqPRCDZDQAMaATSgEYx3GO/ONjT63CFo9Blr9Clco1FrjHeARgAN6DM/R2PwQKMBjQAaR3A0GgH06RnvMNuh0YBGAA1oQCOABjQCaEADGgE0oBFAAxrQCKB9nD8BQ5Ky+KjSM7sAAAAASUVORK5CYII=" />
-  </g>
-  <text x="180" y="100" font-size="18" fill="#8870a4" text-anchor="start" font-weight="800" >Junior Kaiju</text>
+  <text x="180" y="100" font-size="18" fill="#8870a4" text-anchor="start" font-weight="800" >Kaiju</text>
   <rect x="180" y="112" width="54" height="20" rx="10" fill="#f5f0f9" />
-  <text x="207" y="126" font-size="11" fill="#8870a4" text-anchor="middle" font-weight="800" >Lv. 25</text>
-  <text x="244" y="126" font-size="11" fill="#94a3b8" text-anchor="start" font-weight="600" >497 total commits</text>
+  <text x="207" y="126" font-size="11" fill="#8870a4" text-anchor="middle" font-weight="800" >Lv. 26</text>
+  <text x="244" y="126" font-size="11" fill="#94a3b8" text-anchor="start" font-weight="600" >500 total commits</text>
   <text x="180" y="144" font-size="10" fill="#94a3b8" text-anchor="start" font-weight="700" >EXP</text>
-  <text x="350" y="144" font-size="9" fill="#475569" text-anchor="end" font-weight="normal" >3 commits to next stage</text>
+  <text x="350" y="144" font-size="9" fill="#475569" text-anchor="end" font-weight="normal" >500 commits to next stage</text>
   <rect x="180" y="150" width="170" height="12" rx="6" fill="#f1f5f9" />
   <clipPath id="xpClip"><rect x="180" y="150" width="170" height="12" rx="6" /></clipPath>
-  <rect x="180" y="150" width="168.3" height="12" rx="6" fill="url(#xpBarGrad)" clip-path="url(#xpClip)" />
+  <rect x="180" y="150" width="8" height="12" rx="6" fill="url(#xpBarGrad)" clip-path="url(#xpClip)" />
 </svg>
