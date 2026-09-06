@@ -41,11 +41,11 @@
   <line x1="30" y1="52" x2="360" y2="52" stroke="url(#purpleMintGradH)" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4,4" />
   <text x="180" y="100" font-size="18" fill="#8870a4" text-anchor="start" font-weight="800" >Kaiju</text>
   <rect x="180" y="112" width="54" height="20" rx="10" fill="#f5f0f9" />
-  <text x="207" y="126" font-size="11" fill="#8870a4" text-anchor="middle" font-weight="800" >Lv. 26</text>
-  <text x="244" y="126" font-size="11" fill="#94a3b8" text-anchor="start" font-weight="600" >500 total commits</text>
+  <text x="207" y="126" font-size="11" fill="#8870a4" text-anchor="middle" font-weight="800" >Lv. 27</text>
+  <text x="244" y="126" font-size="11" fill="#94a3b8" text-anchor="start" font-weight="600" >529 total commits</text>
   <text x="180" y="144" font-size="10" fill="#94a3b8" text-anchor="start" font-weight="700" >EXP</text>
-  <text x="350" y="144" font-size="9" fill="#475569" text-anchor="end" font-weight="normal" >500 commits to next stage</text>
+  <text x="350" y="144" font-size="9" fill="#475569" text-anchor="end" font-weight="normal" >471 commits to next stage</text>
   <rect x="180" y="150" width="170" height="12" rx="6" fill="#f1f5f9" />
   <clipPath id="xpClip"><rect x="180" y="150" width="170" height="12" rx="6" /></clipPath>
-  <rect x="180" y="150" width="8" height="12" rx="6" fill="url(#xpBarGrad)" clip-path="url(#xpClip)" />
+  <rect x="180" y="150" width="9.860000000000001" height="12" rx="6" fill="url(#xpBarGrad)" clip-path="url(#xpClip)" />
 </svg>
