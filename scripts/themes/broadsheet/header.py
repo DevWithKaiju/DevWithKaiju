@@ -1,8 +1,8 @@
 """
-Hero header ("Minimal Editorial" theme) - a bold two-line poster headline.
+Hero header ("Broadsheet" theme) - a bold two-line poster headline.
 """
 
-from theme_minimal_editorial import COLORS, FONT_DISPLAY, FONT_MONO, svg_header, svg_footer, text_element, kicker
+from themes.broadsheet.theme import COLORS, FONT_DISPLAY, FONT_MONO, svg_header, svg_footer, text_element, kicker
 
 CARD_W = 800
 CARD_H = 172

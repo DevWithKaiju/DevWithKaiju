@@ -7,7 +7,7 @@ links in README.md, not inside this SVG - an <a> inside an SVG referenced via
 <img> never becomes clickable in a rendered GitHub README.
 """
 
-from theme_field_notes import COLORS, svg_header, svg_footer, card_shell, text_element, kicker
+from themes.field_notes.theme import COLORS, svg_header, svg_footer, card_shell, text_element, kicker
 
 CARD_W = 800
 CARD_H = 180

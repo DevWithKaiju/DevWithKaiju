@@ -1,9 +1,9 @@
 """
-Toolkit block ("Minimal Editorial" theme) - a thick stacked language bar with
+Toolkit block ("Broadsheet" theme) - a thick stacked language bar with
 a square-marker legend, instead of a wall of pill badges.
 """
 
-from theme_minimal_editorial import COLORS, FONT_MONO, svg_header, svg_footer, text_element, kicker
+from themes.broadsheet.theme import COLORS, FONT_MONO, svg_header, svg_footer, text_element, kicker
 
 CARD_W = 800
 PADDING = 30

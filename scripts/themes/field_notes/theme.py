@@ -3,7 +3,7 @@ Theme: "Field Notes" - a lab-notebook / specimen-card aesthetic built on the
 site's real brand palette (https://devwithkaiju.github.io).
 """
 
-from svg_primitives import svg_open, svg_close, rect, text_element as _text_element
+from common.svg_primitives import svg_open, svg_close, rect, text_element as _text_element
 
 COLORS = {
     "dusty_purple": "#b39cd0",     # Primary accent (borders, small highlights)

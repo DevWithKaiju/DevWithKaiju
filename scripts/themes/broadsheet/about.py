@@ -1,12 +1,12 @@
 """
-About block ("Minimal Editorial" theme) - a pull-quote headline over the bio.
+About block ("Broadsheet" theme) - a pull-quote headline over the bio.
 
 Note: the actual "Personal site" / "Mizuno Group" links live as plain Markdown
 links in README.md, not inside this SVG - an <a> inside an SVG referenced via
 <img> never becomes clickable in a rendered GitHub README.
 """
 
-from theme_minimal_editorial import COLORS, FONT_DISPLAY, FONT_BODY, svg_header, svg_footer, text_element, kicker
+from themes.broadsheet.theme import COLORS, FONT_DISPLAY, FONT_BODY, svg_header, svg_footer, text_element, kicker
 
 CARD_W = 800
 CARD_H = 246

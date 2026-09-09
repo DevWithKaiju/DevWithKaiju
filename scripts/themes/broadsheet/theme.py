@@ -1,10 +1,10 @@
 """
-Theme: "Minimal Editorial" - bold display type, solid color blocks and thin
+Theme: "Broadsheet" - bold display type, solid color blocks and thin
 rules instead of cards; a newspaper/poster-infographic treatment of the same
 content as the "Field Notes" theme.
 """
 
-from svg_primitives import svg_open, svg_close, rect, text_element as _text_element
+from common.svg_primitives import svg_open, svg_close, rect, text_element as _text_element
 
 COLORS = {
     "purple_block": "#8870a4",   # Solid accent block (Kaiju hero)

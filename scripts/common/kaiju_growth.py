@@ -69,8 +69,9 @@ def _autocrop_to_square(img, padding_ratio: float = 0.25):
 
 def embed_stage_image(file_stem: str, size: int = 260) -> str:
     """Return a base64 data: URI of the given stage's art, autocropped to its silhouette."""
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    img_path = os.path.join(os.path.dirname(script_dir), "images", f"stage_{file_stem}.png")
+    # This file lives at scripts/common/kaiju_growth.py - repo root is two levels up.
+    repo_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    img_path = os.path.join(repo_root, "images", f"stage_{file_stem}.png")
 
     from PIL import Image
     with Image.open(img_path) as img:

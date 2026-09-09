@@ -1,10 +1,10 @@
 """
-Kaiju hero block ("Minimal Editorial" theme) - a solid color block with the
+Kaiju hero block ("Broadsheet" theme) - a solid color block with the
 mascot and a huge level number, instead of a soft specimen card.
 """
 
-from theme_minimal_editorial import COLORS, FONT_DISPLAY, FONT_MONO, svg_header, svg_footer, text_element, kicker
-from kaiju_growth import get_stage, xp_progress, level, embed_stage_image
+from themes.broadsheet.theme import COLORS, FONT_DISPLAY, FONT_MONO, svg_header, svg_footer, text_element, kicker
+from common.kaiju_growth import get_stage, xp_progress, level, embed_stage_image
 
 CARD_W = 800
 CARD_H = 268

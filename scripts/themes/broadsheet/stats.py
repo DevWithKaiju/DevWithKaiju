@@ -1,9 +1,9 @@
 """
-Field Data block ("Minimal Editorial" theme) - a newspaper-style stat grid:
+Field Data block ("Broadsheet" theme) - a newspaper-style stat grid:
 uniform big numbers over a soft hairline rule, instead of a card.
 """
 
-from theme_minimal_editorial import COLORS, FONT_DISPLAY, FONT_MONO, svg_header, svg_footer, text_element, kicker, hairline
+from themes.broadsheet.theme import COLORS, FONT_DISPLAY, FONT_MONO, svg_header, svg_footer, text_element, kicker, hairline
 
 CARD_W = 800
 CARD_H = 290

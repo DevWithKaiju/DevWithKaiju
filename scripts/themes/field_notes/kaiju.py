@@ -4,8 +4,8 @@ Renders the mascot's current growth stage as a labelled specimen card,
 with a level, a growth (XP) gauge, and a field-note caption.
 """
 
-from theme_field_notes import COLORS, FONT_MONO, svg_header, svg_footer, card_shell, text_element, kicker
-from kaiju_growth import get_stage, xp_progress, level, embed_stage_image
+from themes.field_notes.theme import COLORS, FONT_MONO, svg_header, svg_footer, card_shell, text_element, kicker
+from common.kaiju_growth import get_stage, xp_progress, level, embed_stage_image
 
 CARD_W = 800
 CARD_H = 246
