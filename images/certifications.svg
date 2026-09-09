@@ -1,60 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 800 160">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="130" viewBox="0 0 800 130">
   <defs>
-    <linearGradient id="purpleMintGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#b39cd0" />
-      <stop offset="100%" stop-color="#8870a4" />
-    </linearGradient>
-    <linearGradient id="purpleMintGradH" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#b39cd0" stop-opacity="0.5" />
-      <stop offset="100%" stop-color="#8870a4" stop-opacity="0.5" />
-    </linearGradient>
-    <linearGradient id="cardBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#b39cd0" stop-opacity="0.4" />
-      <stop offset="100%" stop-color="#8870a4" stop-opacity="0.2" />
-    </linearGradient>
-    
-    <linearGradient id="certGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="100%" stop-color="#f5f0f9" />
-    </linearGradient>
-    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.04" />
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="3" dy="3" stdDeviation="0" flood-color="#8870a4" flood-opacity="0.08"/>
     </filter>
     
   </defs>
   <style>
-    text { font-family: 'Segoe UI', 'Helvetica Neue', Ubuntu, sans-serif; }
-    
-    .cert-card { transition: transform 0.3s ease; }
-    .cert-card:hover { transform: translateY(-3px); }
+    text { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif; }
     
   </style>
-  <rect x="0" y="0" width="800" height="160" rx="16" fill="none" />
-  <text x="30" y="30" font-size="18" fill="#8870a4" text-anchor="start" font-weight="800" >Certifications</text>
-<line x1="30" y1="42" x2="770" y2="42" stroke="url(#purpleMintGradH)" stroke-width="1.5" stroke-opacity="0.4" stroke-linecap="round" />
-<g class="cert-card" transform="translate(30, 60)">
-  <rect x="0" y="0" width="240" height="80" rx="12" fill="url(#certGrad)" stroke="url(#cardBorderGrad)" stroke-width="1.5" filter="url(#shadow)"/>
-  <rect x="10" y="20" width="40" height="40" rx="10" fill="#e6f8f5" opacity="0.7" />
-<path d="M 30 28 L 40 28 L 40 42 Q 30 50 20 42 L 20 28 Z" fill="none" stroke="#8870a4" stroke-width="2" stroke-linejoin="round" />
-  <text x="60" y="36" font-size="12" fill="#8870a4" text-anchor="start" font-weight="700" >応用情報技術者</text>
-  <text x="60" y="54" font-size="10" fill="#94a3b8" text-anchor="start" font-weight="500" >Applied IT Engineer</text>
-</g>
-<g class="cert-card" transform="translate(280, 60)">
-  <rect x="0" y="0" width="240" height="80" rx="12" fill="url(#certGrad)" stroke="url(#cardBorderGrad)" stroke-width="1.5" filter="url(#shadow)"/>
-  <rect x="10" y="20" width="40" height="40" rx="10" fill="#e6f8f5" opacity="0.7" />
-<ellipse cx="30" cy="30" rx="10" ry="4" fill="none" stroke="#8870a4" stroke-width="2" />
-<path d="M 20 30 L 20 46 A 10 4 0 0 0 40 46 L 40 30" fill="none" stroke="#8870a4" stroke-width="2" />
-<path d="M 20 38 A 10 4 0 0 0 40 38" fill="none" stroke="#8870a4" stroke-width="2" />
-  <text x="60" y="36" font-size="12" fill="#8870a4" text-anchor="start" font-weight="700" >データベーススペシャリスト</text>
-  <text x="60" y="54" font-size="10" fill="#94a3b8" text-anchor="start" font-weight="500" >Database Specialist</text>
-</g>
-<g class="cert-card" transform="translate(530, 60)">
-  <rect x="0" y="0" width="240" height="80" rx="12" fill="url(#certGrad)" stroke="url(#cardBorderGrad)" stroke-width="1.5" filter="url(#shadow)"/>
-  <rect x="10" y="20" width="40" height="40" rx="10" fill="#e6f8f5" opacity="0.7" />
-<rect x="20" y="40" width="6" height="10" rx="1" fill="#b39cd0" />
-<rect x="28" y="32" width="6" height="18" rx="1" fill="#2dd4bf" />
-<rect x="36" y="24" width="6" height="26" rx="1" fill="#8870a4" />
-  <text x="60" y="36" font-size="12" fill="#8870a4" text-anchor="start" font-weight="700" >統計検定2級</text>
-  <text x="60" y="54" font-size="10" fill="#94a3b8" text-anchor="start" font-weight="500" >Statistics Grade 2</text>
-</g>
+  <rect x="0.75" y="0.75" width="798.5" height="128.5" rx="3" fill="#FAFAFC" stroke="#e2e8f0" stroke-width="1.5" filter="url(#cardShadow)"/>
+  <text x="30" y="38" font-size="10.5" fill="#8870a4" text-anchor="start" font-weight="600" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" letter-spacing="1.4" >CREDENTIALS</text>
+  <g transform="translate(30.0, 54)"><circle cx="15" cy="12" r="8" fill="none" stroke="#8870a4" stroke-width="1.6"/><path d="M11 18.5 L9 27 L15 24 L21 27 L19 18.5" fill="none" stroke="#8870a4" stroke-width="1.6" stroke-linejoin="round"/></g>
+  <text x="72.0" y="68" font-size="12.5" fill="#27222c" text-anchor="start" font-weight="700" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" >応用情報技術者</text>
+  <text x="72.0" y="86" font-size="10" fill="#94a3b8" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >Applied IT Engineer</text>
+  <g transform="translate(276.66666666666663, 54)"><circle cx="15" cy="12" r="8" fill="none" stroke="#8870a4" stroke-width="1.6"/><path d="M11 18.5 L9 27 L15 24 L21 27 L19 18.5" fill="none" stroke="#8870a4" stroke-width="1.6" stroke-linejoin="round"/></g>
+  <text x="318.66666666666663" y="68" font-size="12.5" fill="#27222c" text-anchor="start" font-weight="700" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" >データベーススペシャリスト</text>
+  <text x="318.66666666666663" y="86" font-size="10" fill="#94a3b8" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >Database Specialist</text>
+  <g transform="translate(523.3333333333333, 54)"><circle cx="15" cy="12" r="8" fill="none" stroke="#8870a4" stroke-width="1.6"/><path d="M11 18.5 L9 27 L15 24 L21 27 L19 18.5" fill="none" stroke="#8870a4" stroke-width="1.6" stroke-linejoin="round"/></g>
+  <text x="565.3333333333333" y="68" font-size="12.5" fill="#27222c" text-anchor="start" font-weight="700" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" >統計検定2級</text>
+  <text x="565.3333333333333" y="86" font-size="10" fill="#94a3b8" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >Statistics Grade 2</text>
 </svg>

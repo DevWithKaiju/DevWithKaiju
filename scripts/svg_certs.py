@@ -1,76 +1,44 @@
 """
-Custom SVG Certifications for GitHub Profile.
+Credentials card - certifications as a row of stamp-sealed entries.
 """
 
-from theme import COLORS, FONT_FAMILY, svg_header, svg_footer, draw_card, rounded_rect, text_element
+from theme import COLORS, FONT_MONO, svg_header, svg_footer, card_shell, text_element, kicker
 
-CARD_W = 390
-CARD_H = 240
+CARD_W = 800
+CARD_H = 130
+PADDING = 30
 
-def generate_certs_svg(data: dict = None) -> str:
-    extra_defs = f"""
-    <linearGradient id="certGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="{COLORS['white']}" />
-      <stop offset="100%" stop-color="{COLORS['lavender']}" />
-    </linearGradient>
-    """
-    
-    extra_style = """
-    .cert-card { transition: transform 0.3s ease; }
-    .cert-card:hover { transform: translateX(3px); }
-    """
+CERTS = [
+    {"title": "応用情報技術者", "sub": "Applied IT Engineer"},
+    {"title": "データベーススペシャリスト", "sub": "Database Specialist"},
+    {"title": "統計検定2級", "sub": "Statistics Grade 2"},
+]
 
-    lines = [svg_header(CARD_W, CARD_H, extra_defs=extra_defs, extra_style=extra_style)]
 
-    # Draw standard card background & title
-    lines.extend(draw_card(CARD_W, CARD_H, "Certifications", "📜"))
+def _seal_icon(x: float, y: float) -> str:
+    color = COLORS["deep_purple"]
+    return (f'  <g transform="translate({x}, {y})">'
+            f'<circle cx="15" cy="12" r="8" fill="none" stroke="{color}" stroke-width="1.6"/>'
+            f'<path d="M11 18.5 L9 27 L15 24 L21 27 L19 18.5" fill="none" stroke="{color}" '
+            f'stroke-width="1.6" stroke-linejoin="round"/>'
+            f'</g>')
 
-    # Vertical list of cards
-    cert_w = CARD_W - 60
-    cert_h = 44
-    gap = 12
-    start_x = 30
-    start_y = 66
 
-    certs = [
-        {"title": "応用情報技術者", "sub": "Applied IT Engineer", "icon": "shield"},
-        {"title": "データベーススペシャリスト", "sub": "Database Specialist", "icon": "db"},
-        {"title": "統計検定2級", "sub": "Statistics Grade 2", "icon": "chart"}
-    ]
+def generate_certs_svg(data: dict | None = None) -> str:
+    lines = [svg_header(CARD_W, CARD_H)]
+    lines.append(card_shell(CARD_W, CARD_H))
+    lines.append(kicker(PADDING, 38, "Credentials"))
 
-    for i, cert in enumerate(certs):
-        y = start_y + (cert_h + gap) * i
-        
-        lines.append(f'<g class="cert-card" transform="translate({start_x}, {y})">')
-        
-        # Icon Background
-        lines.append(rounded_rect(0, 0, 44, 44, rx=10, fill=COLORS["soft_mint"], opacity=0.7))
-        
-        # Draw elegant SVG icons
-        icon_color = COLORS["deep_purple"]
-        if cert["icon"] == "shield":
-            path = f'<path d="M 12 10 L 32 10 L 32 24 Q 22 36 12 24 Z" fill="none" stroke="{icon_color}" stroke-width="2" stroke-linejoin="round" />'
-            lines.append(path)
-        elif cert["icon"] == "db":
-            path1 = f'<ellipse cx="22" cy="14" rx="10" ry="4" fill="none" stroke="{icon_color}" stroke-width="2" />'
-            path2 = f'<path d="M 12 14 L 12 30 A 10 4 0 0 0 32 30 L 32 14" fill="none" stroke="{icon_color}" stroke-width="2" />'
-            path3 = f'<path d="M 12 22 A 10 4 0 0 0 32 22" fill="none" stroke="{icon_color}" stroke-width="2" />'
-            lines.append(path1)
-            lines.append(path2)
-            lines.append(path3)
-        elif cert["icon"] == "chart":
-            path1 = f'<rect x="12" y="24" width="6" height="10" rx="1" fill="{COLORS["dusty_purple"]}" />'
-            path2 = f'<rect x="20" y="16" width="6" height="18" rx="1" fill="{COLORS["mint_green"]}" />'
-            path3 = f'<rect x="28" y="8" width="6" height="26" rx="1" fill="{icon_color}" />'
-            lines.append(path1)
-            lines.append(path2)
-            lines.append(path3)
-            
-        # Text
-        lines.append(text_element(56, 18, cert["title"], size=13, fill=COLORS["deep_purple"], weight="700"))
-        lines.append(text_element(56, 34, cert["sub"], size=11, fill=COLORS["text_muted"], weight="500"))
-        
-        lines.append('</g>')
+    col_w = (CARD_W - 2 * PADDING) / len(CERTS)
+    icon_y = 54
+    for i, cert in enumerate(CERTS):
+        col_x = PADDING + col_w * i
+        lines.append(_seal_icon(col_x, icon_y))
+        text_x = col_x + 42
+        lines.append(text_element(text_x, icon_y + 14, cert["title"], size=12.5,
+                                   fill=COLORS["ink"], weight="700"))
+        lines.append(text_element(text_x, icon_y + 32, cert["sub"], size=10,
+                                   fill=COLORS["text_faint"], family=FONT_MONO))
 
     lines.append(svg_footer())
     return "\n".join(lines)

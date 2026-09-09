@@ -1,19 +1,21 @@
 <div align="center">
-  <img src="./images/header.svg?v=6" width="800" alt="Header Banner" />
+  <img src="./images/header.svg?v=7" width="800" alt="Header">
   <br><br>
 
-  <!-- Row 1: About Me (Left) | Kaiju (Right) -->
-  <img src="./images/about.svg?v=6" width="390" alt="About Me">
-  &nbsp;&nbsp;
-  <img src="./images/kaiju.svg?v=6" width="390" alt="My Kaiju">
+  <img src="./images/kaiju.svg?v=7" width="800" alt="Kaiju Specimen Card">
   <br><br>
 
-  <!-- Row 2: GitHub Stats (Left) | Certifications (Right) -->
-  <img src="./images/stats.svg?v=6" width="390" alt="GitHub Stats">
-  &nbsp;&nbsp;
-  <img src="./images/certifications.svg?v=6" width="390" alt="Certifications">
+  <img src="./images/about.svg?v=7" width="800" alt="About">
   <br><br>
 
-  <!-- Row 3: Skills & Languages (Full Width) -->
-  <img src="./images/skills.svg?v=6" width="800" alt="Skills & Languages">
+  <img src="./images/stats.svg?v=7" width="800" alt="Field Data">
+  <br><br>
+
+  <img src="./images/skills.svg?v=7" width="800" alt="Toolkit">
+  <br><br>
+
+  <img src="./images/certifications.svg?v=7" width="800" alt="Credentials">
+  <br><br>
+
+  <sub>Log auto-generated daily via GitHub Actions</sub>
 </div>
