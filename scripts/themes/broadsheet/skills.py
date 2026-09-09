@@ -3,7 +3,7 @@ Toolkit block ("Broadsheet" theme) - a thick stacked language bar with
 a square-marker legend, instead of a wall of pill badges.
 """
 
-from themes.broadsheet.theme import COLORS, FONT_MONO, svg_header, svg_footer, text_element, kicker
+from themes.broadsheet.theme import COLORS, CHART_PALETTE, FONT_MONO, svg_header, svg_footer, text_element, kicker
 
 CARD_W = 800
 PADDING = 30
@@ -15,11 +15,16 @@ def _prepare_languages(languages: list[dict]) -> list[dict]:
     if not languages:
         return [{"name": "No data", "color": COLORS["muted"], "percentage": 100.0}]
 
-    top = languages[:MAX_SEGMENTS]
+    top = [dict(lang) for lang in languages[:MAX_SEGMENTS]]  # copy - we're about to overwrite "color"
     rest = languages[MAX_SEGMENTS:]
     if rest:
         other_pct = round(sum(l["percentage"] for l in rest), 1)
-        top = top + [{"name": "Other", "color": COLORS["purple_block"], "percentage": other_pct}]
+        top = top + [{"name": "Other", "percentage": other_pct}]
+
+    # Rank-based tones from the page's own palette, not each language's GitHub
+    # brand color - those are a clash of unrelated hues against the rest of the page.
+    for i, lang in enumerate(top):
+        lang["color"] = CHART_PALETTE[min(i, len(CHART_PALETTE) - 1)]
     return top
 
 
