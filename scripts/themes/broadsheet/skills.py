@@ -8,23 +8,25 @@ from themes.broadsheet.theme import COLORS, CHART_PALETTE, FONT_MONO, svg_header
 CARD_W = 800
 PADDING = 30
 BAR_H = 22
-MAX_SEGMENTS = 6  # top N languages get their own segment; the rest are bucketed as "Other"
+SEGMENT_GAP = 2  # thin surface gap between segments so neighbors read as separate even at a glance
+MAX_SEGMENTS = len(CHART_PALETTE)  # top N languages get their own validated hue; the rest bucket as "Other"
 
 
 def _prepare_languages(languages: list[dict]) -> list[dict]:
     if not languages:
-        return [{"name": "No data", "color": COLORS["muted"], "percentage": 100.0}]
+        return [{"name": "No data", "color": COLORS["chart_other"], "percentage": 100.0}]
 
     top = [dict(lang) for lang in languages[:MAX_SEGMENTS]]  # copy - we're about to overwrite "color"
     rest = languages[MAX_SEGMENTS:]
     if rest:
         other_pct = round(sum(l["percentage"] for l in rest), 1)
-        top = top + [{"name": "Other", "percentage": other_pct}]
+        top = top + [{"name": "Other", "percentage": other_pct, "color": COLORS["chart_other"]}]
 
-    # Rank-based tones from the page's own palette, not each language's GitHub
-    # brand color - those are a clash of unrelated hues against the rest of the page.
-    for i, lang in enumerate(top):
-        lang["color"] = CHART_PALETTE[min(i, len(CHART_PALETTE) - 1)]
+    # Rank-based tones from the page's own validated categorical palette, not
+    # each language's GitHub brand color - those are a clash of unrelated hues
+    # against the rest of the page.
+    for i, lang in enumerate(top[:len(CHART_PALETTE)]):
+        lang["color"] = CHART_PALETTE[i]
     return top
 
 
@@ -56,9 +58,10 @@ def generate_skills_svg(data: dict) -> str:
 
     bar_w = CARD_W - PADDING * 2
     cursor_x = PADDING
-    for lang in langs:
+    for i, lang in enumerate(langs):
         seg_w = bar_w * lang["percentage"] / 100
-        lines.append(f'  <rect x="{cursor_x}" y="{bar_y}" width="{seg_w}" height="{BAR_H}" fill="{lang["color"]}" />')
+        draw_w = max(seg_w - (SEGMENT_GAP if i < len(langs) - 1 else 0), 1)
+        lines.append(f'  <rect x="{cursor_x}" y="{bar_y}" width="{draw_w}" height="{BAR_H}" fill="{lang["color"]}" />')
         cursor_x += seg_w
 
     for row_idx, row in enumerate(rows):
