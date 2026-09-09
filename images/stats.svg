@@ -12,18 +12,18 @@
   <rect x="0.75" y="0.75" width="798.5" height="234.5" rx="3" fill="#FAFAFC" stroke="#e2e8f0" stroke-width="1.5" filter="url(#cardShadow)"/>
   <text x="30" y="38" font-size="10.5" fill="#8870a4" text-anchor="start" font-weight="600" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" letter-spacing="1.4" >FIELD DATA</text>
   <text x="770" y="38" font-size="10" fill="#94a3b8" text-anchor="end" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >Updated daily · 09:00 JST</text>
-  <text x="153.33333333333331" y="100" font-size="28" fill="#27222c" text-anchor="middle" font-weight="700" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" >150</text>
+  <text x="153.33333333333331" y="100" font-size="28" fill="#27222c" text-anchor="middle" font-weight="700" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" >529</text>
   <text x="153.33333333333331" y="120" font-size="10" fill="#475569" text-anchor="middle" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" letter-spacing="1.0" >COMMITS</text>
-  <text x="399.99999999999994" y="100" font-size="28" fill="#27222c" text-anchor="middle" font-weight="700" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" >5</text>
+  <text x="399.99999999999994" y="100" font-size="28" fill="#27222c" text-anchor="middle" font-weight="700" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" >234</text>
   <text x="399.99999999999994" y="120" font-size="10" fill="#475569" text-anchor="middle" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" letter-spacing="1.0" >PULL REQUESTS</text>
-  <text x="646.6666666666666" y="100" font-size="28" fill="#27222c" text-anchor="middle" font-weight="700" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" >8</text>
+  <text x="646.6666666666666" y="100" font-size="28" fill="#27222c" text-anchor="middle" font-weight="700" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" >36</text>
   <text x="646.6666666666666" y="120" font-size="10" fill="#475569" text-anchor="middle" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" letter-spacing="1.0" >REPOSITORIES</text>
-  <text x="153.33333333333331" y="162" font-size="28" fill="#27222c" text-anchor="middle" font-weight="700" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" >2</text>
+  <text x="153.33333333333331" y="162" font-size="28" fill="#27222c" text-anchor="middle" font-weight="700" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" >38</text>
   <text x="153.33333333333331" y="182" font-size="10" fill="#475569" text-anchor="middle" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" letter-spacing="1.0" >ISSUES</text>
-  <text x="399.99999999999994" y="162" font-size="28" fill="#27222c" text-anchor="middle" font-weight="700" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" >3</text>
+  <text x="399.99999999999994" y="162" font-size="28" fill="#27222c" text-anchor="middle" font-weight="700" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" >5</text>
   <text x="399.99999999999994" y="182" font-size="10" fill="#475569" text-anchor="middle" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" letter-spacing="1.0" >STARS</text>
-  <text x="646.6666666666666" y="162" font-size="28" fill="#27222c" text-anchor="middle" font-weight="700" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" >5</text>
+  <text x="646.6666666666666" y="162" font-size="28" fill="#27222c" text-anchor="middle" font-weight="700" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" >18</text>
   <text x="646.6666666666666" y="182" font-size="10" fill="#475569" text-anchor="middle" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" letter-spacing="1.0" >FOLLOWERS</text>
   <line x1="30" y1="198" x2="770" y2="198" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3,3" />
-  <text x="400.0" y="220" font-size="14" fill="#8870a4" text-anchor="middle" font-weight="normal" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" font-style="italic" >120 contributions logged this year</text>
+  <text x="400.0" y="220" font-size="14" fill="#8870a4" text-anchor="middle" font-weight="normal" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" font-style="italic" >728 contributions logged this year</text>
 </svg>
