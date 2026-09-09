@@ -18,7 +18,7 @@ USERNAME = "DevWithKaiju"
 # implemented - flip this one line (and push) to switch the whole profile:
 #   "field_notes"  - lab-notebook / specimen-card cards
 #   "broadsheet"   - bold display type, solid color blocks, newspaper stat grid
-THEME = "broadsheet"
+THEME = "field_notes"
 
 if THEME == "broadsheet":
     from themes.broadsheet.stats import generate_stats_svg
