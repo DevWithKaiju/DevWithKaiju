@@ -1,13 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="103.39999999999999" height="20" viewBox="0 0 103.39999999999999 20">
+<svg xmlns="http://www.w3.org/2000/svg" width="132.8" height="34" viewBox="0 0 132.8 34">
   <defs>
-    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
-      <feDropShadow dx="3" dy="3" stdDeviation="0" flood-color="#8870a4" flood-opacity="0.08"/>
-    </filter>
     
   </defs>
   <style>
-    text { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif; }
+    text { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
 
   </style>
-  <text x="0" y="15" font-size="12.5" fill="#8870a4" text-anchor="start" font-weight="600" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >Mizuno Group ↗</text>
+  <rect x="0.75" y="0.75" width="131.3" height="32.5" fill="none" stroke="#27222c" stroke-width="1.5" />
+  <text x="66.4" y="21.0" font-size="11" fill="#27222c" text-anchor="middle" font-weight="600" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" letter-spacing="0.6" >MIZUNO GROUP ↗</text>
 </svg>
