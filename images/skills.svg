@@ -7,25 +7,25 @@
 
   </style>
   <text x="30" y="30" font-size="10.5" fill="#475569" text-anchor="start" font-weight="600" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" letter-spacing="1.6" >TOOLKIT</text>
-  <rect x="30" y="56" width="496.5399999999999" height="22" fill="#DA5B0B" />
-  <rect x="526.54" y="56" width="131.72" height="22" fill="#3572A5" />
-  <rect x="658.26" y="56" width="68.07999999999998" height="22" fill="#89e051" />
-  <rect x="726.3399999999999" y="56" width="17.019999999999996" height="22" fill="#ff5a03" />
-  <rect x="743.3599999999999" y="56" width="9.62" height="22" fill="#384d54" />
-  <rect x="752.9799999999999" y="56" width="5.18" height="22" fill="#3178c6" />
-  <rect x="758.1599999999999" y="56" width="11.1" height="22" fill="#8870a4" />
-  <rect x="30" y="97" width="10" height="10" fill="#DA5B0B" />
+  <rect x="30" y="56" width="496.5399999999999" height="22" fill="#8870a4" />
+  <rect x="526.54" y="56" width="131.72" height="22" fill="#14b8a6" />
+  <rect x="658.26" y="56" width="68.07999999999998" height="22" fill="#b39cd0" />
+  <rect x="726.3399999999999" y="56" width="17.019999999999996" height="22" fill="#2dd4bf" />
+  <rect x="743.3599999999999" y="56" width="9.62" height="22" fill="#6b6178" />
+  <rect x="752.9799999999999" y="56" width="5.18" height="22" fill="#c9b6e4" />
+  <rect x="758.1599999999999" y="56" width="11.1" height="22" fill="#c9b6e4" />
+  <rect x="30" y="97" width="10" height="10" fill="#8870a4" />
   <text x="48" y="106" font-size="11.5" fill="#27222c" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >Jupyter Notebook  67.1%</text>
-  <rect x="225.79999999999998" y="97" width="10" height="10" fill="#3572A5" />
+  <rect x="225.79999999999998" y="97" width="10" height="10" fill="#14b8a6" />
   <text x="243.79999999999998" y="106" font-size="11.5" fill="#27222c" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >Python  17.8%</text>
-  <rect x="355.6" y="97" width="10" height="10" fill="#89e051" />
+  <rect x="355.6" y="97" width="10" height="10" fill="#b39cd0" />
   <text x="373.6" y="106" font-size="11.5" fill="#27222c" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >Shell  9.2%</text>
-  <rect x="472.20000000000005" y="97" width="10" height="10" fill="#ff5a03" />
+  <rect x="472.20000000000005" y="97" width="10" height="10" fill="#2dd4bf" />
   <text x="490.20000000000005" y="106" font-size="11.5" fill="#27222c" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >Astro  2.3%</text>
-  <rect x="588.8000000000001" y="97" width="10" height="10" fill="#384d54" />
+  <rect x="588.8000000000001" y="97" width="10" height="10" fill="#6b6178" />
   <text x="606.8000000000001" y="106" font-size="11.5" fill="#27222c" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >Dockerfile  1.3%</text>
-  <rect x="30" y="117" width="10" height="10" fill="#3178c6" />
+  <rect x="30" y="117" width="10" height="10" fill="#c9b6e4" />
   <text x="48" y="126" font-size="11.5" fill="#27222c" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >TypeScript  0.7%</text>
-  <rect x="179.6" y="117" width="10" height="10" fill="#8870a4" />
+  <rect x="179.6" y="117" width="10" height="10" fill="#c9b6e4" />
   <text x="197.6" y="126" font-size="11.5" fill="#27222c" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >Other  1.5%</text>
 </svg>
