@@ -1,17 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="128" viewBox="0 0 800 128">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="172" viewBox="0 0 800 172">
   <defs>
-    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
-      <feDropShadow dx="3" dy="3" stdDeviation="0" flood-color="#8870a4" flood-opacity="0.08"/>
-    </filter>
     
   </defs>
   <style>
-    text { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif; }
+    text { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
 
   </style>
-  <rect x="0.75" y="0.75" width="798.5" height="126.5" rx="3" fill="#FAFAFC" stroke="#e2e8f0" stroke-width="1.5" filter="url(#cardShadow)"/>
-  <text x="30" y="38" font-size="10.5" fill="#8870a4" text-anchor="start" font-weight="600" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" letter-spacing="1.4" >GITHUB FIELD LOG</text>
-  <text x="770" y="38" font-size="11" fill="#94a3b8" text-anchor="end" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >@DevWithKaiju</text>
-  <text x="30" y="74" font-size="25" fill="#27222c" text-anchor="start" font-weight="700" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" >Bridging Pharmaceutical Sciences &amp; NLP</text>
-  <text x="30" y="98" font-size="13.5" fill="#475569" text-anchor="start" font-weight="normal" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" font-style="italic" >Master&#8217;s Student, Graduate School of Pharmaceutical Sciences &#8212; The University of Tokyo</text>
+  <text x="30" y="30" font-size="10.5" fill="#475569" text-anchor="start" font-weight="600" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" letter-spacing="1.6" >@DEVWITHKAIJU · GITHUB PROFILE</text>
+  <text x="30" y="76" font-size="46" fill="#27222c" text-anchor="start" font-weight="900" font-family="'Arial Narrow', 'Helvetica Neue Condensed', Arial, sans-serif" letter-spacing="-0.3" >Bridging Pharma</text>
+  <text x="30" y="120" font-size="46" fill="#27222c" text-anchor="start" font-weight="900" font-family="'Arial Narrow', 'Helvetica Neue Condensed', Arial, sans-serif" letter-spacing="-0.3" >Science &amp; NLP.</text>
+  <text x="30" y="144" font-size="13.5" fill="#475569" text-anchor="start" font-weight="normal" font-family="'Segoe UI', Arial, sans-serif" >Master&#8217;s Student, Graduate School of Pharmaceutical Sciences &#8212; The University of Tokyo</text>
+  <rect x="30" y="156" width="64" height="3" fill="#27222c" />
 </svg>

@@ -1,23 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="130" viewBox="0 0 800 130">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="108" viewBox="0 0 800 108">
   <defs>
-    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
-      <feDropShadow dx="3" dy="3" stdDeviation="0" flood-color="#8870a4" flood-opacity="0.08"/>
-    </filter>
     
   </defs>
   <style>
-    text { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif; }
+    text { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
 
   </style>
-  <rect x="0.75" y="0.75" width="798.5" height="128.5" rx="3" fill="#FAFAFC" stroke="#e2e8f0" stroke-width="1.5" filter="url(#cardShadow)"/>
-  <text x="30" y="38" font-size="10.5" fill="#8870a4" text-anchor="start" font-weight="600" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" letter-spacing="1.4" >CREDENTIALS</text>
-  <g transform="translate(30.0, 54)"><circle cx="15" cy="12" r="8" fill="none" stroke="#8870a4" stroke-width="1.6"/><path d="M11 18.5 L9 27 L15 24 L21 27 L19 18.5" fill="none" stroke="#8870a4" stroke-width="1.6" stroke-linejoin="round"/></g>
-  <text x="72.0" y="68" font-size="12.5" fill="#27222c" text-anchor="start" font-weight="700" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" >応用情報技術者</text>
-  <text x="72.0" y="86" font-size="10" fill="#94a3b8" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >Applied IT Engineer</text>
-  <g transform="translate(276.66666666666663, 54)"><circle cx="15" cy="12" r="8" fill="none" stroke="#8870a4" stroke-width="1.6"/><path d="M11 18.5 L9 27 L15 24 L21 27 L19 18.5" fill="none" stroke="#8870a4" stroke-width="1.6" stroke-linejoin="round"/></g>
-  <text x="318.66666666666663" y="68" font-size="12.5" fill="#27222c" text-anchor="start" font-weight="700" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" >データベーススペシャリスト</text>
-  <text x="318.66666666666663" y="86" font-size="10" fill="#94a3b8" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >Database Specialist</text>
-  <g transform="translate(523.3333333333333, 54)"><circle cx="15" cy="12" r="8" fill="none" stroke="#8870a4" stroke-width="1.6"/><path d="M11 18.5 L9 27 L15 24 L21 27 L19 18.5" fill="none" stroke="#8870a4" stroke-width="1.6" stroke-linejoin="round"/></g>
-  <text x="565.3333333333333" y="68" font-size="12.5" fill="#27222c" text-anchor="start" font-weight="700" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif" >統計検定2級</text>
-  <text x="565.3333333333333" y="86" font-size="10" fill="#94a3b8" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >Statistics Grade 2</text>
+  <text x="30" y="30" font-size="10.5" fill="#475569" text-anchor="start" font-weight="600" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" letter-spacing="1.6" >CREDENTIALS</text>
+  <rect x="30.0" y="44" width="236.66666666666666" height="64" fill="none" stroke="#27222c" stroke-width="1.5" />
+  <text x="46.0" y="70" font-size="14" fill="#27222c" text-anchor="start" font-weight="700" font-family="'Arial Narrow', 'Helvetica Neue Condensed', Arial, sans-serif" >応用情報技術者</text>
+  <text x="46.0" y="90" font-size="9.5" fill="#475569" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" letter-spacing="0.6" >APPLIED IT ENGINEER</text>
+  <rect x="276.66666666666663" y="44" width="236.66666666666666" height="64" fill="none" stroke="#27222c" stroke-width="1.5" />
+  <text x="292.66666666666663" y="70" font-size="14" fill="#27222c" text-anchor="start" font-weight="700" font-family="'Arial Narrow', 'Helvetica Neue Condensed', Arial, sans-serif" >データベーススペシャリスト</text>
+  <text x="292.66666666666663" y="90" font-size="9.5" fill="#475569" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" letter-spacing="0.6" >DATABASE SPECIALIST</text>
+  <rect x="523.3333333333333" y="44" width="246.66666666666666" height="64" fill="none" stroke="#27222c" stroke-width="1.5" />
+  <text x="539.3333333333333" y="70" font-size="14" fill="#27222c" text-anchor="start" font-weight="700" font-family="'Arial Narrow', 'Helvetica Neue Condensed', Arial, sans-serif" >統計検定2級</text>
+  <text x="539.3333333333333" y="90" font-size="9.5" fill="#475569" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" letter-spacing="0.6" >STATISTICS GRADE 2</text>
 </svg>
