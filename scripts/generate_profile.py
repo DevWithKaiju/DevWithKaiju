@@ -27,6 +27,7 @@ if THEME == "broadsheet":
     from themes.broadsheet.header import generate_header_svg
     from themes.broadsheet.certs import generate_certs_svg
     from themes.broadsheet.about import generate_about_svg
+    from themes.broadsheet.links import generate_link_site_svg, generate_link_group_svg
 else:
     from themes.field_notes.stats import generate_stats_svg
     from themes.field_notes.skills import generate_skills_svg
@@ -34,6 +35,7 @@ else:
     from themes.field_notes.header import generate_header_svg
     from themes.field_notes.certs import generate_certs_svg
     from themes.field_notes.about import generate_about_svg
+    from themes.field_notes.links import generate_link_site_svg, generate_link_group_svg
 
 
 def main():
@@ -61,6 +63,8 @@ def main():
         "header.svg": generate_header_svg,
         "certifications.svg": generate_certs_svg,
         "about.svg": generate_about_svg,
+        "link_site.svg": generate_link_site_svg,
+        "link_group.svg": generate_link_group_svg,
     }
 
     for filename, gen_fn in generators.items():

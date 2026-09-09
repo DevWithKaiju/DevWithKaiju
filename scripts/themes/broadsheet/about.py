@@ -1,16 +1,17 @@
 """
 About block ("Broadsheet" theme) - a pull-quote headline over the bio.
 
-Note: the "Personal site" / "Mizuno Group" chips below are visual only. An <a>
-inside an SVG referenced via <img> never becomes clickable in a rendered
-GitHub README, so the actual clickable links live as plain Markdown links in
-README.md, placed right under this image.
+The "Personal Site" / "Mizuno Group" chips are a separate pair of small
+images (links.py in this package) wrapped in real <a> tags in README.md -
+not drawn inside this SVG. An <a> inside an SVG loaded via <img> is never
+actually clickable on GitHub, but an <img> wrapped in a real Markdown/HTML
+<a> works fine, so the chips live as their own tiny clickable images instead.
 """
 
-from themes.broadsheet.theme import COLORS, FONT_DISPLAY, FONT_BODY, FONT_MONO, svg_header, svg_footer, text_element, kicker
+from themes.broadsheet.theme import COLORS, FONT_DISPLAY, FONT_BODY, svg_header, svg_footer, text_element, kicker
 
 CARD_W = 800
-CARD_H = 286
+CARD_H = 246
 
 PULL_QUOTE = ["Teaching machines", "to read the literature."]
 
@@ -20,8 +21,6 @@ BIO_LINES = [
     "at the intersection of biomedical NLP, literature mining, and knowledge",
     "discovery &#8212; so researchers don&#8217;t have to read all of it themselves.",
 ]
-
-LINKS = ["Personal Site ↗", "Mizuno Group ↗"]
 
 
 def generate_about_svg(data: dict | None = None) -> str:
@@ -35,17 +34,6 @@ def generate_about_svg(data: dict | None = None) -> str:
     for line in BIO_LINES:
         lines.append(text_element(30, line_y, line, size=15, fill=COLORS["ink"], family=FONT_BODY))
         line_y += 24
-
-    chip_y, chip_h = 228, 34
-    chip_x = 30
-    for label in LINKS:
-        chip_w = len(label) * 7.2 + 32
-        lines.append(f'  <rect x="{chip_x}" y="{chip_y}" width="{chip_w}" height="{chip_h}" fill="none" '
-                      f'stroke="{COLORS["ink"]}" stroke-width="1.5" />')
-        lines.append(text_element(chip_x + chip_w / 2, chip_y + chip_h / 2 + 4, label.upper(), size=11,
-                                   fill=COLORS["ink"], anchor="middle", weight="600",
-                                   family=FONT_MONO, letter_spacing=0.6))
-        chip_x += chip_w + 14
 
     lines.append(svg_footer())
     return "\n".join(lines)
