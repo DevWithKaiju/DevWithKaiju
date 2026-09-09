@@ -18,7 +18,7 @@ USERNAME = "DevWithKaiju"
 # line (and push) to switch the whole profile:
 #   "field_notes"        - lab-notebook / specimen-card cards
 #   "minimal_editorial"  - bold display type, solid color blocks, newspaper stat grid
-THEME = "field_notes"
+THEME = "minimal_editorial"
 
 if THEME == "minimal_editorial":
     from svg_stats_minimal_editorial import generate_stats_svg
