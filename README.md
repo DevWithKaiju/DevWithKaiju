@@ -6,6 +6,10 @@
   <br><br>
 
   <img src="./images/about.svg?v=7" width="800" alt="About">
+  <br>
+  <a href="https://devwithkaiju.github.io">Personal site ↗</a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://www.mizuno-group.com">Mizuno Group ↗</a>
   <br><br>
 
   <img src="./images/stats.svg?v=7" width="800" alt="Field Data">

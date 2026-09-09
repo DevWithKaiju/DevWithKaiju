@@ -7,7 +7,7 @@
   </defs>
   <style>
     text { font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', Palatino, serif; }
-    
+
   </style>
   <rect x="0.75" y="0.75" width="798.5" height="128.5" rx="3" fill="#FAFAFC" stroke="#e2e8f0" stroke-width="1.5" filter="url(#cardShadow)"/>
   <text x="30" y="38" font-size="10.5" fill="#8870a4" text-anchor="start" font-weight="600" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" letter-spacing="1.4" >CREDENTIALS</text>

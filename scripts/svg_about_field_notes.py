@@ -1,11 +1,16 @@
 """
-About card - researcher bio, as plain readable prose rather than icon-per-line rows.
+About card ("Field Notes" theme) - researcher bio, as plain readable prose
+rather than icon-per-line rows.
+
+Note: the actual "Personal site" / "Mizuno Group" links live as plain Markdown
+links in README.md, not inside this SVG - an <a> inside an SVG referenced via
+<img> never becomes clickable in a rendered GitHub README.
 """
 
-from theme import COLORS, FONT_MONO, svg_header, svg_footer, card_shell, text_element, kicker
+from theme_field_notes import COLORS, svg_header, svg_footer, card_shell, text_element, kicker
 
 CARD_W = 800
-CARD_H = 208
+CARD_H = 180
 
 BIO_LINES = [
     "I&#8217;m a master&#8217;s student at the Graduate School of Pharmaceutical Sciences,",
@@ -26,17 +31,6 @@ def generate_about_svg(data: dict | None = None) -> str:
     for line in BIO_LINES:
         lines.append(text_element(30, line_y, line, size=14.5, fill=COLORS["ink"]))
         line_y += 22
-
-    link_y = CARD_H - 26
-    lines.append(f'  <a href="https://devwithkaiju.github.io" target="_blank">')
-    lines.append(text_element(30, link_y, "Personal site &#8599;", size=12.5, fill=COLORS["deep_purple"],
-                               weight="600", family=FONT_MONO))
-    lines.append(f'  </a>')
-
-    lines.append(f'  <a href="https://www.mizuno-group.com" target="_blank">')
-    lines.append(text_element(160, link_y, "Mizuno Group &#8599;", size=12.5, fill=COLORS["deep_purple"],
-                               weight="600", family=FONT_MONO))
-    lines.append(f'  </a>')
 
     lines.append(svg_footer())
     return "\n".join(lines)

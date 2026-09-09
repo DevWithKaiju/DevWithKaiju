@@ -2,7 +2,7 @@
 Masthead card - the top of the profile "field log".
 """
 
-from theme import COLORS, FONT_MONO, svg_header, svg_footer, card_shell, text_element, kicker
+from theme_field_notes import COLORS, FONT_MONO, svg_header, svg_footer, card_shell, text_element, kicker
 
 CARD_W = 800
 CARD_H = 128

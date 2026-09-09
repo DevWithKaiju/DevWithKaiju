@@ -1,8 +1,9 @@
 """
-Theme: Dusty Purple x Mint (Field Notes)
-A lab-notebook / specimen-card aesthetic built on the site's real brand palette
-(https://devwithkaiju.github.io) rather than generic pastel-dashboard styling.
+Theme: "Field Notes" - a lab-notebook / specimen-card aesthetic built on the
+site's real brand palette (https://devwithkaiju.github.io).
 """
+
+from svg_primitives import svg_open, svg_close, rect, text_element as _text_element
 
 COLORS = {
     "dusty_purple": "#b39cd0",     # Primary accent (borders, small highlights)
@@ -29,40 +30,29 @@ TEXT_BODY = 14.5
 
 
 def svg_header(width: int, height: int, extra_defs: str = "", extra_style: str = "") -> str:
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">
-  <defs>
-    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+    defs = f'''<filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
       <feDropShadow dx="3" dy="3" stdDeviation="0" flood-color="{COLORS['deep_purple']}" flood-opacity="0.08"/>
     </filter>
-    {extra_defs}
-  </defs>
-  <style>
-    text {{ font-family: {FONT_SERIF}; }}
-    {extra_style}
-  </style>'''
+    {extra_defs}'''
+    style = f"text {{ font-family: {FONT_SERIF}; }}\n{extra_style}"
+    return svg_open(width, height, extra_defs=defs, extra_style=style)
 
 
 def svg_footer() -> str:
-    return "</svg>"
+    return svg_close()
 
 
 def rounded_rect(x: float, y: float, w: float, h: float, rx: float = 3, fill: str | None = None,
                   stroke: str | None = None, stroke_width: float = 1, opacity: float = 1, extra: str = "") -> str:
-    fill = fill or COLORS["card_bg"]
-    stroke_attr = f' stroke="{stroke}" stroke-width="{stroke_width}"' if stroke else ""
-    opacity_attr = f' opacity="{opacity}"' if opacity != 1 else ""
-    return f'  <rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="{fill}"{stroke_attr}{opacity_attr} {extra}/>'
+    return rect(x, y, w, h, rx=rx, fill=fill or COLORS["card_bg"], stroke=stroke,
+                stroke_width=stroke_width, opacity=opacity, extra=extra)
 
 
 def text_element(x: float, y: float, content: str, size: float = TEXT_BODY, fill: str | None = None,
                   anchor: str = "start", weight: str = "normal", family: str | None = None,
                   style: str = "normal", letter_spacing: float | None = None, extra: str = "") -> str:
-    fill = fill or COLORS["text"]
-    family = family or FONT_SERIF
-    ls_attr = f' letter-spacing="{letter_spacing}"' if letter_spacing is not None else ""
-    style_attr = f' font-style="{style}"' if style != "normal" else ""
-    return (f'  <text x="{x}" y="{y}" font-size="{size}" fill="{fill}" text-anchor="{anchor}" '
-            f'font-weight="{weight}" font-family="{family}"{style_attr}{ls_attr} {extra}>{content}</text>')
+    return _text_element(x, y, content, size=size, fill=fill or COLORS["text"], family=family or FONT_SERIF,
+                          anchor=anchor, weight=weight, style=style, letter_spacing=letter_spacing, extra=extra)
 
 
 def card_shell(width: float, height: float, x: float = 0, y: float = 0,

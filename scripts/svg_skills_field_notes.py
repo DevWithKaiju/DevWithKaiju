@@ -3,7 +3,7 @@ Toolkit card - a single stacked language-composition bar plus a dot-legend,
 instead of a wall of per-language pill badges.
 """
 
-from theme import COLORS, FONT_MONO, svg_header, svg_footer, card_shell, text_element, kicker
+from theme_field_notes import COLORS, FONT_MONO, svg_header, svg_footer, card_shell, text_element, kicker
 
 CARD_W = 800
 PADDING = 30

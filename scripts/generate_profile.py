@@ -11,15 +11,29 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from github_api import fetch_github_data
-from svg_stats import generate_stats_svg
-from svg_skills import generate_skills_svg
-from svg_kaiju import generate_kaiju_svg
-from svg_header import generate_header_svg
-from svg_certs import generate_certs_svg
-from svg_about import generate_about_svg
-
 
 USERNAME = "DevWithKaiju"
+
+# Which visual theme to render. Both are fully implemented - flip this one
+# line (and push) to switch the whole profile:
+#   "field_notes"        - lab-notebook / specimen-card cards
+#   "minimal_editorial"  - bold display type, solid color blocks, newspaper stat grid
+THEME = "field_notes"
+
+if THEME == "minimal_editorial":
+    from svg_stats_minimal_editorial import generate_stats_svg
+    from svg_skills_minimal_editorial import generate_skills_svg
+    from svg_kaiju_minimal_editorial import generate_kaiju_svg
+    from svg_header_minimal_editorial import generate_header_svg
+    from svg_certs_minimal_editorial import generate_certs_svg
+    from svg_about_minimal_editorial import generate_about_svg
+else:
+    from svg_stats_field_notes import generate_stats_svg
+    from svg_skills_field_notes import generate_skills_svg
+    from svg_kaiju_field_notes import generate_kaiju_svg
+    from svg_header_field_notes import generate_header_svg
+    from svg_certs_field_notes import generate_certs_svg
+    from svg_about_field_notes import generate_about_svg
 
 
 def main():
