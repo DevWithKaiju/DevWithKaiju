@@ -13,13 +13,12 @@ from themes.broadsheet.theme import COLORS, FONT_DISPLAY, FONT_BODY, svg_header,
 CARD_W = 800
 CARD_H = 246
 
-PULL_QUOTE = ["Teaching machines", "to read the literature."]
+PULL_QUOTE = ["Extracting biological insights", "from the literature."]
 
 BIO_LINES = [
-    "I&#8217;m a master&#8217;s student at the Graduate School of Pharmaceutical Sciences,",
-    "The University of Tokyo, and a member of the Mizuno Group. My research sits",
-    "at the intersection of biomedical NLP, literature mining, and knowledge",
-    "discovery &#8212; so researchers don&#8217;t have to read all of it themselves.",
+    "I&#8217;m a master&#8217;s student at the Graduate School of Pharmaceutical Sciences, The University of Tokyo,",
+    "and a member of the Mizuno Group. My research sits at the intersection of biomedical NLP,",
+    "literature mining, and knowledge discovery, seamlessly connecting life sciences with computational models.",
 ]
 
 
