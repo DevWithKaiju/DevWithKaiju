@@ -7,10 +7,9 @@
 
   </style>
   <text x="30" y="30" font-size="10.5" fill="#475569" text-anchor="start" font-weight="600" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" letter-spacing="1.6" >ABOUT</text>
-  <text x="30" y="72" font-size="30" fill="#27222c" text-anchor="start" font-weight="800" font-family="'Arial Narrow', 'Helvetica Neue Condensed', Arial, sans-serif" >Teaching machines</text>
-  <text x="30" y="104" font-size="30" fill="#27222c" text-anchor="start" font-weight="800" font-family="'Arial Narrow', 'Helvetica Neue Condensed', Arial, sans-serif" >to read the literature.</text>
-  <text x="30" y="140" font-size="15" fill="#27222c" text-anchor="start" font-weight="normal" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" >I&#8217;m a master&#8217;s student at the Graduate School of Pharmaceutical Sciences,</text>
-  <text x="30" y="164" font-size="15" fill="#27222c" text-anchor="start" font-weight="normal" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" >The University of Tokyo, and a member of the Mizuno Group. My research sits</text>
-  <text x="30" y="188" font-size="15" fill="#27222c" text-anchor="start" font-weight="normal" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" >at the intersection of biomedical NLP, literature mining, and knowledge</text>
-  <text x="30" y="212" font-size="15" fill="#27222c" text-anchor="start" font-weight="normal" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" >discovery &#8212; so researchers don&#8217;t have to read all of it themselves.</text>
+  <text x="30" y="72" font-size="30" fill="#27222c" text-anchor="start" font-weight="800" font-family="'Arial Narrow', 'Helvetica Neue Condensed', Arial, sans-serif" >Extracting biological insights</text>
+  <text x="30" y="104" font-size="30" fill="#27222c" text-anchor="start" font-weight="800" font-family="'Arial Narrow', 'Helvetica Neue Condensed', Arial, sans-serif" >from the literature.</text>
+  <text x="30" y="140" font-size="15" fill="#27222c" text-anchor="start" font-weight="normal" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" >I&#8217;m a master&#8217;s student at the Graduate School of Pharmaceutical Sciences, The University of Tokyo,</text>
+  <text x="30" y="164" font-size="15" fill="#27222c" text-anchor="start" font-weight="normal" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" >and a member of the Mizuno Group. My research sits at the intersection of biomedical NLP,</text>
+  <text x="30" y="188" font-size="15" fill="#27222c" text-anchor="start" font-weight="normal" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" >literature mining, and knowledge discovery, seamlessly connecting life sciences with computational models.</text>
 </svg>
