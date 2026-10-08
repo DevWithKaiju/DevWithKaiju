@@ -7,15 +7,15 @@
 
   </style>
   <text x="30" y="30" font-size="10.5" fill="#475569" text-anchor="start" font-weight="600" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" letter-spacing="1.6" >TOOLKIT</text>
-  <rect x="30" y="56" width="484.92" height="22" fill="#c2447e" />
-  <rect x="516.9200000000001" y="56" width="135.64000000000001" height="22" fill="#5a4fb0" />
-  <rect x="654.5600000000001" y="56" width="71.26" height="22" fill="#0f9e8e" />
-  <rect x="727.82" y="56" width="15.019999999999996" height="22" fill="#3a6bc4" />
-  <rect x="744.84" y="56" width="25.9" height="22" fill="#84809a" />
+  <rect x="30" y="56" width="481.22" height="22" fill="#c2447e" />
+  <rect x="513.22" y="56" width="140.08" height="22" fill="#5a4fb0" />
+  <rect x="655.3000000000001" y="56" width="71.26" height="22" fill="#0f9e8e" />
+  <rect x="728.5600000000001" y="56" width="15.019999999999996" height="22" fill="#3a6bc4" />
+  <rect x="745.58" y="56" width="25.9" height="22" fill="#84809a" />
   <rect x="30" y="97" width="10" height="10" fill="#c2447e" />
-  <text x="48" y="106" font-size="11.5" fill="#27222c" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >Jupyter Notebook  65.8%</text>
+  <text x="48" y="106" font-size="11.5" fill="#27222c" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >Jupyter Notebook  65.3%</text>
   <rect x="225.79999999999998" y="97" width="10" height="10" fill="#5a4fb0" />
-  <text x="243.79999999999998" y="106" font-size="11.5" fill="#27222c" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >Python  18.6%</text>
+  <text x="243.79999999999998" y="106" font-size="11.5" fill="#27222c" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >Python  19.2%</text>
   <rect x="355.6" y="97" width="10" height="10" fill="#0f9e8e" />
   <text x="373.6" y="106" font-size="11.5" fill="#27222c" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >Shell  9.9%</text>
   <rect x="472.20000000000005" y="97" width="10" height="10" fill="#3a6bc4" />
