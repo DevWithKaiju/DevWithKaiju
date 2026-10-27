@@ -11,7 +11,7 @@
   <rect x="480.66" y="56" width="172.64" height="22" fill="#5a4fb0" />
   <rect x="655.3" y="56" width="69.04" height="22" fill="#0f9e8e" />
   <rect x="726.3399999999999" y="56" width="14.280000000000001" height="22" fill="#3a6bc4" />
-  <rect x="742.6199999999999" y="56" width="27.38" height="22" fill="#84809a" />
+  <rect x="742.6199999999999" y="56" width="28.12" height="22" fill="#84809a" />
   <rect x="30" y="97" width="10" height="10" fill="#c2447e" />
   <text x="48" y="106" font-size="11.5" fill="#27222c" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >Jupyter Notebook  60.9%</text>
   <rect x="225.79999999999998" y="97" width="10" height="10" fill="#5a4fb0" />
@@ -21,5 +21,5 @@
   <rect x="472.20000000000005" y="97" width="10" height="10" fill="#3a6bc4" />
   <text x="490.20000000000005" y="106" font-size="11.5" fill="#27222c" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >Astro  2.2%</text>
   <rect x="588.8000000000001" y="97" width="10" height="10" fill="#84809a" />
-  <text x="606.8000000000001" y="106" font-size="11.5" fill="#27222c" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >Other  3.7%</text>
+  <text x="606.8000000000001" y="106" font-size="11.5" fill="#27222c" text-anchor="start" font-weight="normal" font-family="'SF Mono', 'Cascadia Code', Consolas, 'Courier New', monospace" >Other  3.8%</text>
 </svg>
